@@ -67,7 +67,7 @@ class ContactVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     
     func buildContacts(){
         
-        contactCards = contactCards.sorted{ ($0.LastName < $1.LastName) } //sort array (Seems to be a bug here)
+        contactCards = contactCards.sorted{ ($0.LastName == $1.LastName ? $0.FirstName < $1.FirstName : $0.LastName < $1.LastName) } //sort array
         
         for user in contactCards {
             var userKey = String(user.LastName.prefix(1))
