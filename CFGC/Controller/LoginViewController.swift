@@ -26,6 +26,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, UIScrollViewDe
     var previousLogin: User!
     
     @IBOutlet weak var submitBtn: UIButton!
+    @IBOutlet weak var btnHome: UIButton!
     
     func pullContacts(){
         if (!authenticated && loginAttempts > 0){
@@ -44,13 +45,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate, UIScrollViewDe
         scrollView.minimumZoomScale = 1.0
         scrollView.maximumZoomScale = 6.0
         let center: NotificationCenter = NotificationCenter.default;
-        center.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        center.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        center.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        center.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         let scrollViewTap = UITapGestureRecognizer(target: self, action: #selector(scrollViewTapped))
         scrollViewTap.numberOfTapsRequired = 1
         scrollView.addGestureRecognizer(scrollViewTap)
-        userName.borderStyle = UITextBorderStyle.roundedRect
-        password.borderStyle = UITextBorderStyle.roundedRect
+        userName.borderStyle = UITextField.BorderStyle.roundedRect
+        password.borderStyle = UITextField.BorderStyle.roundedRect
         submitBtn.layer.cornerRadius = 23
     
     }
@@ -60,7 +61,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, UIScrollViewDe
         //print("scrollViewTapped")
     }
     @objc func keyboardWillShow(notification:NSNotification) {
-        guard let keyboardFrameValue = notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue else {
+        guard let keyboardFrameValue = notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue else {
             return
         }
         let keyboardFrame = view.convert(keyboardFrameValue.cgRectValue, from: nil)
@@ -78,6 +79,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate, UIScrollViewDe
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
         scrollView.isUserInteractionEnabled = true
+    }
+    
+    
+    @IBAction func btnHomePressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "HomePageVC", sender: btnHome)
     }
     
     @IBAction func submitBtnPressed(_ sender: UIButton){
@@ -112,9 +118,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate, UIScrollViewDe
     }
     
     func createAlert (title: String!, message: String!){
-        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) in
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action) in
             alert.dismiss(animated: true, completion: nil)
         }))
         
