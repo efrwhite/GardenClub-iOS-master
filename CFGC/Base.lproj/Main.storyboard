@@ -164,12 +164,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This box is going to contain the Contact Us info from the website" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyD-sd-RIh" userLabel="Description">
-                                <rect key="frame" x="0.0" y="233" width="320" height="82.5"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pd1-bX-Hul" userLabel="BackButton">
                                 <rect key="frame" x="0.0" y="433" width="320" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -216,25 +210,85 @@
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="ContactUsToLogin" id="czg-DI-FVn"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wI-D9-u9S">
+                                <rect key="frame" x="16" y="180" width="288" height="245"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4I-PL-ATi">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="500.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyD-sd-RIh" userLabel="Description">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="500.5"/>
+                                                <string key="text">Our USPS Mailing Address:
+Cape Fear Garden Club, Inc.
+P.O. Box 4751 Wilmington, NC 28406
+For General Inquires:
+info[@]CapeFearGardenClub.org
+
+President of the Cape Fear Garden Club, Inc.:
+Rebecca Philpott
+President[@]CapeFearGardenClub.org
+
+For information about the Bird Islands Cruise:
+Marlene Eader
+birdislandscruise[@]capefeargardenclub.org
+
+Media Questions and Interview Requests:
+Barbara Downing
+publicity[@]capefeargardenclub.org
+
+Azalea Garden Tour Media Questions and Interview Requests:
+Nina Brown or Barbara Downing
+gardentourpublicity[@]capefeargardenclub.org
+
+Cape Fear Garden Club, Inc. Azalea Belles:
+Karen Smith
+AzaleaBellesChair[@]CapeFearGardenClub.org
+
+Webmaster:
+Rahel Haley
+Webmaster[@]CapeFearGardenClub.org</string>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="nyD-sd-RIh" firstAttribute="leading" secondItem="d4I-PL-ATi" secondAttribute="leading" id="HWh-0v-cRv"/>
+                                            <constraint firstAttribute="bottom" secondItem="nyD-sd-RIh" secondAttribute="bottom" id="b2y-9H-ecN"/>
+                                            <constraint firstAttribute="trailing" secondItem="nyD-sd-RIh" secondAttribute="trailing" id="kbR-ug-VtL"/>
+                                            <constraint firstItem="nyD-sd-RIh" firstAttribute="top" secondItem="d4I-PL-ATi" secondAttribute="top" id="yKj-au-qSH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="d4I-PL-ATi" secondAttribute="trailing" id="4cd-6f-Ocn"/>
+                                    <constraint firstItem="d4I-PL-ATi" firstAttribute="leading" secondItem="3wI-D9-u9S" secondAttribute="leading" id="5d0-3U-0q3"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="d4I-PL-ATi" secondAttribute="bottom" id="ayr-th-jdw"/>
+                                    <constraint firstAttribute="bottom" secondItem="d4I-PL-ATi" secondAttribute="bottom" priority="250" id="hHo-0Y-uBV"/>
+                                    <constraint firstItem="d4I-PL-ATi" firstAttribute="top" secondItem="3wI-D9-u9S" secondAttribute="top" id="qG2-id-ioQ"/>
+                                    <constraint firstItem="d4I-PL-ATi" firstAttribute="width" secondItem="3wI-D9-u9S" secondAttribute="width" id="slM-jh-6od"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="AMF-L7-B8q"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="8Ia-Ml-Z30"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.84313725490000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="GEq-F8-AU0" firstAttribute="top" secondItem="zgF-Oj-uW9" secondAttribute="top" constant="40" id="139-AS-TQi"/>
                             <constraint firstItem="0CW-T5-OTy" firstAttribute="leading" secondItem="zgF-Oj-uW9" secondAttribute="leading" id="5mk-fV-XNF"/>
+                            <constraint firstItem="3wI-D9-u9S" firstAttribute="leading" secondItem="zgF-Oj-uW9" secondAttribute="leading" constant="16" id="9cu-2k-oOQ"/>
                             <constraint firstItem="zgF-Oj-uW9" firstAttribute="trailing" secondItem="AK5-1y-xPJ" secondAttribute="trailing" id="9g3-eT-eUq"/>
-                            <constraint firstItem="zgF-Oj-uW9" firstAttribute="trailing" secondItem="nyD-sd-RIh" secondAttribute="trailing" id="LNw-If-8jd"/>
-                            <constraint firstItem="nyD-sd-RIh" firstAttribute="top" relation="greaterThanOrEqual" secondItem="AK5-1y-xPJ" secondAttribute="bottom" constant="20" id="Lba-19-zhl"/>
-                            <constraint firstItem="nyD-sd-RIh" firstAttribute="centerY" secondItem="zgF-Oj-uW9" secondAttribute="centerY" id="Mjo-gB-ECL"/>
+                            <constraint firstItem="zgF-Oj-uW9" firstAttribute="trailing" secondItem="3wI-D9-u9S" secondAttribute="trailing" constant="16" id="ELO-RB-rnq"/>
                             <constraint firstItem="zgF-Oj-uW9" firstAttribute="trailing" secondItem="pd1-bX-Hul" secondAttribute="trailing" id="Nqr-WO-3JS"/>
                             <constraint firstItem="AK5-1y-xPJ" firstAttribute="leading" secondItem="zgF-Oj-uW9" secondAttribute="leading" id="TqA-4m-xfd"/>
                             <constraint firstItem="0CW-T5-OTy" firstAttribute="top" secondItem="pd1-bX-Hul" secondAttribute="bottom" constant="10" id="Uhk-8P-E0W"/>
                             <constraint firstItem="AK5-1y-xPJ" firstAttribute="top" secondItem="GEq-F8-AU0" secondAttribute="bottom" constant="10" id="VjC-2I-TdD"/>
                             <constraint firstItem="zgF-Oj-uW9" firstAttribute="leading" secondItem="GEq-F8-AU0" secondAttribute="leading" id="ZIb-WT-S31"/>
-                            <constraint firstItem="pd1-bX-Hul" firstAttribute="top" relation="greaterThanOrEqual" secondItem="nyD-sd-RIh" secondAttribute="bottom" constant="20" id="aJL-Ro-tNP"/>
                             <constraint firstItem="GEq-F8-AU0" firstAttribute="trailing" secondItem="zgF-Oj-uW9" secondAttribute="trailing" id="acQ-iF-JiS"/>
                             <constraint firstItem="zgF-Oj-uW9" firstAttribute="bottom" secondItem="0CW-T5-OTy" secondAttribute="bottom" constant="5" id="fhP-JI-Dh5"/>
                             <constraint firstItem="pd1-bX-Hul" firstAttribute="leading" secondItem="zgF-Oj-uW9" secondAttribute="leading" id="hbC-gh-1Nw"/>
-                            <constraint firstItem="nyD-sd-RIh" firstAttribute="leading" secondItem="zgF-Oj-uW9" secondAttribute="leading" id="mkU-9A-A01"/>
+                            <constraint firstItem="3wI-D9-u9S" firstAttribute="top" secondItem="AK5-1y-xPJ" secondAttribute="bottom" constant="8" id="oVL-Dv-m0I"/>
+                            <constraint firstItem="pd1-bX-Hul" firstAttribute="top" secondItem="3wI-D9-u9S" secondAttribute="bottom" constant="8" id="pqu-eL-LND"/>
                             <constraint firstItem="zgF-Oj-uW9" firstAttribute="trailing" secondItem="0CW-T5-OTy" secondAttribute="trailing" id="yRm-Sf-qkr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zgF-Oj-uW9"/>
@@ -280,12 +334,6 @@
                                         <integer key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This box is going to contain text from History page and Purpose pages from website." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3s-I3-HJn" userLabel="Description">
-                                <rect key="frame" x="10" y="233" width="300" height="82.5"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGk-CQ-BsR" userLabel="ContactButton">
                                 <rect key="frame" x="0.0" y="433" width="320" height="50"/>
@@ -333,6 +381,86 @@
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="MembershipToLogin" id="Lcm-Tx-Gmh"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fec-Kn-ycY">
+                                <rect key="frame" x="16" y="180" width="288" height="245"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQD-YL-j9v">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="1064"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3s-I3-HJn" userLabel="Description">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="1064"/>
+                                                <mutableString key="text">CAPE FEAR GARDEN CLUB, INC
+WILMINGTON, NORTH CAROLINA
+
+ORGANIZED FEBRUARY 11, 1925
+Federated with The Garden Club of North Carolina, Inc., 1929
+Federated with The National Garden Clubs, Inc., 1930
+Member of the South Atlantic Region, 1933
+Member of District 11
+Affiliated Member North Carolina Wildlife Federation, 1999
+
+MOTTO
+“And the Lord God planted a Garden…and there He put Man”….Genesis 2:8
+Adopted September 9, 1953
+
+COLORS
+Green and Yellow
+
+FLOWER
+Carolina Yellow Jessamine (Gelsemium sempervirens)
+
+CAPE FEAR GARDEN CLUB SEAL
+Adopted March 25, 1997, designed by Myrta W. Spence, CFGC
+
+Established North Carolina State Butterfly (SB236) Eastern Tiger Swallowtail
+June 18, 2012
+
+THE OBJECTIVES SHALL BE….
+
+    To provide a non-profit, philanthropic, and educational association for the members.
+    To stimulate knowledge and the love of gardening.
+    To study, in all its aspects, the art of gardening, particularly horticulture, and to cooperate with other agencies furthering such interest.
+    To encourage environmental improvement through civic development, beautification, restoration, and to aid in the protection and conservation of our native trees, plants, and birds.
+    Cape Fear Garden Club, Inc. is a registered, non-profit corporation which is exempt from US Federal income tax under Section 501(c) 3 of the Internal Revenue Code.
+
+Charter Members 1925
+
+Mrs. N.M. Martin, President
+Mrs. W.A. Graham, Recording Secretary
+Mrs. John Bolles
+Mrs. A.M. Hall
+Mrs. Hugh MacRae
+Mrs. Platt W. Davis
+Mrs. R.H. Hubbard
+Miss Jeanie Strange
+Mrs. W.E. Elliott
+Mrs. William Latimer
+Mrs. Martin Willard
+Miss Sarah Lippitt</mutableString>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Z3s-I3-HJn" firstAttribute="leading" secondItem="OQD-YL-j9v" secondAttribute="leading" id="DZo-jU-yKT"/>
+                                            <constraint firstItem="Z3s-I3-HJn" firstAttribute="top" secondItem="OQD-YL-j9v" secondAttribute="top" id="IoW-CO-Guh"/>
+                                            <constraint firstAttribute="trailing" secondItem="Z3s-I3-HJn" secondAttribute="trailing" id="Lfu-nZ-22u"/>
+                                            <constraint firstAttribute="bottom" secondItem="Z3s-I3-HJn" secondAttribute="bottom" id="Voz-ym-1rD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="OQD-YL-j9v" secondAttribute="bottom" id="Hc6-hc-2zk"/>
+                                    <constraint firstItem="OQD-YL-j9v" firstAttribute="width" secondItem="fec-Kn-ycY" secondAttribute="width" id="ITk-nX-M80"/>
+                                    <constraint firstItem="OQD-YL-j9v" firstAttribute="leading" secondItem="fec-Kn-ycY" secondAttribute="leading" id="j7X-23-loP"/>
+                                    <constraint firstAttribute="bottom" secondItem="OQD-YL-j9v" secondAttribute="bottom" priority="250" id="kd6-EP-WJ0"/>
+                                    <constraint firstAttribute="trailing" secondItem="OQD-YL-j9v" secondAttribute="trailing" id="qou-KH-Fs7"/>
+                                    <constraint firstItem="OQD-YL-j9v" firstAttribute="top" secondItem="fec-Kn-ycY" secondAttribute="top" id="zwR-DL-83K"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="dj6-pc-s8K"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="HHF-et-oJT"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.84313725490000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -340,18 +468,17 @@
                             <constraint firstItem="RRj-bd-zkc" firstAttribute="leading" secondItem="iQO-QG-7QG" secondAttribute="leading" id="9RG-wj-WEk"/>
                             <constraint firstItem="wC7-cd-gKj" firstAttribute="top" secondItem="EGk-CQ-BsR" secondAttribute="bottom" constant="10" id="DDN-xd-vct"/>
                             <constraint firstItem="iQO-QG-7QG" firstAttribute="trailing" secondItem="wC7-cd-gKj" secondAttribute="trailing" id="EYp-Qq-L4R"/>
+                            <constraint firstItem="fec-Kn-ycY" firstAttribute="leading" secondItem="iQO-QG-7QG" secondAttribute="leading" constant="16" id="FlQ-tL-rNZ"/>
                             <constraint firstItem="8GG-Gi-KXp" firstAttribute="trailing" secondItem="iQO-QG-7QG" secondAttribute="trailing" id="HZc-bN-cMD"/>
                             <constraint firstItem="wC7-cd-gKj" firstAttribute="leading" secondItem="iQO-QG-7QG" secondAttribute="leading" id="JFm-qE-2bl"/>
                             <constraint firstItem="iQO-QG-7QG" firstAttribute="trailing" secondItem="EGk-CQ-BsR" secondAttribute="trailing" id="JSY-j9-geY"/>
                             <constraint firstItem="iQO-QG-7QG" firstAttribute="leading" secondItem="8GG-Gi-KXp" secondAttribute="leading" id="SLt-y3-X2B"/>
-                            <constraint firstItem="Z3s-I3-HJn" firstAttribute="leading" secondItem="iQO-QG-7QG" secondAttribute="leading" constant="10" id="Sx9-U9-W4c"/>
                             <constraint firstItem="iQO-QG-7QG" firstAttribute="trailing" secondItem="RRj-bd-zkc" secondAttribute="trailing" id="UcI-LG-cu5"/>
                             <constraint firstItem="iQO-QG-7QG" firstAttribute="bottom" secondItem="wC7-cd-gKj" secondAttribute="bottom" constant="5" id="cKI-I6-WGv"/>
-                            <constraint firstItem="EGk-CQ-BsR" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Z3s-I3-HJn" secondAttribute="bottom" constant="20" id="d0k-wX-j8z"/>
-                            <constraint firstItem="iQO-QG-7QG" firstAttribute="trailing" secondItem="Z3s-I3-HJn" secondAttribute="trailing" constant="10" id="fFv-cd-OOi"/>
-                            <constraint firstItem="Z3s-I3-HJn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="RRj-bd-zkc" secondAttribute="bottom" constant="20" id="fKq-zH-Lhm"/>
+                            <constraint firstItem="EGk-CQ-BsR" firstAttribute="top" secondItem="fec-Kn-ycY" secondAttribute="bottom" constant="8" id="hMk-IP-z1p"/>
+                            <constraint firstItem="iQO-QG-7QG" firstAttribute="trailing" secondItem="fec-Kn-ycY" secondAttribute="trailing" constant="16" id="jlj-6O-bnP"/>
                             <constraint firstItem="EGk-CQ-BsR" firstAttribute="leading" secondItem="iQO-QG-7QG" secondAttribute="leading" id="qLU-2i-H1m"/>
-                            <constraint firstItem="Z3s-I3-HJn" firstAttribute="centerY" secondItem="iQO-QG-7QG" secondAttribute="centerY" id="w8O-Qm-fL1"/>
+                            <constraint firstItem="fec-Kn-ycY" firstAttribute="top" secondItem="RRj-bd-zkc" secondAttribute="bottom" constant="8" id="y9u-5L-Ag5"/>
                             <constraint firstItem="8GG-Gi-KXp" firstAttribute="top" secondItem="iQO-QG-7QG" secondAttribute="top" constant="40" id="zRy-eY-ufJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iQO-QG-7QG"/>
@@ -542,12 +669,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This box is going to contain information from the Endowment History page on website." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aft-t7-Rzx" userLabel="Description">
-                                <rect key="frame" x="10" y="219" width="300" height="110"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qd-oY-8Gg" userLabel="ProjectsButton">
                                 <rect key="frame" x="0.0" y="388" width="320" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -617,26 +738,129 @@
                                     <segue destination="UIR-Bh-WW9" kind="show" identifier="LegacyToImpact" id="fYJ-bc-AH4"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BzY-zU-TRu">
+                                <rect key="frame" x="16" y="180" width="288" height="200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsx-cn-7gT">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="3128.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aft-t7-Rzx" userLabel="Description">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="3128.5"/>
+                                                <mutableString key="text">    For almost 90 years the Cape Fear Garden Club has worked to enhance and support the natural beauty of Wilmington. In 2011, we created the Cape Fear Garden Club Beautification Endowment to create perpetual funding to promote wide scale enhancement and maintenance of the landscapes of our city gateways, medians, byways and public spaces. Below is an overview of how recent grants benefit our Wilmington community:
+
+BEAUTIFICATION:
+
+The creation of new gardens and the restoration of existing gardens; adding trees, shrubs; flowers along with hardscapes that will allow people to enjoy the particular area.
+
+    Children's Museum - Secret Garden off Orange Street in which area residents, visitors and tourists can rest and relax
+    Carolina Beach - enhancement of the "Town Gazebo", central to this community
+    Schools: Wilmington Christian, NHHS, Hoggard, Forest Hills Elementary, CFCC, Roland Grise Middle, Isaac Bear, Friends School, Gregory Elementary, Lake Forest Academy, St Mary's, Wrightsville Beach Elementary, Noble Middle and Holly Tree Elementary
+    Juvenile Day Treatment Center - gateway to Wilmington along side of this building
+    Kure Beach - enhancement of areas surrounding city signs
+    Lower Cape Fear Historical Society - Latimer House
+    City of Wilmington - Greenfield Amphitheater
+    Airlie Gardens - Improve center drive of the gardens with irrigation, plant materials and mulch (2013)
+    Cameron Art Museum - Creation of a quilt garden from the museum's collection. It is a slave-made tulip quilt. Funding is for all plantings in this garden (2013)
+    Bellamy Mansion Museum - re-activate 1861 cistern and rainwater harvesting system
+    Rotary Clubs of Wilmington (for Greenfield Park) - completion of irrigation project and Rotary Wheel for Wilmington Parks and Recreation
+    Friends of the Battleship North Carolina - Improve Battleship Park with plants, mulch and soil (2013)
+    Wilmington Tree Commission - 200 azaleas and 9 Live Oaks on Market Street between 4th and 16th Streets
+    Cape Fear Community College - Beautify the circular courtyard at the Hanover parking deck (2013)
+
+
+
+CONSERSVATION:
+
+Supports the CFGC's ongoing project at Battery Island which was just increased from $4000 to $6000 awarded each year. This is a partnership with the Audubon Society with Walker Goldman and includes a bi-annual cleanup with plantings of Yaupon shrubs which help provide nesting sites for coastal birds, in particular the White Ibis which has one of the largest nesting sites right here in Battery Island. Other recent conservation grant projects have included:
+
+    The Arboretum new entrance which will feature storm water best management practice demonstration site (2008)
+    Cape Fear Community College Foundation - horticultural fitness trail which includes preservation of native carnivorous plants (2007)
+    Cape Fear River Watch - created an Urban Rain Garden to manage storm water runoff from headquarters building on Surry St; utilized native plants and conservation landscaping techniques to create an education site in front of the building (2007)
+    Lower Cape Fear Historical Society - Restore storm drains at sides of the 1852 Lamiter House and improve irrigation (2013)
+    North Carolina Coastal Federation - Native plants and shrubs for rain gardens at Bradley Creek and Alderman Elementary Schools (2013)
+    North Carolina Land Trust - Supplies for propagation of new plants to restore Venus Flytraps at the Stanley Rehder Carnivorous Garden (2013)
+
+
+
+EDUCATIONAL:
+
+Multiple grant awards have gone to schools and organizations for the purpose of educating people about how to use plants for conservation, food, landscaping, attracting wildlife, etc.
+
+    Airlie Butterfly Garden - CFGC supplied the funds to landscape the entire area surrounding the new Butterfly Garden at Airlie Gardens.
+    Cape Fear Community College - funds for a greenhouse in which students learn to grow plants (now named the "Cape Fear Garden Club Greenhouse" in our club's honor for our support). CFCC is also a ppartner in landscaping Habitat for Humanity homes as a part of their landscaping curriculum
+    Arboretum - Plant additional 45 camellia plants and companion plants in the former specimen and patio garden
+    The Davis Community - Create an outdoor destination to draw people from their rooms to experience nature (2013)
+    Creekwood Community - an ongoing project to raise vegetables, engage community participation, educate and improve the health of area residents
+
+SCHOOLS:
+
+    Wilmington Academy of Arts and Sciences - vegetable gardens and a Snow Pea "Tee-Pee" to teach students a scientific introduction to vegetable gardening including the process of preparing beds, planting, composting, harvesting, and eating the crop produced
+    Communities in Schools – this center for at-risk youth will design, implement and maintain a flower and vegetable garden and hopefully sell the products at the Farmer’s Market downtown
+    Yahweh Center – working garden of flowers, herbs and vegetables including a greenhouse for hands on learning for children
+    JT Hoggard – shade garden and education for Horticultural students in implementation and maintenance
+    Bellamy Elementary Garden Club – flower beds to be used in education and to improve self esteem
+    NHHS – English as a second Language Students will install and maintain senior courtyard plantings
+    Laney Highschool – Senior class garden, provide mulch and plantings (2013)
+
+INSPIRATION AND MEMORIALS:
+
+    Lower Cape Fear Hospice received monies to help with a 3 phase project for gardens on the property that will be uplifting to patients as well as to the entire community who visit and contemplate life and death. In 2013 Hospice was awarded a grant to cover all the plantings for new courtyards created as part of the campaign to expand the Pavilion
+    UNCW students applied for and received a grant to beautify an area on campus and create a memorial garden for students and faculty who have died
+    Ashley High School TrrM Society – memorial garden
+    Little Chapel on the Boardwalk – Biblical Garden established on their property off “The Loop” – also educational as to plant materials found in the Old Testament
+    Wilmington Firefighters’ Memorial – Purchase materials for the irrigation system, a load of topsoil and perennials for the garden (2013)
+
+PHILANTHROPIC:
+
+    Habitat for Humanity – for 4 years, we have funded plant materials to landscape homes for this organization; CFCC students provide the labor.  Habitat residents undergo a 12 week program to teach them how to own their own home and maintain it.
+
+ENDOWED SCHOLARSHIPS:
+
+    Cape Fear Community College
+    University of North Carolina, Wilmington</mutableString>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Aft-t7-Rzx" firstAttribute="top" secondItem="nsx-cn-7gT" secondAttribute="top" id="129-e4-lRr"/>
+                                            <constraint firstAttribute="bottom" secondItem="Aft-t7-Rzx" secondAttribute="bottom" id="6BL-e1-i8A"/>
+                                            <constraint firstAttribute="trailing" secondItem="Aft-t7-Rzx" secondAttribute="trailing" id="hQF-Qr-9RR"/>
+                                            <constraint firstItem="Aft-t7-Rzx" firstAttribute="leading" secondItem="nsx-cn-7gT" secondAttribute="leading" id="j8k-8i-hHH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nsx-cn-7gT" firstAttribute="top" secondItem="BzY-zU-TRu" secondAttribute="top" id="4jr-pR-L0G"/>
+                                    <constraint firstItem="nsx-cn-7gT" firstAttribute="leading" secondItem="BzY-zU-TRu" secondAttribute="leading" id="8bK-Yp-e5a"/>
+                                    <constraint firstAttribute="trailing" secondItem="nsx-cn-7gT" secondAttribute="trailing" id="GBv-wf-hM1"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="nsx-cn-7gT" secondAttribute="bottom" id="NJz-FC-KeK"/>
+                                    <constraint firstItem="nsx-cn-7gT" firstAttribute="width" secondItem="BzY-zU-TRu" secondAttribute="width" id="hos-VY-I9Q"/>
+                                    <constraint firstAttribute="bottom" secondItem="nsx-cn-7gT" secondAttribute="bottom" priority="250" id="xDu-LD-OXx"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="9St-aV-nb6"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Sla-ko-hxW"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.84313725490000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Aft-t7-Rzx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="xLT-dl-xwq" secondAttribute="bottom" constant="20" id="1FI-Sn-Ul8"/>
-                            <constraint firstItem="qcO-KT-fnz" firstAttribute="trailing" secondItem="Aft-t7-Rzx" secondAttribute="trailing" constant="10" id="3go-RO-hnc"/>
                             <constraint firstItem="qcO-KT-fnz" firstAttribute="trailing" secondItem="ai6-Wc-fHO" secondAttribute="trailing" id="42C-Di-aeN"/>
+                            <constraint firstItem="BzY-zU-TRu" firstAttribute="leading" secondItem="qcO-KT-fnz" secondAttribute="leading" constant="16" id="4bF-e1-Dk7"/>
                             <constraint firstItem="qcO-KT-fnz" firstAttribute="trailing" secondItem="kXU-YU-UC1" secondAttribute="trailing" id="Afd-HY-Ynk"/>
                             <constraint firstItem="sfq-dB-A8g" firstAttribute="leading" secondItem="qcO-KT-fnz" secondAttribute="leading" id="DDX-er-bJe"/>
+                            <constraint firstItem="9Qd-oY-8Gg" firstAttribute="top" secondItem="BzY-zU-TRu" secondAttribute="bottom" constant="8" id="G7p-1a-nyC"/>
                             <constraint firstItem="qcO-KT-fnz" firstAttribute="trailing" secondItem="sfq-dB-A8g" secondAttribute="trailing" id="HTs-El-ZOT"/>
                             <constraint firstItem="9Qd-oY-8Gg" firstAttribute="leading" secondItem="qcO-KT-fnz" secondAttribute="leading" id="Hcc-Ig-uiq"/>
-                            <constraint firstItem="Aft-t7-Rzx" firstAttribute="centerY" secondItem="qcO-KT-fnz" secondAttribute="centerY" id="Hgg-60-IEg"/>
-                            <constraint firstItem="Aft-t7-Rzx" firstAttribute="leading" secondItem="qcO-KT-fnz" secondAttribute="leading" constant="10" id="IUG-FE-04v"/>
                             <constraint firstItem="sfq-dB-A8g" firstAttribute="top" secondItem="kXU-YU-UC1" secondAttribute="bottom" constant="10" id="LPP-ig-wcv"/>
                             <constraint firstItem="ai6-Wc-fHO" firstAttribute="leading" secondItem="qcO-KT-fnz" secondAttribute="leading" id="M9y-R5-7fp"/>
                             <constraint firstItem="ai6-Wc-fHO" firstAttribute="top" secondItem="qcO-KT-fnz" secondAttribute="top" constant="40" id="V1a-QA-CHc"/>
                             <constraint firstItem="xLT-dl-xwq" firstAttribute="top" secondItem="ai6-Wc-fHO" secondAttribute="bottom" constant="10" id="cDa-nP-3cs"/>
                             <constraint firstItem="kXU-YU-UC1" firstAttribute="top" secondItem="9Qd-oY-8Gg" secondAttribute="bottom" constant="10" id="dAi-rf-G6V"/>
+                            <constraint firstItem="BzY-zU-TRu" firstAttribute="top" secondItem="xLT-dl-xwq" secondAttribute="bottom" constant="8" id="iuX-2B-jSa"/>
+                            <constraint firstItem="qcO-KT-fnz" firstAttribute="trailing" secondItem="BzY-zU-TRu" secondAttribute="trailing" constant="16" id="lxF-gy-9Nk"/>
                             <constraint firstItem="qcO-KT-fnz" firstAttribute="trailing" secondItem="xLT-dl-xwq" secondAttribute="trailing" id="nes-wQ-Bj4"/>
                             <constraint firstItem="kXU-YU-UC1" firstAttribute="leading" secondItem="qcO-KT-fnz" secondAttribute="leading" id="qFg-Wm-dyS"/>
-                            <constraint firstItem="9Qd-oY-8Gg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Aft-t7-Rzx" secondAttribute="bottom" constant="20" id="rtM-PW-XLD"/>
                             <constraint firstItem="qcO-KT-fnz" firstAttribute="trailing" secondItem="9Qd-oY-8Gg" secondAttribute="trailing" id="tXV-5G-YTQ"/>
                             <constraint firstItem="qcO-KT-fnz" firstAttribute="bottom" secondItem="sfq-dB-A8g" secondAttribute="bottom" constant="5" id="uGw-bQ-gda"/>
                             <constraint firstItem="xLT-dl-xwq" firstAttribute="leading" secondItem="qcO-KT-fnz" secondAttribute="leading" id="ziE-3F-TWA"/>
@@ -787,6 +1011,9 @@
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ghq-6k-Qt9" secondAttribute="height" multiplier="320:93" id="J86-Fj-uiF"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="CFGC banner with logo - small"/>
                                 <connections>
                                     <action selector="btnHomePressed:" destination="x6x-hb-OAg" eventType="touchUpInside" id="d1d-Af-ZNH"/>
@@ -796,6 +1023,9 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Azalea Belles©" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g8Q-Zs-Xdj" userLabel="Title">
                                 <rect key="frame" x="0.0" y="143" width="320" height="29"/>
                                 <color key="backgroundColor" red="0.4039215686" green="0.54117647059999996" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="g8Q-Zs-Xdj" secondAttribute="height" multiplier="320:29" id="2tT-J9-ROO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -804,12 +1034,6 @@
                                         <integer key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This box is going to contain text from Azalea Belles website photos, policies, and Belle application info" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CES-WZ-neC" userLabel="Description">
-                                <rect key="frame" x="10" y="219" width="300" height="110"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xp3-pE-Q40" userLabel="MapButton">
                                 <rect key="frame" x="0.0" y="433" width="320" height="50"/>
@@ -857,26 +1081,101 @@
                                     <segue destination="YR8-Rs-kQb" kind="show" identifier="BellesToTour" id="ix7-Jp-m5q"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tM1-P9-HHE">
+                                <rect key="frame" x="16" y="180" width="288" height="245"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nwk-hX-exf">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="2581"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CES-WZ-neC" userLabel="Description">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="2581"/>
+                                                <string key="text">Azalea Belle Policies and Application Information
+2019 Azalea Belle Application Information
+
+Applications for the 2019 Cape Fear Garden Club, Inc. Azalea Belles © will be available to high school juniors and seniors on January 23, 2019 from members of the Cape Fear Garden Club (CFGC) or the Azalea Belle Committee. Young ladies desiring to become a Belle should contact a member of the CFGC to ask if they will sponsor you and help you complete an application. Juniors must have a CFGC member sponsor. For Seniors ONLY: If you do not know a CFGC member, you may go to 1309 Honor Lane at 4:00 PM on January 23rd. to be interviewed by the Belle Committee and receive an application from them. Please refer to the Azalea Belle policy as posted on the website. Belle Applications for 2019 closed at midnight on January 30th.
+AZALEA BELLE POLICIES (adopted 2006; revised 2018)
+
+CFGC Belle Mission Statement: The Cape Fear Garden Club Inc. Azalea Belles © serve as ambassadors for The Cape Fear Garden Club Inc., the North Carolina Azalea Festival and the City of Wilmington. This is a diverse group of young women dressed in colorful gowns that complement the blooms and surrounding landscapes of Wilmington, greet visitors to the Cape Fear Garden Club Azalea Garden Tour©, and participate in other events related to the North Carolina Azalea Festival.
+
+1. The Azalea Belle Committee is composed of members of The Cape Fear Garden Club, Inc.
+
+2. The purpose of the Azalea Belle Committee is to assist the Belle Chairmen with the initial contacting of the Belle, the dress fittings, the tea, the rehearsal, the ribbon cutting, and any other activities in which assistance is needed.
+
+3. The Belle applications will be distributed each year at the January meeting of the Cape Fear Garden Club to members of the Cape Fear Garden Club.
+
+4. Cape Fear Garden Club members may sponsor no more than 3 young ladies who meet the criteria* specified on the Belle information sheet attached to the application. Sponsors are responsible for informing the Belle and her parents of her responsibilities to the Garden Club.
+
+5. Senior girls who wish to be Belles and do not have a garden club sponsor may apply through the Belle Chairmen. Her sponsor will be listed as "committee sponsored." This policy allows more girls to have this opportunity and it helps us to be more diverse. ALL JUNIOR APPLICANTS MUST have a garden club sponsor for their application to be accepted - NO EXCEPTIONS (any junior who wishes to apply but cannot find a garden club sponsor may reapply through the Belle Committee or through a garden club sponsor her senior year).
+
+6. The Belle Chairmen will determine the number of Belles needed for each garden tour based on the sizes of the gardens. The number may vary from year to year. In other words, there is no set number.
+
+7. Belle applications must be mailed to the address listed on the application and they must be postmarked by the date listed on the application. Applications received after the set postmark sate will not be considered. NO EXCEPTIONS!
+
+8. Belle selection will be conducted by the Belle committee chairs using the following guidelines:
+
+    a. Daughters or granddaughters of CFGC members will be given first priority regardless of where the girl resides. High school seniors who attend school or reside in New Hanover County. High school juniors who attend school or reside in New Hanover County. If there are more junior applications than slots available after placing the above, a random lottery will be conducted from the junior applicants by the Belle Chairmen. (We are no longer accepting any sophomore applications due to the numbers of juniors and seniors applying each year.)
+
+    b. Young ladies of appropriate age from surrounding counties may apply, but their applications will not be given priority over any of the above.
+
+9. The Belle Chairmen will mail acceptance letters to the young ladies who are selected. Letters of regret will be mailed to those not selected. If a young lady is not selected, she will have to go through the application process again the following year if she is eligible and wishes to be considered. We do not keep a waiting list.
+
+10. The Belle Chairmen will select the Belles who participate in the special activities. (Examples: trip to Raleigh, photo shoots for publicity, parade floats, the Queen's arrival, etc.) When possible, daughters and granddaughters will be considered for these activities. It is not always possible or fair to always place only daughters and granddaughters in all the special activities.
+
+11. The dressmakers for the Belles are secured by the chairmen annually. The chairmen and the dressmakers will determine the dates for the fittings. If a Belle has her own gown or would like to have her own gown made by someone other than the designated dressmakers, she will have to have the pattern and fabric approved by the Belle Chairmen.
+
+12. These policies will remain in effect until the committee decides changes need to be made.
+
+Criteria*:
+
+    Applications are accepted from young ladies who are in the 11th or 12th grade and who reside in or attend school in New Hanover County. Applications from surrounding counties are accepted, but are not given priority over New Hanover County applicants. (Daughters and granddaughters of CFGC members may reside out of town.)
+    A young lady may only serve as a Belle one year.
+    A young lady who wishes to be a Belle may not participate in the Azalea Festival Scholarship Pageant in the same year she serves as a Belle.
+
+*************************
+Questions regarding this policy should be directed to Karen Smith, Chairperson of the Azalea Belle Committee: karen.smith1309@gmail.com or 910-620-6958.</string>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="CES-WZ-neC" secondAttribute="bottom" id="8W3-DI-hzU"/>
+                                            <constraint firstAttribute="trailing" secondItem="CES-WZ-neC" secondAttribute="trailing" id="gba-pJ-m0K"/>
+                                            <constraint firstItem="CES-WZ-neC" firstAttribute="top" secondItem="Nwk-hX-exf" secondAttribute="top" id="hDw-vl-Gi8"/>
+                                            <constraint firstItem="CES-WZ-neC" firstAttribute="leading" secondItem="Nwk-hX-exf" secondAttribute="leading" id="tQt-SE-UCN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Nwk-hX-exf" firstAttribute="top" secondItem="tM1-P9-HHE" secondAttribute="top" id="60P-TE-RxS"/>
+                                    <constraint firstItem="Nwk-hX-exf" firstAttribute="leading" secondItem="tM1-P9-HHE" secondAttribute="leading" id="BAG-wm-r3B"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nwk-hX-exf" secondAttribute="trailing" id="Q2i-3S-FBf"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Nwk-hX-exf" secondAttribute="bottom" id="aT2-Lj-00o"/>
+                                    <constraint firstItem="Nwk-hX-exf" firstAttribute="width" secondItem="tM1-P9-HHE" secondAttribute="width" id="aoL-hj-9sX"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nwk-hX-exf" secondAttribute="bottom" priority="250" id="jfm-wv-QiO"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="ait-cp-bBw"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="dDx-eE-q0b"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.84313725490000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="IHp-LA-S3b" firstAttribute="bottom" secondItem="dwG-Y8-KVw" secondAttribute="bottom" constant="5" id="7XS-cs-HTz"/>
                             <constraint firstItem="dwG-Y8-KVw" firstAttribute="top" secondItem="xp3-pE-Q40" secondAttribute="bottom" constant="10" id="7eD-2T-5Iy"/>
                             <constraint firstItem="g8Q-Zs-Xdj" firstAttribute="leading" secondItem="IHp-LA-S3b" secondAttribute="leading" id="HWY-XQ-2xR"/>
-                            <constraint firstItem="IHp-LA-S3b" firstAttribute="trailing" secondItem="CES-WZ-neC" secondAttribute="trailing" constant="10" id="Irf-63-0Qe"/>
-                            <constraint firstItem="CES-WZ-neC" firstAttribute="centerY" secondItem="IHp-LA-S3b" secondAttribute="centerY" id="Ix4-tR-mYx"/>
                             <constraint firstItem="IHp-LA-S3b" firstAttribute="trailing" secondItem="ghq-6k-Qt9" secondAttribute="trailing" id="Jef-rk-dWs"/>
                             <constraint firstItem="ghq-6k-Qt9" firstAttribute="leading" secondItem="IHp-LA-S3b" secondAttribute="leading" id="LEa-6C-EJz"/>
                             <constraint firstItem="xp3-pE-Q40" firstAttribute="leading" secondItem="IHp-LA-S3b" secondAttribute="leading" id="Ph0-uM-KrC"/>
                             <constraint firstItem="IHp-LA-S3b" firstAttribute="trailing" secondItem="g8Q-Zs-Xdj" secondAttribute="trailing" id="QkQ-ua-lmF"/>
                             <constraint firstItem="IHp-LA-S3b" firstAttribute="trailing" secondItem="dwG-Y8-KVw" secondAttribute="trailing" id="azY-EI-T8x"/>
                             <constraint firstItem="ghq-6k-Qt9" firstAttribute="top" secondItem="IHp-LA-S3b" secondAttribute="top" constant="40" id="b4r-3P-FhQ"/>
+                            <constraint firstItem="xp3-pE-Q40" firstAttribute="top" secondItem="tM1-P9-HHE" secondAttribute="bottom" constant="8" id="bTe-2X-EF6"/>
                             <constraint firstItem="IHp-LA-S3b" firstAttribute="trailing" secondItem="xp3-pE-Q40" secondAttribute="trailing" id="buY-cg-iKG"/>
-                            <constraint firstItem="xp3-pE-Q40" firstAttribute="top" relation="greaterThanOrEqual" secondItem="CES-WZ-neC" secondAttribute="bottom" constant="20" id="dmb-8J-eOU"/>
-                            <constraint firstItem="CES-WZ-neC" firstAttribute="leading" secondItem="IHp-LA-S3b" secondAttribute="leading" constant="10" id="tce-wb-UB1"/>
+                            <constraint firstItem="tM1-P9-HHE" firstAttribute="leading" secondItem="IHp-LA-S3b" secondAttribute="leading" constant="16" id="gaZ-be-PCK"/>
+                            <constraint firstItem="tM1-P9-HHE" firstAttribute="top" secondItem="g8Q-Zs-Xdj" secondAttribute="bottom" constant="8" id="joG-bh-C1N"/>
                             <constraint firstItem="dwG-Y8-KVw" firstAttribute="leading" secondItem="IHp-LA-S3b" secondAttribute="leading" id="u4e-WO-EXF"/>
                             <constraint firstItem="g8Q-Zs-Xdj" firstAttribute="top" secondItem="ghq-6k-Qt9" secondAttribute="bottom" constant="10" id="uew-8T-aFo"/>
-                            <constraint firstItem="CES-WZ-neC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="g8Q-Zs-Xdj" secondAttribute="bottom" constant="20" id="wmI-EB-AOn"/>
+                            <constraint firstItem="IHp-LA-S3b" firstAttribute="trailing" secondItem="tM1-P9-HHE" secondAttribute="trailing" constant="16" id="wFZ-xr-aRh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IHp-LA-S3b"/>
                     </view>
@@ -923,12 +1222,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This box is going to contain text from Battery Island Committee Info" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSU-wV-SWX" userLabel="Description">
-                                <rect key="frame" x="10" y="233" width="300" height="82.5"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GP-GU-DRj" userLabel="BackButton">
                                 <rect key="frame" x="0.0" y="493" width="320" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -952,22 +1245,57 @@
                                     <segue destination="k6r-B1-ghq" kind="show" identifier="BICToEvents" id="LWn-5P-J6g"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ucc-xg-nGO">
+                                <rect key="frame" x="16" y="180" width="288" height="305"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jd9-EG-246">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="454"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSU-wV-SWX" userLabel="Description">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="454"/>
+                                                <string key="text">    Battery Island (established Fall 1996) - Battery Island Committee highlights the twenty-three-year relationship that The Cape Fear Garden Club, Inc. has in working closely with Audubon NC's Coastal Office and biologists to maintain safe habitats for the migratory birds, specifically the islands in the Lower Cape Fear River where they nest. The Cape Fear Garden Club, Inc. assists Audubon in funding through a standing annual grant and through education outreach by sponsoring the annual Spring Cruise to the Bird Islands in the Lower Cape Fear River each May.
+    This committee supports Audubon with cleanups on Battery Island in the spring before nesting season begins and the fall after the nesting season is complete. Our main concern is to get debris that floats in off the Cape Fear River and specifically fishing line off the island because of the danger of entanglement of pelicans and other shorebirds. The Committee also does the detailed planning and coordination for The Cape Fear Garden Club for the Spring Cruise to the Bird Islands in the Lower Cape Fear River.
+
+this needs to be fixed when I find it.</string>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="DSU-wV-SWX" secondAttribute="trailing" id="QZ2-Lx-jJH"/>
+                                            <constraint firstItem="DSU-wV-SWX" firstAttribute="leading" secondItem="jd9-EG-246" secondAttribute="leading" id="SwU-Vf-5Pj"/>
+                                            <constraint firstAttribute="bottom" secondItem="DSU-wV-SWX" secondAttribute="bottom" id="vqF-1X-MYO"/>
+                                            <constraint firstItem="DSU-wV-SWX" firstAttribute="top" secondItem="jd9-EG-246" secondAttribute="top" id="waK-aM-EBz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jd9-EG-246" firstAttribute="top" secondItem="Ucc-xg-nGO" secondAttribute="top" id="KoX-XL-N5b"/>
+                                    <constraint firstItem="jd9-EG-246" firstAttribute="width" secondItem="Ucc-xg-nGO" secondAttribute="width" id="Thp-7j-ZX9"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="jd9-EG-246" secondAttribute="bottom" id="WC7-iH-Gp9"/>
+                                    <constraint firstItem="jd9-EG-246" firstAttribute="leading" secondItem="Ucc-xg-nGO" secondAttribute="leading" id="XGk-7c-sSN"/>
+                                    <constraint firstAttribute="bottom" secondItem="jd9-EG-246" secondAttribute="bottom" priority="250" id="d1w-k5-pHT"/>
+                                    <constraint firstAttribute="trailing" secondItem="jd9-EG-246" secondAttribute="trailing" id="miE-dW-auq"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Caj-pN-53e"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="aLN-CE-udQ"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.84313725490000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Odl-Wy-AYG" firstAttribute="bottom" secondItem="5GP-GU-DRj" secondAttribute="bottom" constant="5" id="3cH-gF-ZST"/>
                             <constraint firstItem="FzX-sM-NKD" firstAttribute="top" secondItem="Odl-Wy-AYG" secondAttribute="top" constant="40" id="72s-rF-zlj"/>
                             <constraint firstItem="FzX-sM-NKD" firstAttribute="leading" secondItem="Odl-Wy-AYG" secondAttribute="leading" id="74l-9C-U5U"/>
-                            <constraint firstItem="Odl-Wy-AYG" firstAttribute="trailing" secondItem="DSU-wV-SWX" secondAttribute="trailing" constant="10" id="AEY-7v-Qoc"/>
-                            <constraint firstItem="5GP-GU-DRj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="DSU-wV-SWX" secondAttribute="bottom" constant="20" id="AOa-gO-nsT"/>
                             <constraint firstItem="1Qr-7I-gBg" firstAttribute="leading" secondItem="Odl-Wy-AYG" secondAttribute="leading" id="AeE-Py-Y71"/>
+                            <constraint firstItem="Odl-Wy-AYG" firstAttribute="trailing" secondItem="Ucc-xg-nGO" secondAttribute="trailing" constant="16" id="GEq-al-Wlg"/>
                             <constraint firstItem="Odl-Wy-AYG" firstAttribute="trailing" secondItem="FzX-sM-NKD" secondAttribute="trailing" id="I7f-MQ-9Le"/>
-                            <constraint firstItem="DSU-wV-SWX" firstAttribute="leading" secondItem="Odl-Wy-AYG" secondAttribute="leading" constant="10" id="MR2-0v-CPC"/>
-                            <constraint firstItem="DSU-wV-SWX" firstAttribute="centerY" secondItem="Odl-Wy-AYG" secondAttribute="centerY" id="VVt-8B-Mk3"/>
+                            <constraint firstItem="5GP-GU-DRj" firstAttribute="top" secondItem="Ucc-xg-nGO" secondAttribute="bottom" constant="8" id="U8A-nc-1m8"/>
+                            <constraint firstItem="Ucc-xg-nGO" firstAttribute="leading" secondItem="Odl-Wy-AYG" secondAttribute="leading" constant="16" id="Wpz-Hl-HoJ"/>
                             <constraint firstItem="1Qr-7I-gBg" firstAttribute="top" secondItem="FzX-sM-NKD" secondAttribute="bottom" constant="10" id="bAh-fX-FhQ"/>
                             <constraint firstItem="5GP-GU-DRj" firstAttribute="leading" secondItem="Odl-Wy-AYG" secondAttribute="leading" id="cI9-MV-G5X"/>
                             <constraint firstItem="Odl-Wy-AYG" firstAttribute="trailing" secondItem="5GP-GU-DRj" secondAttribute="trailing" id="dLK-Id-eEh"/>
-                            <constraint firstItem="DSU-wV-SWX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="1Qr-7I-gBg" secondAttribute="bottom" constant="20" id="mGj-5h-gXf"/>
+                            <constraint firstItem="Ucc-xg-nGO" firstAttribute="top" secondItem="1Qr-7I-gBg" secondAttribute="bottom" constant="8" id="sBJ-qu-DVY"/>
                             <constraint firstItem="Odl-Wy-AYG" firstAttribute="trailing" secondItem="1Qr-7I-gBg" secondAttribute="trailing" id="zOq-AY-5ht"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Odl-Wy-AYG"/>
@@ -1012,12 +1340,6 @@
                                         <integer key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This box is going to contain information from the Community Projects page on website." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwW-9e-mde" userLabel="Description">
-                                <rect key="frame" x="10" y="219" width="300" height="110"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fD4-Qg-HTy" userLabel="BackButton">
                                 <rect key="frame" x="0.0" y="388" width="320" height="45"/>
@@ -1088,16 +1410,49 @@
                                     <segue destination="rZT-GX-E92" kind="show" identifier="ProjectsToLegacy" id="RUd-Le-6J6"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stN-K7-1H5">
+                                <rect key="frame" x="16" y="180" width="288" height="200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WEH-a1-yP3">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="109.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwW-9e-mde" userLabel="Description">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="109.5"/>
+                                                <string key="text">    For over 50 years, the Azalea Garden Tour, sponsored by the Cape Fear Garden Club, has proudly returned thousands of dollars to New Hanover County. Tour profits Money available to beautify, conserve, educate, inspire, and contribute to people of all ages using horticulture and garden development.</string>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="hwW-9e-mde" secondAttribute="bottom" id="Ggv-HQ-5Nw"/>
+                                            <constraint firstItem="hwW-9e-mde" firstAttribute="leading" secondItem="WEH-a1-yP3" secondAttribute="leading" id="LbM-ik-BbN"/>
+                                            <constraint firstItem="hwW-9e-mde" firstAttribute="top" secondItem="WEH-a1-yP3" secondAttribute="top" id="rVi-NF-v5A"/>
+                                            <constraint firstAttribute="trailing" secondItem="hwW-9e-mde" secondAttribute="trailing" id="sKZ-MK-Z34"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="WEH-a1-yP3" firstAttribute="width" secondItem="stN-K7-1H5" secondAttribute="width" id="0gV-xK-9UW"/>
+                                    <constraint firstItem="WEH-a1-yP3" firstAttribute="top" secondItem="stN-K7-1H5" secondAttribute="top" id="Y1b-QZ-Uci"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="WEH-a1-yP3" secondAttribute="bottom" id="aeC-qN-eal"/>
+                                    <constraint firstItem="WEH-a1-yP3" firstAttribute="leading" secondItem="stN-K7-1H5" secondAttribute="leading" id="bVP-Jw-s6n"/>
+                                    <constraint firstAttribute="bottom" secondItem="WEH-a1-yP3" secondAttribute="bottom" priority="250" id="efq-WA-ms6"/>
+                                    <constraint firstAttribute="trailing" secondItem="WEH-a1-yP3" secondAttribute="trailing" id="k9b-m4-xgv"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="8BE-F2-Lar"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="NPC-Cj-Abg"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.84313725490000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1jU-bk-9xg" firstAttribute="leading" secondItem="Nbj-2W-Hce" secondAttribute="leading" id="2LA-Qa-8uc"/>
-                            <constraint firstItem="hwW-9e-mde" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Oiu-Zx-Ah3" secondAttribute="bottom" constant="20" id="DwO-XJ-gaV"/>
-                            <constraint firstItem="hwW-9e-mde" firstAttribute="leading" secondItem="Nbj-2W-Hce" secondAttribute="leading" constant="10" id="HMK-fc-75C"/>
+                            <constraint firstItem="fD4-Qg-HTy" firstAttribute="top" secondItem="stN-K7-1H5" secondAttribute="bottom" constant="8" id="AAX-Mt-Mi4"/>
                             <constraint firstItem="Oiu-Zx-Ah3" firstAttribute="top" secondItem="1jU-bk-9xg" secondAttribute="bottom" constant="10" id="HiR-P0-w4r"/>
                             <constraint firstItem="Nbj-2W-Hce" firstAttribute="trailing" secondItem="Jn5-Iw-bQW" secondAttribute="trailing" id="IFE-Be-y48"/>
                             <constraint firstItem="fD4-Qg-HTy" firstAttribute="leading" secondItem="Nbj-2W-Hce" secondAttribute="leading" id="IGd-mg-0pD"/>
                             <constraint firstItem="Jn5-Iw-bQW" firstAttribute="top" secondItem="fD4-Qg-HTy" secondAttribute="bottom" constant="10" id="MFB-7j-zmm"/>
+                            <constraint firstItem="stN-K7-1H5" firstAttribute="leading" secondItem="Nbj-2W-Hce" secondAttribute="leading" constant="16" id="Pgz-at-K2T"/>
                             <constraint firstItem="Jn5-Iw-bQW" firstAttribute="leading" secondItem="Nbj-2W-Hce" secondAttribute="leading" id="SJt-Zy-I4s"/>
                             <constraint firstItem="mlo-HI-a9u" firstAttribute="top" secondItem="Jn5-Iw-bQW" secondAttribute="bottom" constant="10" id="Viu-lQ-XWe"/>
                             <constraint firstItem="Nbj-2W-Hce" firstAttribute="trailing" secondItem="mlo-HI-a9u" secondAttribute="trailing" id="WmE-bx-hgH"/>
@@ -1105,12 +1460,11 @@
                             <constraint firstItem="Oiu-Zx-Ah3" firstAttribute="leading" secondItem="Nbj-2W-Hce" secondAttribute="leading" id="YQ8-aY-hah"/>
                             <constraint firstItem="1jU-bk-9xg" firstAttribute="top" secondItem="Nbj-2W-Hce" secondAttribute="top" constant="40" id="cmq-MS-5U6"/>
                             <constraint firstItem="Nbj-2W-Hce" firstAttribute="trailing" secondItem="Oiu-Zx-Ah3" secondAttribute="trailing" id="djj-vR-MmH"/>
-                            <constraint firstItem="fD4-Qg-HTy" firstAttribute="top" relation="greaterThanOrEqual" secondItem="hwW-9e-mde" secondAttribute="bottom" constant="20" id="eIs-SV-w9l"/>
-                            <constraint firstItem="hwW-9e-mde" firstAttribute="centerY" secondItem="Nbj-2W-Hce" secondAttribute="centerY" id="eaQ-tJ-oVO"/>
                             <constraint firstItem="Nbj-2W-Hce" firstAttribute="trailing" secondItem="1jU-bk-9xg" secondAttribute="trailing" id="fhL-bR-EpA"/>
+                            <constraint firstItem="stN-K7-1H5" firstAttribute="top" secondItem="Oiu-Zx-Ah3" secondAttribute="bottom" constant="8" id="k9t-8H-EOh"/>
                             <constraint firstItem="Nbj-2W-Hce" firstAttribute="trailing" secondItem="fD4-Qg-HTy" secondAttribute="trailing" id="tFN-Sp-CdD"/>
                             <constraint firstItem="Nbj-2W-Hce" firstAttribute="bottom" secondItem="mlo-HI-a9u" secondAttribute="bottom" constant="5" id="uwK-FA-RAW"/>
-                            <constraint firstItem="Nbj-2W-Hce" firstAttribute="trailing" secondItem="hwW-9e-mde" secondAttribute="trailing" constant="10" id="wLt-TC-0dS"/>
+                            <constraint firstItem="Nbj-2W-Hce" firstAttribute="trailing" secondItem="stN-K7-1H5" secondAttribute="trailing" constant="16" id="wIc-cQ-f2p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nbj-2W-Hce"/>
                     </view>
@@ -1156,12 +1510,6 @@
                                         <integer key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This box is going to contain text from Azalea Tour website with current year theme" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlw-Zl-dkG" userLabel="Description">
-                                <rect key="frame" x="10" y="233" width="300" height="82.5"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klA-hf-wtH" userLabel="MapButton">
                                 <rect key="frame" x="0.0" y="433" width="320" height="50"/>
@@ -1210,20 +1558,53 @@
                                     <segue destination="x6x-hb-OAg" kind="show" identifier="TourToBelles" id="L39-3r-Fou"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NEa-7G-ybW">
+                                <rect key="frame" x="16" y="180" width="288" height="245"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="99M-cL-w7v">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="313"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlw-Zl-dkG" userLabel="Description">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="313"/>
+                                                <string key="text">    Come enjoy Southern hospitality amid the vibrant color of azaleas and spring flowers during the 67th Annual Cape Fear Garden Club Azalea Garden Tour© in the beautiful coastal community of Wilmington, North Carolina. An official event of the North Carolina Azalea Festival, the tour is one of the longest running and most popular garden tours in the South.
+    Proceeds from the Cape Fear Garden Club Azalea Garden Tour© are reinvested in the community through beautification and horticultural grants within New Hanover County, scholarships at the University of North Carolina Wilmington and Cape Fear Community College, and conservation efforts at Battery Island, a National Audubon Society bird sanctuary. The club has granted over $1 million in donations to the community in the past 61 years.</string>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="xlw-Zl-dkG" secondAttribute="trailing" id="EGe-oE-mPl"/>
+                                            <constraint firstItem="xlw-Zl-dkG" firstAttribute="leading" secondItem="99M-cL-w7v" secondAttribute="leading" id="MNu-Df-IWb"/>
+                                            <constraint firstAttribute="bottom" secondItem="xlw-Zl-dkG" secondAttribute="bottom" id="PIr-vv-W5E"/>
+                                            <constraint firstItem="xlw-Zl-dkG" firstAttribute="top" secondItem="99M-cL-w7v" secondAttribute="top" id="zaj-Vw-gGR"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="99M-cL-w7v" firstAttribute="width" secondItem="NEa-7G-ybW" secondAttribute="width" id="114-0a-5UH"/>
+                                    <constraint firstItem="99M-cL-w7v" firstAttribute="leading" secondItem="NEa-7G-ybW" secondAttribute="leading" id="1Y1-mG-PAd"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="99M-cL-w7v" secondAttribute="bottom" id="Bgs-Qh-yIf"/>
+                                    <constraint firstAttribute="bottom" secondItem="99M-cL-w7v" secondAttribute="bottom" priority="250" id="Sgi-5L-Y4Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="99M-cL-w7v" secondAttribute="trailing" id="lmh-OK-2oN"/>
+                                    <constraint firstItem="99M-cL-w7v" firstAttribute="top" secondItem="NEa-7G-ybW" secondAttribute="top" id="nMJ-K9-x3g"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="RhP-Ho-5Jl"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="FFb-5N-f6u"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.84313725490000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xlw-Zl-dkG" firstAttribute="leading" secondItem="LAV-aY-Fdn" secondAttribute="leading" constant="10" id="0ii-ef-8cM"/>
-                            <constraint firstItem="xlw-Zl-dkG" firstAttribute="centerY" secondItem="LAV-aY-Fdn" secondAttribute="centerY" id="5Vz-l8-TLh"/>
                             <constraint firstItem="klA-hf-wtH" firstAttribute="leading" secondItem="LAV-aY-Fdn" secondAttribute="leading" id="AbY-4a-3e4"/>
-                            <constraint firstItem="klA-hf-wtH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="xlw-Zl-dkG" secondAttribute="bottom" constant="20" id="N8l-x5-Fbs"/>
-                            <constraint firstItem="xlw-Zl-dkG" firstAttribute="trailing" secondItem="LAV-aY-Fdn" secondAttribute="trailing" constant="-10" id="OSp-MJ-Feb"/>
+                            <constraint firstItem="klA-hf-wtH" firstAttribute="top" secondItem="NEa-7G-ybW" secondAttribute="bottom" constant="8" id="BDt-pf-tQg"/>
+                            <constraint firstItem="NEa-7G-ybW" firstAttribute="top" secondItem="1hQ-Et-Egx" secondAttribute="bottom" constant="8" id="FIF-IR-rSI"/>
+                            <constraint firstItem="NEa-7G-ybW" firstAttribute="leading" secondItem="LAV-aY-Fdn" secondAttribute="leading" constant="16" id="Klf-0k-q0j"/>
                             <constraint firstItem="LAV-aY-Fdn" firstAttribute="trailing" secondItem="klA-hf-wtH" secondAttribute="trailing" id="Uxj-IX-dmD"/>
                             <constraint firstItem="LAV-aY-Fdn" firstAttribute="trailing" secondItem="1hQ-Et-Egx" secondAttribute="trailing" id="dTL-q2-kGn"/>
                             <constraint firstItem="rhO-pq-XVg" firstAttribute="leading" secondItem="LAV-aY-Fdn" secondAttribute="leading" id="eim-1c-qyH"/>
                             <constraint firstItem="1hQ-Et-Egx" firstAttribute="top" secondItem="D8A-Ja-ae7" secondAttribute="bottom" constant="10" id="grI-lG-czu"/>
                             <constraint firstItem="1hQ-Et-Egx" firstAttribute="leading" secondItem="LAV-aY-Fdn" secondAttribute="leading" id="jum-8j-AHL"/>
-                            <constraint firstItem="xlw-Zl-dkG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="1hQ-Et-Egx" secondAttribute="bottom" constant="20" id="l9k-RX-nXa"/>
+                            <constraint firstItem="LAV-aY-Fdn" firstAttribute="trailing" secondItem="NEa-7G-ybW" secondAttribute="trailing" constant="16" id="kWB-lo-d9x"/>
                             <constraint firstItem="LAV-aY-Fdn" firstAttribute="leading" secondItem="D8A-Ja-ae7" secondAttribute="leading" id="nU4-R8-XGj"/>
                             <constraint firstItem="D8A-Ja-ae7" firstAttribute="trailing" secondItem="LAV-aY-Fdn" secondAttribute="trailing" id="rcr-Kn-Mmo"/>
                             <constraint firstItem="LAV-aY-Fdn" firstAttribute="trailing" secondItem="rhO-pq-XVg" secondAttribute="trailing" id="teD-SJ-NaK"/>
@@ -1242,7 +1623,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8rd-p6-gij" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4035" y="-711"/>
+            <point key="canvasLocation" x="-4035" y="-711.97183098591552"/>
         </scene>
         <!--EventsVC-->
         <scene sceneID="IG0-ks-1hs">
@@ -1252,6 +1633,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yr6-l4-Jnd">
+                                <rect key="frame" x="16" y="180" width="288" height="305"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpy-0p-83I">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="735.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4D-DB-gLf" userLabel="Description">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="735.5"/>
+                                                <string key="text">Mark your Calendar for the 2019 Cruise
+    Tickets are $40 and will be available beginning March 1 at Wild Bird and Garden located in Wilmington at Hanover Center and also in Southport.
+
+The cruise is an educational experience and viewing is narrated by three experts who will share their knowledge with us:
+    · Dr. James Parnell, Professor Emeritus of UNCW and North Carolina's top ornithologist.
+    · Walker Golder, National Audubon Society's Director of the Eastern Flyway Coast Initiative which includes the North Carolina program as well as programs in eight states along the Atlantic Coast.
+    · Lindsay Addison, Audubon North Carolina's Coastal Biologist speaks describing her work to monitor the nesting colonies on the six bird islands the Cape Fear River including Battery Island.
+
+    The cruise will include islands in the lower Cape Fear River where the birds have chosentheir nesting sites. They are all North Carolina Audubon Bird Sanctuaries.
+    Bring your camera and binoculars to view nesting areas of many coastal water birds including pelicans, white ibis, great egrets and herons. Pack a picnic lunch if you would like. Soft drinks, water and snacks will be sold aboard ship.
+
+Additioinal information is available by emailing birdislandcruise@capefeargardenclub.org
+When and Where:
+
+Sunday, May 19, 2019
+Boarding: 12:30 pm
+Departing: 1:00 pm
+Return: Approx 5:30 pm
+
+Departing from Carolina Beach Marina on the Royal Winner Princess II
+
+Address: 100 Carl Winner Ave, Carolina Beach, NC</string>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Y4D-DB-gLf" firstAttribute="top" secondItem="wpy-0p-83I" secondAttribute="top" id="0iG-qu-l5y"/>
+                                            <constraint firstAttribute="bottom" secondItem="Y4D-DB-gLf" secondAttribute="bottom" id="Eic-3I-am1"/>
+                                            <constraint firstItem="Y4D-DB-gLf" firstAttribute="leading" secondItem="wpy-0p-83I" secondAttribute="leading" id="NPq-ZS-9lH"/>
+                                            <constraint firstAttribute="trailing" secondItem="Y4D-DB-gLf" secondAttribute="trailing" id="wja-VX-bah"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wpy-0p-83I" secondAttribute="bottom" id="bbD-JB-KYV"/>
+                                    <constraint firstItem="wpy-0p-83I" firstAttribute="top" secondItem="Yr6-l4-Jnd" secondAttribute="top" id="ep5-YE-tGp"/>
+                                    <constraint firstAttribute="trailing" secondItem="wpy-0p-83I" secondAttribute="trailing" id="hyu-Mb-lwA"/>
+                                    <constraint firstItem="wpy-0p-83I" firstAttribute="leading" secondItem="Yr6-l4-Jnd" secondAttribute="leading" id="nfg-oV-vNj"/>
+                                    <constraint firstAttribute="bottom" secondItem="wpy-0p-83I" secondAttribute="bottom" priority="250" id="qQG-ni-irZ"/>
+                                    <constraint firstItem="wpy-0p-83I" firstAttribute="width" secondItem="Yr6-l4-Jnd" secondAttribute="width" id="ydz-WN-Uqr"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="ChI-OM-GQX"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Yn2-E0-cku"/>
+                            </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43f-0w-XIS" userLabel="HomeButton">
                                 <rect key="frame" x="0.0" y="40" width="320" height="93"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -1263,12 +1698,6 @@
                                     <segue destination="h8F-cn-3aX" kind="show" identifier="EventsToHome" id="cFj-GI-xsx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This box is going to contain text from Bird Islands cruise page and get date for cruise" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4D-DB-gLf" userLabel="Description">
-                                <rect key="frame" x="10" y="233" width="300" height="82.5"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ce2-aS-pLC" userLabel="BICButton">
                                 <rect key="frame" x="0.0" y="493" width="320" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1307,20 +1736,19 @@
                         </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.84313725490000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Y4D-DB-gLf" firstAttribute="centerY" secondItem="YLd-Bq-ieq" secondAttribute="centerY" id="3G9-gW-mI1"/>
                             <constraint firstItem="YLd-Bq-ieq" firstAttribute="bottom" secondItem="Ce2-aS-pLC" secondAttribute="bottom" constant="5" id="3p9-qQ-E4b"/>
                             <constraint firstItem="YLd-Bq-ieq" firstAttribute="leading" secondItem="43f-0w-XIS" secondAttribute="leading" id="43l-DI-uhD"/>
+                            <constraint firstItem="Ce2-aS-pLC" firstAttribute="top" secondItem="Yr6-l4-Jnd" secondAttribute="bottom" constant="8" id="5CQ-nB-9ko"/>
                             <constraint firstItem="YLd-Bq-ieq" firstAttribute="trailing" secondItem="Ce2-aS-pLC" secondAttribute="trailing" id="EMr-29-UKn"/>
+                            <constraint firstItem="Yr6-l4-Jnd" firstAttribute="top" secondItem="Ld8-ga-NTC" secondAttribute="bottom" constant="8" id="EQo-Cz-adL"/>
                             <constraint firstItem="YLd-Bq-ieq" firstAttribute="trailing" secondItem="Ld8-ga-NTC" secondAttribute="trailing" id="FwC-ZF-Bhk"/>
                             <constraint firstItem="43f-0w-XIS" firstAttribute="top" secondItem="YLd-Bq-ieq" secondAttribute="top" constant="40" id="KyB-7N-Du6"/>
+                            <constraint firstItem="YLd-Bq-ieq" firstAttribute="trailing" secondItem="Yr6-l4-Jnd" secondAttribute="trailing" constant="16" id="MBi-0N-PM1"/>
                             <constraint firstItem="Ce2-aS-pLC" firstAttribute="leading" secondItem="YLd-Bq-ieq" secondAttribute="leading" id="PWn-v8-qIC"/>
                             <constraint firstItem="43f-0w-XIS" firstAttribute="trailing" secondItem="YLd-Bq-ieq" secondAttribute="trailing" id="T8c-8u-atK"/>
-                            <constraint firstItem="YLd-Bq-ieq" firstAttribute="trailing" secondItem="Y4D-DB-gLf" secondAttribute="trailing" constant="10" id="VP7-O8-tpH"/>
-                            <constraint firstItem="Y4D-DB-gLf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Ld8-ga-NTC" secondAttribute="bottom" constant="20" id="e8K-3d-09E"/>
+                            <constraint firstItem="Yr6-l4-Jnd" firstAttribute="leading" secondItem="YLd-Bq-ieq" secondAttribute="leading" constant="16" id="hiI-JW-nN0"/>
                             <constraint firstItem="Ld8-ga-NTC" firstAttribute="top" secondItem="43f-0w-XIS" secondAttribute="bottom" constant="10" id="kWX-3W-9wh"/>
-                            <constraint firstItem="Y4D-DB-gLf" firstAttribute="leading" secondItem="YLd-Bq-ieq" secondAttribute="leading" constant="10" id="kwU-Da-Rye"/>
                             <constraint firstItem="Ld8-ga-NTC" firstAttribute="leading" secondItem="YLd-Bq-ieq" secondAttribute="leading" id="muc-iv-Cfa"/>
-                            <constraint firstItem="Ce2-aS-pLC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Y4D-DB-gLf" secondAttribute="bottom" constant="20" id="xqJ-1c-0FL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YLd-Bq-ieq"/>
                     </view>
@@ -1364,12 +1792,6 @@
                                         <integer key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This box is going to contain information from the Grant app page, Benefits of Grants, and Recent Grants Awarded." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sig-yN-jme" userLabel="Description">
-                                <rect key="frame" x="10" y="219" width="300" height="110"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUr-hU-5sg" userLabel="ProjectsButton">
                                 <rect key="frame" x="0.0" y="388" width="320" height="45"/>
@@ -1440,6 +1862,70 @@
                                     <segue destination="rZT-GX-E92" kind="show" identifier="GrantsToLegacy" id="Dlo-LM-TPn"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wa9-6w-Whe">
+                                <rect key="frame" x="16" y="180" width="288" height="200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1iD-ZG-2dw">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="641.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sig-yN-jme" userLabel="Description">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="641.5"/>
+                                                <string key="text">    Grant Recipients on 2018 were awarded $72,326 on November 14, 2018. The Cape Fear Garden Club is pleased to have David Johnson, owner of Johnson Nursery-Gardens Direct, as a sponsor for the 2018 Grant Recipients received a $300 credit to be used at his nursery located in Willard or by ordering on line.
+
+Airlie Gardens Butterfly House
+Alliance for Cape Fear Trees
+Bellamy Mansion Museum
+Brigade Boys and Girls Club
+Cameron Art Museum
+Cape Fear Clinic, Inc
+Cape Fear Habitat for Humanity
+Children's Museum of Wilmington
+Coastal Preparatory Academy
+Codington Elementary School
+Community Enrichment Initiative, Inc
+DREAMS of Wilmington, Inc
+First Christian Church
+Friends of New Hanover County Arboretum
+Friends of Oakdale Cemetery
+The Greater Wilmington Youth Initiative, Inc
+Lake Forest Academy
+Lower Cape Fear Historical Society
+Lower Cape Fear Hospice
+New Hanover County Arboretum Ability
+New Hanover Parks and Gardens - Veterans Park
+New Hanover High School
+North Carolina Coastal Federation
+St. Andrews-Covenant Presbyterian Church
+Wrightsville Beach Museum of History
+YMCA of Southeastern North Carolina
+Standing Grants
+North Carolina Audubon Society Grant
+Cape Fear Community College Scholarship
+University of North Carolina Wilmington Scholarship</string>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="sig-yN-jme" secondAttribute="trailing" id="IX2-yg-dud"/>
+                                            <constraint firstItem="sig-yN-jme" firstAttribute="leading" secondItem="1iD-ZG-2dw" secondAttribute="leading" id="XlD-bh-aSh"/>
+                                            <constraint firstAttribute="bottom" secondItem="sig-yN-jme" secondAttribute="bottom" id="a5l-38-KDI"/>
+                                            <constraint firstItem="sig-yN-jme" firstAttribute="top" secondItem="1iD-ZG-2dw" secondAttribute="top" id="whZ-Fb-Wbr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1iD-ZG-2dw" secondAttribute="bottom" id="1Ui-jv-36A"/>
+                                    <constraint firstItem="1iD-ZG-2dw" firstAttribute="width" secondItem="wa9-6w-Whe" secondAttribute="width" id="2hS-WA-74r"/>
+                                    <constraint firstAttribute="bottom" secondItem="1iD-ZG-2dw" secondAttribute="bottom" priority="250" id="C8q-w9-y0p"/>
+                                    <constraint firstItem="1iD-ZG-2dw" firstAttribute="top" secondItem="wa9-6w-Whe" secondAttribute="top" id="NVM-vV-IO9"/>
+                                    <constraint firstItem="1iD-ZG-2dw" firstAttribute="leading" secondItem="wa9-6w-Whe" secondAttribute="leading" id="nvS-vl-WqW"/>
+                                    <constraint firstAttribute="trailing" secondItem="1iD-ZG-2dw" secondAttribute="trailing" id="rFp-xA-uAL"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="LGQ-cg-vRv"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="llz-L5-bIT"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.84313725490000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -1448,21 +1934,20 @@
                             <constraint firstItem="yrc-Ps-ag7" firstAttribute="trailing" secondItem="mBe-5H-29A" secondAttribute="trailing" id="5eF-Hx-Ra2"/>
                             <constraint firstItem="v2b-P7-8a5" firstAttribute="top" secondItem="uE5-81-q6H" secondAttribute="bottom" constant="10" id="825-dG-Orm"/>
                             <constraint firstItem="uE5-81-q6H" firstAttribute="leading" secondItem="yrc-Ps-ag7" secondAttribute="leading" id="99T-1U-dhl"/>
-                            <constraint firstItem="eUr-hU-5sg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="sig-yN-jme" secondAttribute="bottom" constant="20" id="AEC-eH-Rgv"/>
                             <constraint firstItem="SvC-r6-3Ov" firstAttribute="leading" secondItem="yrc-Ps-ag7" secondAttribute="leading" id="Ado-j5-x2d"/>
                             <constraint firstItem="yrc-Ps-ag7" firstAttribute="bottom" secondItem="SvC-r6-3Ov" secondAttribute="bottom" constant="5" id="Ap4-n2-e38"/>
+                            <constraint firstItem="wa9-6w-Whe" firstAttribute="leading" secondItem="yrc-Ps-ag7" secondAttribute="leading" constant="16" id="CXG-ZZ-yZ8"/>
                             <constraint firstItem="yrc-Ps-ag7" firstAttribute="trailing" secondItem="uE5-81-q6H" secondAttribute="trailing" id="DcQ-FP-49i"/>
-                            <constraint firstItem="sig-yN-jme" firstAttribute="centerY" secondItem="yrc-Ps-ag7" secondAttribute="centerY" id="DuF-A1-8HF"/>
                             <constraint firstItem="eUr-hU-5sg" firstAttribute="leading" secondItem="yrc-Ps-ag7" secondAttribute="leading" id="F6u-DI-idT"/>
+                            <constraint firstItem="eUr-hU-5sg" firstAttribute="top" secondItem="wa9-6w-Whe" secondAttribute="bottom" constant="8" id="HB7-V6-c3e"/>
                             <constraint firstItem="uE5-81-q6H" firstAttribute="top" secondItem="yrc-Ps-ag7" secondAttribute="top" constant="40" id="Neg-qR-0sA"/>
-                            <constraint firstItem="sig-yN-jme" firstAttribute="top" relation="greaterThanOrEqual" secondItem="v2b-P7-8a5" secondAttribute="bottom" constant="20" id="Nhg-a8-Gmo"/>
+                            <constraint firstItem="wa9-6w-Whe" firstAttribute="top" secondItem="v2b-P7-8a5" secondAttribute="bottom" constant="8" id="PVp-IG-IMf"/>
                             <constraint firstItem="v2b-P7-8a5" firstAttribute="leading" secondItem="yrc-Ps-ag7" secondAttribute="leading" id="Tjf-Qm-1Jr"/>
                             <constraint firstItem="yrc-Ps-ag7" firstAttribute="trailing" secondItem="eUr-hU-5sg" secondAttribute="trailing" id="UCc-VB-7BQ"/>
-                            <constraint firstItem="sig-yN-jme" firstAttribute="leading" secondItem="yrc-Ps-ag7" secondAttribute="leading" constant="10" id="bBe-h6-HVU"/>
+                            <constraint firstItem="yrc-Ps-ag7" firstAttribute="trailing" secondItem="wa9-6w-Whe" secondAttribute="trailing" constant="16" id="geQ-vn-9ic"/>
                             <constraint firstItem="yrc-Ps-ag7" firstAttribute="trailing" secondItem="v2b-P7-8a5" secondAttribute="trailing" id="q33-xe-Lx6"/>
                             <constraint firstItem="SvC-r6-3Ov" firstAttribute="top" secondItem="mBe-5H-29A" secondAttribute="bottom" constant="10" id="qCQ-Bn-F9a"/>
                             <constraint firstItem="mBe-5H-29A" firstAttribute="leading" secondItem="yrc-Ps-ag7" secondAttribute="leading" id="sXI-da-PBW"/>
-                            <constraint firstItem="yrc-Ps-ag7" firstAttribute="trailing" secondItem="sig-yN-jme" secondAttribute="trailing" constant="10" id="uKa-rq-lai"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yrc-Ps-ag7"/>
                     </view>
@@ -2218,6 +2703,7 @@ Wilmington, NC 28403</string>
                         <rect key="frame" x="0.0" y="0.0" width="300" height="221"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="khm-Ha-Y5t"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zB-AH-EbA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2233,16 +2719,16 @@ Wilmington, NC 28403</string>
     <inferredMetricsTieBreakers>
         <segue reference="tvg-Mh-GLi"/>
         <segue reference="yyA-Nf-nzp"/>
-        <segue reference="czg-DI-FVn"/>
+        <segue reference="Lcm-Tx-Gmh"/>
         <segue reference="iRi-0V-gkS"/>
         <segue reference="Jcw-jy-QDr"/>
         <segue reference="wWO-MV-KEj"/>
         <segue reference="m3H-ix-876"/>
-        <segue reference="kWx-oG-9T9"/>
-        <segue reference="U5T-a2-BNb"/>
-        <segue reference="Dlo-LM-TPn"/>
-        <segue reference="7gu-2R-7OK"/>
+        <segue reference="L39-3r-Fou"/>
+        <segue reference="gW6-C0-QJP"/>
+        <segue reference="lXw-kl-bS7"/>
+        <segue reference="fYJ-bc-AH4"/>
         <segue reference="mgI-9s-2fW"/>
-        <segue reference="x56-br-KeC"/>
+        <segue reference="Omh-RH-a1T"/>
     </inferredMetricsTieBreakers>
 </document>
