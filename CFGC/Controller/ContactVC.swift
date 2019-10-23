@@ -15,6 +15,8 @@ class ContactVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     
     @IBOutlet weak var logoutBtn: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var sortSwitch: UISwitch!
+    @IBOutlet weak var sortLabel: UILabel!
     var currentUser: User?
     var userDictionary = [String: [ContactCard]]()
     var userSectionTitles = [String]()
@@ -67,7 +69,13 @@ class ContactVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     
     func buildContacts(){
         
-        contactCards = contactCards.sorted{ ($0.LastName == $1.LastName ? $0.FirstName < $1.FirstName : $0.LastName < $1.LastName) } //sort array
+        if sortSwitch.isOn == false {
+            sortLabel.text = "Sort Last"
+            contactCards = contactCards.sorted{ ($0.LastName == $1.LastName ? $0.FirstName < $1.FirstName : $0.LastName < $1.LastName) } //sort array
+        } else {
+            sortLabel.text = "Sort First"
+            contactCards = contactCards.sorted{ ($0.FirstName == $1.FirstName ? $0.LastName < $1.LastName : $0.FirstName < $1.FirstName) } //sort array
+        }
         
         for user in contactCards {
             var userKey = String(user.LastName.prefix(1))
