@@ -83,7 +83,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, UIScrollViewDe
     
     
     @IBAction func btnHomePressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "HomePageVC", sender: btnHome)
+        performSegue(withIdentifier: "LoginToHome", sender: btnHome)
     }
     
     @IBAction func submitBtnPressed(_ sender: UIButton){
