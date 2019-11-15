@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h8F-cn-3aX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h8F-cn-3aX">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -144,7 +144,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEq-F8-AU0" userLabel="HomeButton">
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEq-F8-AU0" userLabel="HomeButton">
                                 <rect key="frame" x="0.0" y="16" width="320" height="100"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
@@ -220,13 +220,15 @@
                                 <rect key="frame" x="16" y="161" width="288" height="263"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4I-PL-ATi">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="500.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="532"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyD-sd-RIh" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="500.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="532"/>
                                                 <string key="text">Our USPS Mailing Address:
+
 Cape Fear Garden Club, Inc.
 P.O. Box 4751 Wilmington, NC 28406
+
 For General Inquires:
 info[@]CapeFearGardenClub.org
 
@@ -318,7 +320,7 @@ Webmaster[@]CapeFearGardenClub.org</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8GG-Gi-KXp" userLabel="HomeButton">
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8GG-Gi-KXp" userLabel="HomeButton">
                                 <rect key="frame" x="0.0" y="16" width="320" height="100"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
@@ -426,11 +428,12 @@ June 18, 2012
 
 THE OBJECTIVES SHALL BE….
 
-    To provide a non-profit, philanthropic, and educational association for the members.
-    To stimulate knowledge and the love of gardening.
-    To study, in all its aspects, the art of gardening, particularly horticulture, and to cooperate with other agencies furthering such interest.
-    To encourage environmental improvement through civic development, beautification, restoration, and to aid in the protection and conservation of our native trees, plants, and birds.
-    Cape Fear Garden Club, Inc. is a registered, non-profit corporation which is exempt from US Federal income tax under Section 501(c) 3 of the Internal Revenue Code.
+-To provide a non-profit, philanthropic, and educational association for the members.
+-To stimulate knowledge and the love of gardening.
+-To study, in all its aspects, the art of gardening, particularly horticulture, and to cooperate with other agencies furthering such interest.
+-To encourage environmental improvement through civic development, beautification, restoration, and to aid in the protection and conservation of our native trees, plants, and birds.
+
+Cape Fear Garden Club, Inc. is a registered, non-profit corporation which is exempt from US Federal income tax under Section 501(c) 3 of the Internal Revenue Code.
 
 Charter Members 1925
 
@@ -525,12 +528,6 @@ Miss Sarah Lippitt</string>
                                     <segue destination="h8F-cn-3aX" kind="show" identifier="ImpactToHome" id="Q7G-fq-H8f"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This box is going to contain information from the Club theme page on website." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHB-4E-Vkb" userLabel="Description">
-                                <rect key="frame" x="10" y="233" width="300" height="82.5"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEB-gq-b9E" userLabel="ProjectsButton">
                                 <rect key="frame" x="0.0" y="389" width="320" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -612,29 +609,72 @@ Miss Sarah Lippitt</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUg-9J-aZQ">
+                                <rect key="frame" x="16" y="161" width="288" height="220"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTq-GO-qpP">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="938.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHB-4E-Vkb" userLabel="Description">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="938.5"/>
+                                                <string key="text">Several landscape installations throughout New Hanover County have been initiated by the Cape Fear Garden Club.
+
+AIRLIE SHOWCASE GARDEN
+Airlie Showcase Garden was born in 2006 with an Asian design.   Over time the garden had outgrown its borders.  The idea of changing the garden to a Southern Garden was presented at the September 2015 General Meeting.  In late winter of 2016 the Asian garden was torn out and the Southern Garden was completed in early April 2016.
+
+The Southern Garden is filled with Encore Azaleas, Drift Roses, Endless Summer Hydrangeas, Yew Prostrata, and Dwarf Lorepetalum.  The border for the garden is white Sasanqua Camellias.  In the spring the garden has the sweet aroma of Confederate Jasmine which covers an arbor at the entrance.  In addition to the plants there are two Red Maple trees that offer some shade.  A slate walkway outlined with Dwarf Mondo grass leads to a white vineyard bench.
+
+The garden has a different but tranquil feeling when it is lite during Enchanted Airlie In November and December of each year.  A committee of 20 Cape Fear Garden Club members maintain the Southern Garden through the year.
+
+BIRDS AND BUTTERFLIES Birds and Butterflies installs bluebird trails and butterfly gardens as the opportunity presents itself in the community, as well as assisting with community projects that relate to Birds and Butterflies.  Bluebird trails include those at the Seaspray Landing community, in honor of Doris Ayers, a CFGC member, and the trail at River Bluffs, a low-impact development community overlooking the Cape Fear River. As a designated LID community, it provides a wetland area to temporarily store, filter and clean runoff water rather than using retention ponds. They provide habitat for many creatures such as birds, butterflies, bees, salamanders, toads and frogs. Bluebirds had taken up residence as of spring 2017 at both locations.  
+
+Additional committees focus on: civic improvements, such as tree canopy replacement after storms and Beauty Spot awards; conservation projects; gardening for wildlife, educating the public on how to create a wildlife habitat; and leading youth garden clubs, helping several local elementary schools plant wildlife habitats on their campus.</string>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="GHB-4E-Vkb" firstAttribute="leading" secondItem="rTq-GO-qpP" secondAttribute="leading" id="dlQ-2l-8Kw"/>
+                                            <constraint firstItem="GHB-4E-Vkb" firstAttribute="top" secondItem="rTq-GO-qpP" secondAttribute="top" id="qvY-XC-HMY"/>
+                                            <constraint firstAttribute="trailing" secondItem="GHB-4E-Vkb" secondAttribute="trailing" id="uX4-1O-rvp"/>
+                                            <constraint firstAttribute="bottom" secondItem="GHB-4E-Vkb" secondAttribute="bottom" id="vdz-vs-R4V"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rTq-GO-qpP" firstAttribute="top" secondItem="gUg-9J-aZQ" secondAttribute="top" id="PTf-SN-tPT"/>
+                                    <constraint firstItem="rTq-GO-qpP" firstAttribute="width" secondItem="gUg-9J-aZQ" secondAttribute="width" id="jyw-BS-2B5"/>
+                                    <constraint firstAttribute="trailing" secondItem="rTq-GO-qpP" secondAttribute="trailing" id="ljw-D1-E3L"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rTq-GO-qpP" secondAttribute="bottom" id="nEY-dg-hUP"/>
+                                    <constraint firstItem="rTq-GO-qpP" firstAttribute="leading" secondItem="gUg-9J-aZQ" secondAttribute="leading" id="syd-Qk-Nom"/>
+                                    <constraint firstAttribute="bottom" secondItem="rTq-GO-qpP" secondAttribute="bottom" priority="250" id="wxy-97-avB"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="ZDl-6F-ilh"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="5ZJ-T2-Wm2"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.84313725490000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DTs-wk-xKF" firstAttribute="trailing" secondItem="CjG-ph-Qxe" secondAttribute="trailing" id="3aR-bj-Kch"/>
-                            <constraint firstItem="GHB-4E-Vkb" firstAttribute="top" relation="greaterThanOrEqual" secondItem="4g2-5J-KU7" secondAttribute="bottom" constant="20" id="48c-A3-GPz"/>
                             <constraint firstItem="4g2-5J-KU7" firstAttribute="top" secondItem="OAc-Yr-vCA" secondAttribute="bottom" constant="8" id="87E-OQ-pt8"/>
                             <constraint firstItem="DTs-wk-xKF" firstAttribute="trailing" secondItem="ZFB-7z-HwW" secondAttribute="trailing" id="87K-x2-yAR"/>
                             <constraint firstItem="DTs-wk-xKF" firstAttribute="trailing" secondItem="XEB-gq-b9E" secondAttribute="trailing" id="BoW-Ag-TQE"/>
                             <constraint firstItem="4g2-5J-KU7" firstAttribute="leading" secondItem="DTs-wk-xKF" secondAttribute="leading" id="Fjf-kT-fSu"/>
+                            <constraint firstItem="gUg-9J-aZQ" firstAttribute="top" secondItem="4g2-5J-KU7" secondAttribute="bottom" constant="8" id="LpZ-6T-xqa"/>
                             <constraint firstItem="ZFB-7z-HwW" firstAttribute="leading" secondItem="DTs-wk-xKF" secondAttribute="leading" id="QZH-ih-0A0"/>
                             <constraint firstItem="ZFB-7z-HwW" firstAttribute="top" secondItem="XEB-gq-b9E" secondAttribute="bottom" constant="8" id="Sxh-Lo-XLb"/>
-                            <constraint firstItem="GHB-4E-Vkb" firstAttribute="trailing" secondItem="DTs-wk-xKF" secondAttribute="trailing" constant="-10" id="cN2-F6-Q3e"/>
+                            <constraint firstItem="gUg-9J-aZQ" firstAttribute="leading" secondItem="DTs-wk-xKF" secondAttribute="leading" constant="16" id="cLR-4R-nGM"/>
                             <constraint firstItem="DTs-wk-xKF" firstAttribute="bottom" secondItem="CjG-ph-Qxe" secondAttribute="bottom" constant="8" id="dKs-eG-IwU"/>
                             <constraint firstItem="OAc-Yr-vCA" firstAttribute="trailing" secondItem="DTs-wk-xKF" secondAttribute="trailing" id="eLk-f8-fSl"/>
                             <constraint firstItem="XEB-gq-b9E" firstAttribute="leading" secondItem="DTs-wk-xKF" secondAttribute="leading" id="evh-YZ-a4Z"/>
-                            <constraint firstItem="XEB-gq-b9E" firstAttribute="top" relation="greaterThanOrEqual" secondItem="GHB-4E-Vkb" secondAttribute="bottom" constant="20" id="g6y-Fi-sfU"/>
-                            <constraint firstItem="GHB-4E-Vkb" firstAttribute="centerY" secondItem="DTs-wk-xKF" secondAttribute="centerY" id="iUp-j1-TQN"/>
+                            <constraint firstItem="XEB-gq-b9E" firstAttribute="top" secondItem="gUg-9J-aZQ" secondAttribute="bottom" constant="8" id="iJB-c5-ucM"/>
+                            <constraint firstItem="DTs-wk-xKF" firstAttribute="trailing" secondItem="gUg-9J-aZQ" secondAttribute="trailing" constant="16" id="kO9-h8-9wo"/>
                             <constraint firstItem="OAc-Yr-vCA" firstAttribute="top" secondItem="DTs-wk-xKF" secondAttribute="top" constant="16" id="m2J-8h-CeE"/>
                             <constraint firstItem="DTs-wk-xKF" firstAttribute="trailing" secondItem="4g2-5J-KU7" secondAttribute="trailing" id="myU-uK-raM"/>
                             <constraint firstItem="CjG-ph-Qxe" firstAttribute="leading" secondItem="DTs-wk-xKF" secondAttribute="leading" id="r8I-Jc-XjV"/>
                             <constraint firstItem="CjG-ph-Qxe" firstAttribute="top" secondItem="ZFB-7z-HwW" secondAttribute="bottom" constant="8" id="ur4-fm-kXW"/>
                             <constraint firstItem="DTs-wk-xKF" firstAttribute="leading" secondItem="OAc-Yr-vCA" secondAttribute="leading" id="vce-hi-yQR"/>
-                            <constraint firstItem="GHB-4E-Vkb" firstAttribute="leading" secondItem="DTs-wk-xKF" secondAttribute="leading" constant="10" id="zk8-2k-t7q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DTs-wk-xKF"/>
                     </view>
@@ -648,7 +688,7 @@ Miss Sarah Lippitt</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ul1-oI-ImW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4035" y="866"/>
+            <point key="canvasLocation" x="-4035" y="865.14084507042253"/>
         </scene>
         <!--LegacyVC-->
         <scene sceneID="G8T-0K-RGr">
@@ -757,82 +797,14 @@ Miss Sarah Lippitt</string>
                                 <rect key="frame" x="16" y="161" width="288" height="220"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsx-cn-7gT">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="3128.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="282"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aft-t7-Rzx" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="3128.5"/>
-                                                <string key="text">    For almost 90 years the Cape Fear Garden Club has worked to enhance and support the natural beauty of Wilmington. In 2011, we created the Cape Fear Garden Club Beautification Endowment to create perpetual funding to promote wide scale enhancement and maintenance of the landscapes of our city gateways, medians, byways and public spaces. Below is an overview of how recent grants benefit our Wilmington community:
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="282"/>
+                                                <string key="text">For over 50 years, the Azalea Garden Tour, sponsored by the Cape Fear Garden Club, has proudly returned thousands of dollars to New Hanover County. Tour profits Money available to beautify, conserve, educate, inspire, and contribute to people of all ages using horticulture and garden development. 
 
-BEAUTIFICATION:
-
-The creation of new gardens and the restoration of existing gardens; adding trees, shrubs; flowers along with hardscapes that will allow people to enjoy the particular area.
-
-    Children's Museum - Secret Garden off Orange Street in which area residents, visitors and tourists can rest and relax
-    Carolina Beach - enhancement of the "Town Gazebo", central to this community
-    Schools: Wilmington Christian, NHHS, Hoggard, Forest Hills Elementary, CFCC, Roland Grise Middle, Isaac Bear, Friends School, Gregory Elementary, Lake Forest Academy, St Mary's, Wrightsville Beach Elementary, Noble Middle and Holly Tree Elementary
-    Juvenile Day Treatment Center - gateway to Wilmington along side of this building
-    Kure Beach - enhancement of areas surrounding city signs
-    Lower Cape Fear Historical Society - Latimer House
-    City of Wilmington - Greenfield Amphitheater
-    Airlie Gardens - Improve center drive of the gardens with irrigation, plant materials and mulch (2013)
-    Cameron Art Museum - Creation of a quilt garden from the museum's collection. It is a slave-made tulip quilt. Funding is for all plantings in this garden (2013)
-    Bellamy Mansion Museum - re-activate 1861 cistern and rainwater harvesting system
-    Rotary Clubs of Wilmington (for Greenfield Park) - completion of irrigation project and Rotary Wheel for Wilmington Parks and Recreation
-    Friends of the Battleship North Carolina - Improve Battleship Park with plants, mulch and soil (2013)
-    Wilmington Tree Commission - 200 azaleas and 9 Live Oaks on Market Street between 4th and 16th Streets
-    Cape Fear Community College - Beautify the circular courtyard at the Hanover parking deck (2013)
-
-
-
-CONSERSVATION:
-
-Supports the CFGC's ongoing project at Battery Island which was just increased from $4000 to $6000 awarded each year. This is a partnership with the Audubon Society with Walker Goldman and includes a bi-annual cleanup with plantings of Yaupon shrubs which help provide nesting sites for coastal birds, in particular the White Ibis which has one of the largest nesting sites right here in Battery Island. Other recent conservation grant projects have included:
-
-    The Arboretum new entrance which will feature storm water best management practice demonstration site (2008)
-    Cape Fear Community College Foundation - horticultural fitness trail which includes preservation of native carnivorous plants (2007)
-    Cape Fear River Watch - created an Urban Rain Garden to manage storm water runoff from headquarters building on Surry St; utilized native plants and conservation landscaping techniques to create an education site in front of the building (2007)
-    Lower Cape Fear Historical Society - Restore storm drains at sides of the 1852 Lamiter House and improve irrigation (2013)
-    North Carolina Coastal Federation - Native plants and shrubs for rain gardens at Bradley Creek and Alderman Elementary Schools (2013)
-    North Carolina Land Trust - Supplies for propagation of new plants to restore Venus Flytraps at the Stanley Rehder Carnivorous Garden (2013)
-
-
-
-EDUCATIONAL:
-
-Multiple grant awards have gone to schools and organizations for the purpose of educating people about how to use plants for conservation, food, landscaping, attracting wildlife, etc.
-
-    Airlie Butterfly Garden - CFGC supplied the funds to landscape the entire area surrounding the new Butterfly Garden at Airlie Gardens.
-    Cape Fear Community College - funds for a greenhouse in which students learn to grow plants (now named the "Cape Fear Garden Club Greenhouse" in our club's honor for our support). CFCC is also a ppartner in landscaping Habitat for Humanity homes as a part of their landscaping curriculum
-    Arboretum - Plant additional 45 camellia plants and companion plants in the former specimen and patio garden
-    The Davis Community - Create an outdoor destination to draw people from their rooms to experience nature (2013)
-    Creekwood Community - an ongoing project to raise vegetables, engage community participation, educate and improve the health of area residents
-
-SCHOOLS:
-
-    Wilmington Academy of Arts and Sciences - vegetable gardens and a Snow Pea "Tee-Pee" to teach students a scientific introduction to vegetable gardening including the process of preparing beds, planting, composting, harvesting, and eating the crop produced
-    Communities in Schools – this center for at-risk youth will design, implement and maintain a flower and vegetable garden and hopefully sell the products at the Farmer’s Market downtown
-    Yahweh Center – working garden of flowers, herbs and vegetables including a greenhouse for hands on learning for children
-    JT Hoggard – shade garden and education for Horticultural students in implementation and maintenance
-    Bellamy Elementary Garden Club – flower beds to be used in education and to improve self esteem
-    NHHS – English as a second Language Students will install and maintain senior courtyard plantings
-    Laney Highschool – Senior class garden, provide mulch and plantings (2013)
-
-INSPIRATION AND MEMORIALS:
-
-    Lower Cape Fear Hospice received monies to help with a 3 phase project for gardens on the property that will be uplifting to patients as well as to the entire community who visit and contemplate life and death. In 2013 Hospice was awarded a grant to cover all the plantings for new courtyards created as part of the campaign to expand the Pavilion
-    UNCW students applied for and received a grant to beautify an area on campus and create a memorial garden for students and faculty who have died
-    Ashley High School TrrM Society – memorial garden
-    Little Chapel on the Boardwalk – Biblical Garden established on their property off “The Loop” – also educational as to plant materials found in the Old Testament
-    Wilmington Firefighters’ Memorial – Purchase materials for the irrigation system, a load of topsoil and perennials for the garden (2013)
-
-PHILANTHROPIC:
-
-    Habitat for Humanity – for 4 years, we have funded plant materials to landscape homes for this organization; CFCC students provide the labor.  Habitat residents undergo a 12 week program to teach them how to own their own home and maintain it.
-
-ENDOWED SCHOLARSHIPS:
-
-    Cape Fear Community College
-    University of North Carolina, Wilmington</string>
+BEAUTIFICATION ENDOWMENT FUND
+The Cape Fear Garden Club works with the North Carolina Community Foundation (NCCF) to maintain and invest Club funds set aside to ensure the long-term commitment of the Club to its mission in the New Hanover County community.  Events, such as the Southern Soiree in honor of a notable Club member, are held each year to support this endowment fund.</string>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1097,60 +1069,20 @@ ENDOWED SCHOLARSHIPS:
                                 <rect key="frame" x="16" y="161" width="288" height="263"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nwk-hX-exf">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="2487"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="563.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CES-WZ-neC" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="2487"/>
-                                                <mutableString key="text">Belle Mission Statement
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="563.5"/>
+                                                <string key="text">Belle Mission Statement
 
-        The Cape Fear Garden Club, Inc. Azalea Belles© serve as ambassadors for The Cape Fear Garden Club, Inc., the North Carolina Azalea Festival and the City of Wilmington. This is a diverse group of young women dressed in colorful gowns that complement the blooms and surrounding landscapes of Wilmington, greet visitors to the Cape Fear Garden Club Azalea Garden Tour©, and participate in other events related to the North Carolina Azalea Festival.
- 1. The Azalea Belle Committee is composed of members of The Cape Fear Garden Club.
- 2. The purpose of the Azalea Belle Committee is to assist the Belle Chairperson with the initial contacting of the Belles, the dress fittings, the tea, the rehearsal, the ribbon cutting, and any other activities in which assistance is needed.
+The Cape Fear Garden Club, Inc. Azalea Belles© serve as ambassadors for The Cape Fear Garden Club, Inc., the North Carolina Azalea Festival and the City of Wilmington. This is a diverse group of young women dressed in colorful gowns that complement the blooms and surrounding landscapes of Wilmington, greet visitors to the Cape Fear Garden Club Azalea Garden Tour©, and participate in other events related to the North Carolina Azalea Festival.
 
-3. Applications for 2020 Belles will be made available to junior and senior girls ON LINE ONLY starting November 20, 2019 and will close at midnight December 20, 2019.
-
-4. Cape Fear Garden Club members may sponsor no more than 3 young ladies who meet the criteria* specified on the Belle information sheet attached to the application. Sponsors are responsible for informing the Belle and her parents of her responsibilities to the CFGC.
-
-5. Senior girls who wish to be Belles and do not have a Garden Club sponsor may apply through the Belle Chairperson. Her sponsor will be listed as “committee sponsored”. This policy allows more girls to have this opportunity and it helps us to be more diverse. ALL JUNIOR APPLICANTS MUST have a Garden Club sponsor for their application to be accepted – NO EXCEPTIONS (any junior who wishes to apply but cannot find a Garden Club sponsor may reapply through the Belle Committee or through a Garden Club sponsor her senior year).
-
-6. The Belle Chairperson will determine the number of Belles needed for each garden tour based on the sizes of the gardens. The number may vary from year-year. In other words, there is no set number.
- 7. Belle applications must be mailed to the address listed on the application and they must be postmarked by the date listed. Applications received after the set postmark date will not be considered. NO EXCEPTIONS!
-
-8. Belle selection will be conducted by the Belle Committee Co-Chairpersons using the following guidelines:
-
-	a. Daughters and granddaughters of CFGC members will be given first priority regardless of where the young lady resides.
-
-	b. High school seniors who attend school or reside in New Hanover County.
-
-	c. High school juniors who attend school or reside in New Hanover County. If there are more junior applications than slots available after placing the above, a random lottery will be conducted from the junior applicants by the Belle Chairperson. (We are no longer accepting any sophomore applications due to the number of juniors and seniors applying each year.)
-
-	d. Young ladies of appropriate age from surrounding counties may apply, but their applications will not be given priority over any of the above.
- 9. The Belle Chairperson will mail acceptance letters to the young ladies who are selected. Letters of regret will be mailed to those not selected.
-
-	If a young lady is not selected, she will have to go through the application again the following year if she is eligible and wishes to be considered. We do not keep a waiting list.
-
-10. The Belle Co-Chairpersons will select the Belles who will participate in the special activities. (Examples: trip to Raleigh, photo shoots for publicity, parade floats, the Queen's arrival, etc.) When possible, daughters and granddaughters will be considered for these activities. It is not possible or fair to always place only daughters and granddaughters in all the special activities.
-
-11. The dressmakers for the Belles are secured by the Chairperson annually. The Chairperson and the dressmakers will determine the dates for the fittings. Committee members will assist with the fittings. If a Belle has her own gown or would like to have her own gown made by someone other than the designated dressmakers, she will have to have the pattern and fabric approved by the Belle Chairperson.
-
-12. These policies will remain in effect until the committee decides changes need to be made.
-
-* Criteria:
-
+Criteria for being selected as an Azalea Belle:
 · Applications are accepted from young ladies who are in the 11th or 12th grade and who reside in or attend school in New Hanover County. Applications from surrounding counties are accepted, but are not given priority over New Hanover County applicants. (Daughters and granddaughters of CFGC members may reside out of the county.)
 · A young lady may only serve as a Belle one year.
 · A young lady who wishes to be a Belle may not participate in the Azalea Scholarship Pageant in the same year she serves as a Belle.
 
-
-Please direct any questions regarding this to:
-
-Karen Smith, Chairperson of the Azalea Belle Committee
-
-Karen.Smith1309@gmail.com or 910-620-6958.
-
-
-
-Updated information concerning The Cape Fear Garden Club, Inc. Azalea Belles© may be found on the website of The Cape Fear Garden Club at capefeargardenclub.org and on Facebook at www.facebook.com/AzaleaBelles</mutableString>
+Updated information concerning The Cape Fear Garden Club, Inc. Azalea Belles© may be found on the website of The Cape Fear Garden Club at capefeargardenclub.org and on Facebook at www.facebook.com/AzaleaBelles</string>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1270,14 +1202,13 @@ Updated information concerning The Cape Fear Garden Club, Inc. Azalea Belles© m
                                 <rect key="frame" x="16" y="161" width="288" height="321"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jd9-EG-246">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="454"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="407"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSU-wV-SWX" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="454"/>
-                                                <string key="text">    Battery Island (established Fall 1996) - Battery Island Committee highlights the twenty-three-year relationship that The Cape Fear Garden Club, Inc. has in working closely with Audubon NC's Coastal Office and biologists to maintain safe habitats for the migratory birds, specifically the islands in the Lower Cape Fear River where they nest. The Cape Fear Garden Club, Inc. assists Audubon in funding through a standing annual grant and through education outreach by sponsoring the annual Spring Cruise to the Bird Islands in the Lower Cape Fear River each May.
-    This committee supports Audubon with cleanups on Battery Island in the spring before nesting season begins and the fall after the nesting season is complete. Our main concern is to get debris that floats in off the Cape Fear River and specifically fishing line off the island because of the danger of entanglement of pelicans and other shorebirds. The Committee also does the detailed planning and coordination for The Cape Fear Garden Club for the Spring Cruise to the Bird Islands in the Lower Cape Fear River.
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="407"/>
+                                                <string key="text">Battery Island Committee highlights the twenty-three-year relationship that The Cape Fear Garden Club, Inc. has in working closely with Audubon NC's Coastal Office and biologists to maintain safe habitats for the migratory birds, specifically the islands in the Lower Cape Fear River where they nest. 
 
-this needs to be fixed when I find it.</string>
+The Cape Fear Garden Club, Inc. assists Audubon in funding through a standing annual grant and through education outreach by sponsoring the annual Spring Cruise to the Bird Islands in the Lower Cape Fear River each May. This committee supports Audubon with cleanups on Battery Island in the spring before nesting season begins and the fall after the nesting season is complete. Our main concern is to get debris that floats in off the Cape Fear River and specifically fishing line off the island because of the danger of entanglement of pelicans and other shorebirds. The Committee also does the detailed planning and coordination for The Cape Fear Garden Club for the Spring Cruise to the Bird Islands in the Lower Cape Fear River.</string>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1438,11 +1369,71 @@ this needs to be fixed when I find it.</string>
                                 <rect key="frame" x="16" y="161" width="288" height="220"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WEH-a1-yP3">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="109.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="2956.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwW-9e-mde" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="109.5"/>
-                                                <string key="text">    For over 50 years, the Azalea Garden Tour, sponsored by the Cape Fear Garden Club, has proudly returned thousands of dollars to New Hanover County. Tour profits Money available to beautify, conserve, educate, inspire, and contribute to people of all ages using horticulture and garden development.</string>
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="2956.5"/>
+                                                <string key="text">For almost 90 years the Cape Fear Garden Club has worked to enhance and support the natural beauty of Wilmington. In 2011, we created the Cape Fear Garden Club Beautification Endowment to create perpetual funding to promote wide scale enhancement and maintenance of the landscapes of our city gateways, medians, byways and public spaces. Below is an overview of how recent grants benefit our Wilmington community:
+
+BEAUTIFICATION:
+The creation of new gardens and the restoration of existing gardens; adding trees, shrubs; flowers along with hardscapes that will allow people to enjoy the particular area.
+
+    Children's Museum - Secret Garden off Orange Street in which area residents, visitors and tourists can rest and relax
+    Carolina Beach - enhancement of the "Town Gazebo", central to this community
+    Schools: Wilmington Christian, NHHS, Hoggard, Forest Hills Elementary, CFCC, Roland Grise Middle, Isaac Bear, Friends School, Gregory Elementary, Lake Forest Academy, St Mary's, Wrightsville Beach Elementary, Noble Middle and Holly Tree Elementary
+    Juvenile Day Treatment Center - gateway to Wilmington along side of this building
+    Kure Beach - enhancement of areas surrounding city signs
+    Lower Cape Fear Historical Society - Latimer House
+    City of Wilmington - Greenfield Amphitheater
+    Airlie Gardens - Improve center drive of the gardens with irrigation, plant materials and mulch (2013)
+    Cameron Art Museum - Creation of a quilt garden from the museum's collection. It is a slave-made tulip quilt. Funding is for all plantings in this garden (2013)
+    Bellamy Mansion Museum - re-activate 1861 cistern and rainwater harvesting system
+    Rotary Clubs of Wilmington (for Greenfield Park) - completion of irrigation project and Rotary Wheel for Wilmington Parks and Recreation
+    Friends of the Battleship North Carolina - Improve Battleship Park with plants, mulch and soil (2013)
+    Wilmington Tree Commission - 200 azaleas and 9 Live Oaks on Market Street between 4th and 16th Streets
+    Cape Fear Community College - Beautify the circular courtyard at the Hanover parking deck (2013)
+
+CONSERVATION:
+Supports the CFGC's ongoing project at Battery Island which was just increased from $4000 to $6000 awarded each year. This is a partnership with the Audubon Society with Walker Goldman and includes a bi-annual cleanup with plantings of Yaupon shrubs which help provide nesting sites for coastal birds, in particular the White Ibis which has one of the largest nesting sites right here in Battery Island. Other recent conservation grant projects have included:
+
+    The Arboretum new entrance which will feature storm water best management practice demonstration site (2008)
+    Cape Fear Community College Foundation - horticultural fitness trail which includes preservation of native carnivorous plants (2007)
+    Cape Fear River Watch - created an Urban Rain Garden to manage storm water runoff from headquarters building on Surry St; utilized native plants and conservation landscaping techniques to create an education site in front of the building (2007)
+    Lower Cape Fear Historical Society - Restore storm drains at sides of the 1852 Lamiter House and improve irrigation (2013)
+    North Carolina Coastal Federation - Native plants and shrubs for rain gardens at Bradley Creek and Alderman Elementary Schools (2013)
+    North Carolina Land Trust - Supplies for propagation of new plants to restore Venus Flytraps at the Stanley Rehder Carnivorous Garden (2013)
+
+EDUCATIONAL:
+Multiple grant awards have gone to schools and organizations for the purpose of educating people about how to use plants for conservation, food, landscaping, attracting wildlife, etc.
+
+    Airlie Butterfly Garden - CFGC supplied the funds to landscape the entire area surrounding the new Butterfly Garden at Airlie Gardens.
+    Cape Fear Community College - funds for a greenhouse in which students learn to grow plants (now named the "Cape Fear Garden Club Greenhouse" in our club's honor for our support). CFCC is also a ppartner in landscaping Habitat for Humanity homes as a part of their landscaping curriculum
+    Arboretum - Plant additional 45 camellia plants and companion plants in the former specimen and patio garden
+    The Davis Community - Create an outdoor destination to draw people from their rooms to experience nature (2013)
+    Creekwood Community - an ongoing project to raise vegetables, engage community participation, educate and improve the health of area residents
+
+SCHOOLS:
+    Wilmington Academy of Arts and Sciences - vegetable gardens and a Snow Pea "Tee-Pee" to teach students a scientific introduction to vegetable gardening including the process of preparing beds, planting, composting, harvesting, and eating the crop produced
+    Communities in Schools – this center for at-risk youth will design, implement and maintain a flower and vegetable garden and hopefully sell the products at the Farmer’s Market downtown
+    Yahweh Center – working garden of flowers, herbs and vegetables including a greenhouse for hands on learning for children
+    JT Hoggard – shade garden and education for Horticultural students in implementation and maintenance
+    Bellamy Elementary Garden Club – flower beds to be used in education and to improve self esteem
+    NHHS – English as a second Language Students will install and maintain senior courtyard plantings
+    Laney Highschool – Senior class garden, provide mulch and plantings (2013)
+
+INSPIRATION AND MEMORIALS:
+    Lower Cape Fear Hospice received monies to help with a 3 phase project for gardens on the property that will be uplifting to patients as well as to the entire community who visit and contemplate life and death. In 2013 Hospice was awarded a grant to cover all the plantings for new courtyards created as part of the campaign to expand the Pavilion
+    UNCW students applied for and received a grant to beautify an area on campus and create a memorial garden for students and faculty who have died
+    Ashley High School TrrM Society – memorial garden
+    Little Chapel on the Boardwalk – Biblical Garden established on their property off “The Loop” – also educational as to plant materials found in the Old Testament
+    Wilmington Firefighters’ Memorial – Purchase materials for the irrigation system, a load of topsoil and perennials for the garden (2013)
+
+PHILANTHROPIC:
+    Habitat for Humanity – for 4 years, we have funded plant materials to landscape homes for this organization; CFCC students provide the labor.  Habitat residents undergo a 12 week program to teach them how to own their own home and maintain it.
+
+ENDOWED SCHOLARSHIPS:
+    Cape Fear Community College
+    University of North Carolina, Wilmington </string>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1593,8 +1584,9 @@ this needs to be fixed when I find it.</string>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlw-Zl-dkG" userLabel="Description">
                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="313"/>
-                                                <string key="text">    Come enjoy Southern hospitality amid the vibrant color of azaleas and spring flowers during the 67th Annual Cape Fear Garden Club Azalea Garden Tour© in the beautiful coastal community of Wilmington, North Carolina. An official event of the North Carolina Azalea Festival, the tour is one of the longest running and most popular garden tours in the South.
-    Proceeds from the Cape Fear Garden Club Azalea Garden Tour© are reinvested in the community through beautification and horticultural grants within New Hanover County, scholarships at the University of North Carolina Wilmington and Cape Fear Community College, and conservation efforts at Battery Island, a National Audubon Society bird sanctuary. The club has granted over $1 million in donations to the community in the past 61 years.</string>
+                                                <string key="text">Come enjoy Southern hospitality amid the vibrant color of azaleas and spring flowers during the Annual Cape Fear Garden Club Azalea Garden Tour© in the beautiful coastal community of Wilmington, North Carolina. An official event of the North Carolina Azalea Festival, the tour is one of the longest running and most popular garden tours in the South.
+
+Proceeds from the Cape Fear Garden Club Azalea Garden Tour© are reinvested in the community through beautification and horticultural grants within New Hanover County, scholarships at the University of North Carolina Wilmington and Cape Fear Community College, and conservation efforts at Battery Island, a National Audubon Society bird sanctuary. The club has granted over $1 million in donations to the community in the past 61 years.</string>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1664,27 +1656,27 @@ this needs to be fixed when I find it.</string>
                                 <rect key="frame" x="16" y="161" width="288" height="321"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpy-0p-83I">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="626"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="594.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4D-DB-gLf" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="626"/>
-                                                <mutableString key="text">Mark your Calendar for the 2020 Cruise
-    The Bird Cruise is The Battery Island/Birds of the Lower Cape Fear Cruise on Sunday, May 17, 2020. Tickets go on sale February 26, 2020.
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="594.5"/>
+                                                <string key="text">Mark your Calendar for the 2020 Cruise!
+
+The Battery Island/Birds of the Lower Cape Fear Cruise will sail on Sunday, May 17, 2020. 
+Boarding: 10:30 am
+Departing: 11:00 am
+Tickets go on sale February 26, 2020.
 
 The cruise is an educational experience and viewing is narrated by three experts who will share their knowledge with us:
     · Dr. James Parnell, Professor Emeritus of UNCW and North Carolina's top ornithologist.
     · Walker Golder, National Audubon Society's Director of the Eastern Flyway Coast Initiative which includes the North Carolina program as well as programs in eight states along the Atlantic Coast.
     · Lindsay Addison, Audubon North Carolina's Coastal Biologist speaks describing her work to monitor the nesting colonies on the six bird islands the Cape Fear River including Battery Island.
 
-    The cruise will include islands in the lower Cape Fear River where the birds have chosentheir nesting sites. They are all North Carolina Audubon Bird Sanctuaries.
-    Bring your camera and binoculars to view nesting areas of many coastal water birds including pelicans, white ibis, great egrets and herons. Pack a picnic lunch if you would like. Soft drinks, water and snacks will be sold aboard ship.
+The cruise will include islands in the lower Cape Fear River where the birds have chosentheir nesting sites. They are all North Carolina Audubon Bird Sanctuaries.
 
-Additioinal information is available by emailing birdislandcruise@capefeargardenclub.org
-When and Where:
+Bring your camera and binoculars to view nesting areas of many coastal water birds including pelicans, white ibis, great egrets and herons. Pack a picnic lunch if you would like. Soft drinks, water and snacks will be sold aboard ship.
 
-Sunday, May 17, 2020
-Boarding: 10:30 am
-Departing: 11:00 am</mutableString>
+Additional information is available by emailing birdislandcruise@capefeargardenclub.org.</string>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1894,12 +1886,13 @@ Departing: 11:00 am</mutableString>
                                 <rect key="frame" x="16" y="161" width="288" height="220"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1iD-ZG-2dw">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="641.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="673"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sig-yN-jme" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="641.5"/>
-                                                <string key="text">    Grant Recipients on 2018 were awarded $72,326 on November 14, 2018. The Cape Fear Garden Club is pleased to have David Johnson, owner of Johnson Nursery-Gardens Direct, as a sponsor for the 2018 Grant Recipients received a $300 credit to be used at his nursery located in Willard or by ordering on line.
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="673"/>
+                                                <string key="text">Proceeds of the 2018 Azalea Festival Garden Tour, totalling $72,326, were awarded to grant recipients on November 14, 2018. The Cape Fear Garden Club is pleased to have David Johnson, owner of Johnson Nursery-Gardens Direct, as a sponsor for the 2018 Grant Recipients received a $300 credit to be used at his nursery located in Willard or by ordering on line.
 
+GRANT RECIPIENTS
 Airlie Gardens Butterfly House
 Alliance for Cape Fear Trees
 Bellamy Mansion Museum
@@ -2734,6 +2727,106 @@ Wilmington, NC 28403</string>
             </objects>
             <point key="canvasLocation" x="-9276" y="528"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="UUh-qi-hQI">
+            <objects>
+                <viewController id="ym2-YC-c4w" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aJm-DY-ok6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="66E-U9-nef" userLabel="DirectionsButton">
+                                <rect key="frame" x="0.0" y="472" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZSW-36-gcT"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Get Directions to Ribbon Cutting  (Opens Google Maps)">
+                                            <attributes>
+                                                <color key="NSColor" red="0.4039215686" green="0.54117647059999996" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" metaFont="system" size="22"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3b-xb-bwC" userLabel="BackButton">
+                                <rect key="frame" x="0.0" y="530" width="320" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xLD-JG-1oq">
+                                <rect key="frame" x="16" y="161" width="288" height="303"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCF-Bu-nWD" userLabel="MarkerInfo">
+                                        <rect key="frame" x="0.0" y="143.5" width="288" height="16"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="QCF-Bu-nWD" firstAttribute="centerY" secondItem="xLD-JG-1oq" secondAttribute="centerY" id="HdX-DL-6kO"/>
+                                    <constraint firstAttribute="trailing" secondItem="QCF-Bu-nWD" secondAttribute="trailing" id="deF-gU-SVF"/>
+                                    <constraint firstItem="QCF-Bu-nWD" firstAttribute="leading" secondItem="xLD-JG-1oq" secondAttribute="leading" id="lhq-DZ-L7K"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pC-cm-KaE" userLabel="HomeButton">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="tiv-Rh-4uM"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="CFGC banner with logo - small"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info About Ribbon Cutting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fyN-eg-HWT" userLabel="Title">
+                                <rect key="frame" x="0.0" y="124" width="320" height="29"/>
+                                <color key="backgroundColor" red="0.4039215686" green="0.54117647059999996" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.84313725490000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="66E-U9-nef" firstAttribute="leading" secondItem="ZDh-C3-D5d" secondAttribute="leading" id="Fbz-Qk-Frb"/>
+                            <constraint firstItem="1pC-cm-KaE" firstAttribute="trailing" secondItem="ZDh-C3-D5d" secondAttribute="trailing" id="Hrw-qT-Kge"/>
+                            <constraint firstItem="ZDh-C3-D5d" firstAttribute="bottom" secondItem="K3b-xb-bwC" secondAttribute="bottom" constant="8" id="NJi-M1-qAY"/>
+                            <constraint firstItem="xLD-JG-1oq" firstAttribute="leading" secondItem="ZDh-C3-D5d" secondAttribute="leading" constant="16" id="P2c-Gf-RmA"/>
+                            <constraint firstItem="66E-U9-nef" firstAttribute="top" secondItem="xLD-JG-1oq" secondAttribute="bottom" constant="8" id="Ppf-01-Dyz"/>
+                            <constraint firstItem="fyN-eg-HWT" firstAttribute="top" secondItem="1pC-cm-KaE" secondAttribute="bottom" constant="8" id="UVl-mG-FBW"/>
+                            <constraint firstItem="1pC-cm-KaE" firstAttribute="top" secondItem="ZDh-C3-D5d" secondAttribute="top" constant="16" id="YPQ-9U-5JM"/>
+                            <constraint firstItem="xLD-JG-1oq" firstAttribute="top" secondItem="fyN-eg-HWT" secondAttribute="bottom" constant="8" id="YbR-Oq-81Y"/>
+                            <constraint firstItem="ZDh-C3-D5d" firstAttribute="trailing" secondItem="xLD-JG-1oq" secondAttribute="trailing" constant="16" id="btT-hN-EWA"/>
+                            <constraint firstItem="ZDh-C3-D5d" firstAttribute="trailing" secondItem="fyN-eg-HWT" secondAttribute="trailing" id="cSB-IL-RL5"/>
+                            <constraint firstItem="ZDh-C3-D5d" firstAttribute="trailing" secondItem="66E-U9-nef" secondAttribute="trailing" id="fWc-6Y-LNS"/>
+                            <constraint firstItem="ZDh-C3-D5d" firstAttribute="trailing" secondItem="K3b-xb-bwC" secondAttribute="trailing" id="hi2-Ci-mLb"/>
+                            <constraint firstItem="K3b-xb-bwC" firstAttribute="leading" secondItem="ZDh-C3-D5d" secondAttribute="leading" id="oei-t2-RR5"/>
+                            <constraint firstItem="K3b-xb-bwC" firstAttribute="top" secondItem="66E-U9-nef" secondAttribute="bottom" constant="8" id="uBv-Ap-FUY"/>
+                            <constraint firstItem="ZDh-C3-D5d" firstAttribute="leading" secondItem="1pC-cm-KaE" secondAttribute="leading" id="vbt-qo-Qep"/>
+                            <constraint firstItem="fyN-eg-HWT" firstAttribute="leading" secondItem="ZDh-C3-D5d" secondAttribute="leading" id="xue-Ni-5rV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZDh-C3-D5d"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OEQ-wG-FVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5989" y="-1379"/>
+        </scene>
         <!--Embed MapVC-->
         <scene sceneID="Jim-pO-2QS">
             <objects>
@@ -2757,17 +2850,17 @@ Wilmington, NC 28403</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="tvg-Mh-GLi"/>
-        <segue reference="yyA-Nf-nzp"/>
-        <segue reference="zjO-Lx-Eqy"/>
-        <segue reference="y3k-WG-u1D"/>
+        <segue reference="2kb-zO-Cul"/>
+        <segue reference="czg-DI-FVn"/>
+        <segue reference="U3P-11-oDk"/>
         <segue reference="LWn-5P-J6g"/>
-        <segue reference="ix7-Jp-m5q"/>
-        <segue reference="JWM-S4-Nhm"/>
+        <segue reference="Upw-Ny-4pX"/>
+        <segue reference="1uL-Ti-aiY"/>
         <segue reference="kWx-oG-9T9"/>
-        <segue reference="U5T-a2-BNb"/>
-        <segue reference="Dlo-LM-TPn"/>
-        <segue reference="Jqd-bU-lIQ"/>
-        <segue reference="mgI-9s-2fW"/>
-        <segue reference="kuz-aN-gFN"/>
+        <segue reference="gW6-C0-QJP"/>
+        <segue reference="lXw-kl-bS7"/>
+        <segue reference="fYJ-bc-AH4"/>
+        <segue reference="Wjg-hC-N3U"/>
+        <segue reference="x56-br-KeC"/>
     </inferredMetricsTieBreakers>
 </document>
