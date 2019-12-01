@@ -67,39 +67,55 @@ class ContactVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         
     }
     
-    func buildContacts(){
+//    @IBAction func switchChange(sender: UISwitch) {
+//        buildContacts()
+//    }
+    
+    func buildContacts() {
         
-        if sortSwitch.isOn == false {
+//        if sortSwitch.isOn == false {
             sortLabel.text = "Sort Last"
             contactCards = contactCards.sorted{ ($0.LastName == $1.LastName ? $0.FirstName < $1.FirstName : $0.LastName < $1.LastName) } //sort array
-        } else {
-            sortLabel.text = "Sort First"
-            contactCards = contactCards.sorted{ ($0.FirstName == $1.FirstName ? $0.LastName < $1.LastName : $0.FirstName < $1.FirstName) } //sort array
-        }
-        
-        for user in contactCards {
-            var userKey = String(user.LastName.prefix(1))
-            if (userKey == userKey.lowercased()){
-                userKey = userKey.uppercased()
-            }
             
-            if var userValues = userDictionary[userKey] {
-                userValues.append(user)
+            for user in contactCards {
+                var userKey = String(user.LastName.prefix(1))
+                if (userKey == userKey.lowercased()){
+                    userKey = userKey.uppercased()
+                }
                 
-                userDictionary[userKey] = userValues
-            } else {
-                userDictionary[userKey] = [user]
+                if var userValues = userDictionary[userKey] {
+                    userValues.append(user)
+                    
+                    userDictionary[userKey] = userValues
+                } else {
+                    userDictionary[userKey] = [user]
+                }
             }
-        }
-        
+//        } else {
+//            sortLabel.text = "Sort First"
+//            contactCards = contactCards.sorted{ ($0.FirstName == $1.FirstName ? $0.LastName < $1.LastName : $0.FirstName < $1.FirstName) } //sort array
+//
+//            for user in contactCards {
+//                var userKey = String(user.FirstName.prefix(1))
+//                if (userKey == userKey.lowercased()){
+//                    userKey = userKey.uppercased()
+//                }
+//
+//                if var userValues = userDictionary[userKey] {
+//                    userValues.append(user)
+//
+//                    userDictionary[userKey] = userValues
+//                } else {
+//                    userDictionary[userKey] = [user]
+//                }
+//            }
+//        }
         
         userSectionTitles = [String](userDictionary.keys)
         userSectionTitles = userSectionTitles.sorted(by: { $0 < $1 })
         
-        
         tableView.delegate = self
         tableView.dataSource = self
-
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -110,6 +126,7 @@ class ContactVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         
         return userSectionTitles.count
     }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // 2
@@ -130,9 +147,9 @@ class ContactVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // 3
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "ContactCell", for: indexPath) as? ContactCell{
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "ContactCell", for: indexPath) as? ContactCell {
             
-            if(inSearchMode){
+            if(inSearchMode) {
                 var contact: ContactCard!
                 let userKey = filteredUserSectionTitles[indexPath.section]
 

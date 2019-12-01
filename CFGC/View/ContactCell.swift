@@ -14,7 +14,7 @@ class ContactCell: UITableViewCell {
     @IBOutlet weak var contactImg: UIImageView!
     @IBOutlet weak var contactName: UILabel!
     @IBOutlet weak var mbrStat: UILabel!
-    
+    @IBOutlet weak var btnEnlarge: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -51,7 +51,6 @@ class ContactCell: UITableViewCell {
             contactImg.frame = CGRect(x: 0, y: 0, width: 42, height: 42)
             //print("objectData nil at\(imageName)")
         }
-        
         
         //if(image != nil){
             //print("Image found!")

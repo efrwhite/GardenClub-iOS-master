@@ -25,6 +25,8 @@
 		32BB5A8323485E0300523A2D /* GrantsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB5A8223485E0300523A2D /* GrantsVC.swift */; };
 		32BB5A8523485E3300523A2D /* LegacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB5A8423485E3300523A2D /* LegacyVC.swift */; };
 		32BB5A8723485E6800523A2D /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB5A8623485E6800523A2D /* MapVC.swift */; };
+		7FB3268C237E9D70006240AD /* DirectionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3268B237E9D70006240AD /* DirectionsVC.swift */; };
+		7FB3268E237EBBB3006240AD /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FB3268D237EBBB2006240AD /* icon.png */; };
 		8B05D0C4208E034200E468F1 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B05D0C3208E034200E468F1 /* WebVC.swift */; };
 		8B0C5F34208DD33B006FF116 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C5F33208DD33B006FF116 /* UIViewControllerExtensions.swift */; };
 		8B24CBFA2048C93200FE6390 /* ContactCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B24CBF92048C93200FE6390 /* ContactCard.swift */; };
@@ -70,6 +72,8 @@
 		32BB5A8423485E3300523A2D /* LegacyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyVC.swift; sourceTree = "<group>"; };
 		32BB5A8623485E6800523A2D /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		67DA5C6E2772DB0B68867871 /* Pods-CFGC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CFGC.debug.xcconfig"; path = "Target Support Files/Pods-CFGC/Pods-CFGC.debug.xcconfig"; sourceTree = "<group>"; };
+		7FB3268B237E9D70006240AD /* DirectionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsVC.swift; sourceTree = "<group>"; };
+		7FB3268D237EBBB2006240AD /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		8B05D0C3208E034200E468F1 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
 		8B0C5F33208DD33B006FF116 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		8B24CBF92048C93200FE6390 /* ContactCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCard.swift; sourceTree = "<group>"; };
@@ -224,6 +228,8 @@
 				32BB5A8423485E3300523A2D /* LegacyVC.swift */,
 				32BB5A8623485E6800523A2D /* MapVC.swift */,
 				32A8D0102349216F0083E46F /* EmbedMapVC.swift */,
+				7FB3268D237EBBB2006240AD /* icon.png */,
+				7FB3268B237E9D70006240AD /* DirectionsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -300,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0130DC412034B06400362B90 /* LaunchScreen.storyboard in Resources */,
+				7FB3268E237EBBB3006240AD /* icon.png in Resources */,
 				8B24CBFC2048ECB600FE6390 /* sqlData_1.txt in Resources */,
 				0130DC3E2034B06400362B90 /* Assets.xcassets in Resources */,
 				0130DC3C2034B06400362B90 /* Main.storyboard in Resources */,
@@ -362,6 +369,7 @@
 				8BB974F2203B5EF1008039BB /* LoginViewController.swift in Sources */,
 				32BB5A7D23485D3800523A2D /* BICVC.swift in Sources */,
 				32BB5A8323485E0300523A2D /* GrantsVC.swift in Sources */,
+				7FB3268C237E9D70006240AD /* DirectionsVC.swift in Sources */,
 				8B05D0C4208E034200E468F1 /* WebVC.swift in Sources */,
 				8B24CBFA2048C93200FE6390 /* ContactCard.swift in Sources */,
 				32BB5A7F23485D8600523A2D /* BellesVC.swift in Sources */,
