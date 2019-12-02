@@ -151,7 +151,7 @@ class Background {
                     let photo = self.pullSimpleFromURL(photoID: self._contactCards[i].PhotoId)
                     
                     if photo != nil{
-                        let photoData = UIImageJPEGRepresentation(photo, 0.5) as! NSData
+                        let photoData = photo.jpegData(compressionQuality: 0.5) as! NSData
                         UserDefaults.standard.set(photoData, forKey: self._contactCards[i].PhotoId)
                         UserDefaults.standard.synchronize()
                     }

@@ -24,7 +24,7 @@ extension UIImage {
         
         // image has not been created yet: create it, store it, return it
         let newImage: UIImage = self.pullSimpleFromURL(photoID: imageName)
-        try? UIImagePNGRepresentation(newImage)?.write(to: imageUrl)
+        ((try? newImage.pngData()?.write(to: imageUrl)) as ()??)
         return newImage
         
     }

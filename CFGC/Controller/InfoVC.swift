@@ -61,18 +61,18 @@ class InfoVC: UIViewController, MFMessageComposeViewControllerDelegate, MFMailCo
         secondaryConTxt.delegate = self
         emailTxt.delegate = self
         
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         
         buildInfoScreen()
         // Do any additional setup after loading the view.
     }
     
     deinit {
-        NotificationCenter.default.removeObserver(self,name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
+        NotificationCenter.default.removeObserver(self,name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -105,11 +105,11 @@ class InfoVC: UIViewController, MFMessageComposeViewControllerDelegate, MFMailCo
     @objc func keyboardWillChange(notification: Notification){
         //print("Keyboard will show: \(notification.name.rawValue)")
         
-        guard let keyboardRect = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else{
+        guard let keyboardRect = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else{
             return
         }
         
-        if ((notification.name == Notification.Name.UIKeyboardWillShow || notification.name == Notification.Name.UIKeyboardWillChangeFrame) && shouldRaiseKeyboard){
+        if ((notification.name == UIResponder.keyboardWillShowNotification || notification.name == UIResponder.keyboardWillChangeFrameNotification) && shouldRaiseKeyboard){
             
             view.frame.origin.y = -keyboardRect.height
         }
@@ -390,9 +390,9 @@ class InfoVC: UIViewController, MFMessageComposeViewControllerDelegate, MFMailCo
     }
     
     func createAlert (title: String!, message: String!){
-        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) in
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action) in
             alert.dismiss(animated: true, completion: nil)
         }))
         
@@ -432,17 +432,17 @@ class InfoVC: UIViewController, MFMessageComposeViewControllerDelegate, MFMailCo
         let primaryNum = contact.PrimaryContactNo.replacingOccurrences(of: ".", with: "")
         let secondaryNum = contact.SecondaryContactNo.replacingOccurrences(of: ".", with: "")
         
-        let phoneActionSheet = UIAlertController(title: "Please Select A Number", message: "", preferredStyle: UIAlertControllerStyle.actionSheet)
+        let phoneActionSheet = UIAlertController(title: "Please Select A Number", message: "", preferredStyle: UIAlertController.Style.actionSheet)
         
-        let primaryPhoneButtonAction = UIAlertAction(title: "Primary Phone: " + contact.PrimaryContactNo, style: UIAlertActionStyle.default){(ACTION) in
+        let primaryPhoneButtonAction = UIAlertAction(title: "Primary Phone: " + contact.PrimaryContactNo, style: UIAlertAction.Style.default){(ACTION) in
             self.callSelectedNumber(number: primaryNum)
         }
         
-        let secondaryPhoneButtonAction = UIAlertAction(title: "Secondary Phone: " + contact.SecondaryContactNo, style: UIAlertActionStyle.default){(ACTION) in
+        let secondaryPhoneButtonAction = UIAlertAction(title: "Secondary Phone: " + contact.SecondaryContactNo, style: UIAlertAction.Style.default){(ACTION) in
             self.callSelectedNumber(number: secondaryNum)
         }
         
-        let cancelButtonAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default){
+        let cancelButtonAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default){
             (ACTION) in
             print("canceled")
         }
@@ -487,7 +487,7 @@ class InfoVC: UIViewController, MFMessageComposeViewControllerDelegate, MFMailCo
         let emailMessageRecipients = [contact.ContactEmail]
         if MFMailComposeViewController.canSendMail(){
             let emailComposeVC = MFMailComposeViewController()
-            emailComposeVC.mailComposeDelegate = self as! MFMailComposeViewControllerDelegate
+            emailComposeVC.mailComposeDelegate = self as MFMailComposeViewControllerDelegate
             emailComposeVC.setToRecipients(emailMessageRecipients)
             emailComposeVC.setSubject("Hello!")
             emailComposeVC.setMessageBody("From my iPhone", isHTML: false)

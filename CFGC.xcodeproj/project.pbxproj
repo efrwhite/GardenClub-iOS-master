@@ -12,6 +12,21 @@
 		0130DC3C2034B06400362B90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0130DC3A2034B06400362B90 /* Main.storyboard */; };
 		0130DC3E2034B06400362B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0130DC3D2034B06400362B90 /* Assets.xcassets */; };
 		0130DC412034B06400362B90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0130DC3F2034B06400362B90 /* LaunchScreen.storyboard */; };
+		32A8D0112349216F0083E46F /* EmbedMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8D0102349216F0083E46F /* EmbedMapVC.swift */; };
+		32B3CB0223481C8500534E4A /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3CB0123481C8500534E4A /* HomePageVC.swift */; };
+		32B3CB0423483BC300534E4A /* TourVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3CB0323483BC300534E4A /* TourVC.swift */; };
+		32B3CB0623483C3300534E4A /* EventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3CB0523483C3300534E4A /* EventsVC.swift */; };
+		32B3CB0823483C6E00534E4A /* ImpactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3CB0723483C6E00534E4A /* ImpactVC.swift */; };
+		32B3CB0A23483C9F00534E4A /* MembershipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3CB0923483C9F00534E4A /* MembershipVC.swift */; };
+		32BB5A7B23485CC900523A2D /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB5A7A23485CC900523A2D /* ContactUsVC.swift */; };
+		32BB5A7D23485D3800523A2D /* BICVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB5A7C23485D3800523A2D /* BICVC.swift */; };
+		32BB5A7F23485D8600523A2D /* BellesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB5A7E23485D8600523A2D /* BellesVC.swift */; };
+		32BB5A8123485DB700523A2D /* ProjectsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB5A8023485DB700523A2D /* ProjectsVC.swift */; };
+		32BB5A8323485E0300523A2D /* GrantsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB5A8223485E0300523A2D /* GrantsVC.swift */; };
+		32BB5A8523485E3300523A2D /* LegacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB5A8423485E3300523A2D /* LegacyVC.swift */; };
+		32BB5A8723485E6800523A2D /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB5A8623485E6800523A2D /* MapVC.swift */; };
+		7FB3268C237E9D70006240AD /* DirectionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3268B237E9D70006240AD /* DirectionsVC.swift */; };
+		7FB3268E237EBBB3006240AD /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FB3268D237EBBB2006240AD /* icon.png */; };
 		8B05D0C4208E034200E468F1 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B05D0C3208E034200E468F1 /* WebVC.swift */; };
 		8B0C5F34208DD33B006FF116 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C5F33208DD33B006FF116 /* UIViewControllerExtensions.swift */; };
 		8B24CBFA2048C93200FE6390 /* ContactCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B24CBF92048C93200FE6390 /* ContactCard.swift */; };
@@ -32,6 +47,7 @@
 		8BC643292044F22F00AC8C8C /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC643282044F22F00AC8C8C /* InfoVC.swift */; };
 		8BD6DC5C203B38F800788CB6 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD6DC5B203B38F800788CB6 /* ContactCell.swift */; };
 		8BD6DC5F203B3E4300788CB6 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD6DC5E203B3E4300788CB6 /* ContactModel.swift */; };
+		D0E61125F29C3A43C06EB39F /* libPods-CFGC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF56EB2916C969F99F22143F /* libPods-CFGC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +58,22 @@
 		0130DC3D2034B06400362B90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0130DC402034B06400362B90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0130DC422034B06400362B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32A8D0102349216F0083E46F /* EmbedMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbedMapVC.swift; sourceTree = "<group>"; };
+		32B3CB0123481C8500534E4A /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
+		32B3CB0323483BC300534E4A /* TourVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourVC.swift; sourceTree = "<group>"; };
+		32B3CB0523483C3300534E4A /* EventsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsVC.swift; sourceTree = "<group>"; };
+		32B3CB0723483C6E00534E4A /* ImpactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactVC.swift; sourceTree = "<group>"; };
+		32B3CB0923483C9F00534E4A /* MembershipVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipVC.swift; sourceTree = "<group>"; };
+		32BB5A7A23485CC900523A2D /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
+		32BB5A7C23485D3800523A2D /* BICVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BICVC.swift; sourceTree = "<group>"; };
+		32BB5A7E23485D8600523A2D /* BellesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellesVC.swift; sourceTree = "<group>"; };
+		32BB5A8023485DB700523A2D /* ProjectsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsVC.swift; sourceTree = "<group>"; };
+		32BB5A8223485E0300523A2D /* GrantsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrantsVC.swift; sourceTree = "<group>"; };
+		32BB5A8423485E3300523A2D /* LegacyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyVC.swift; sourceTree = "<group>"; };
+		32BB5A8623485E6800523A2D /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		67DA5C6E2772DB0B68867871 /* Pods-CFGC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CFGC.debug.xcconfig"; path = "Target Support Files/Pods-CFGC/Pods-CFGC.debug.xcconfig"; sourceTree = "<group>"; };
+		7FB3268B237E9D70006240AD /* DirectionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsVC.swift; sourceTree = "<group>"; };
+		7FB3268D237EBBB2006240AD /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		8B05D0C3208E034200E468F1 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
 		8B0C5F33208DD33B006FF116 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		8B24CBF92048C93200FE6390 /* ContactCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCard.swift; sourceTree = "<group>"; };
@@ -62,6 +94,8 @@
 		8BC643282044F22F00AC8C8C /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
 		8BD6DC5B203B38F800788CB6 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 		8BD6DC5E203B3E4300788CB6 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		A6B67BCF05C19C94C6442A30 /* Pods-CFGC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CFGC.release.xcconfig"; path = "Target Support Files/Pods-CFGC/Pods-CFGC.release.xcconfig"; sourceTree = "<group>"; };
+		FF56EB2916C969F99F22143F /* libPods-CFGC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CFGC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +104,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B85E83720921BC200EA36F6 /* CoreData.framework in Frameworks */,
+				D0E61125F29C3A43C06EB39F /* libPods-CFGC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +118,7 @@
 				8B85E83820921D1600EA36F6 /* cfgcDataModel.xcdatamodeld */,
 				0130DC342034B06400362B90 /* Products */,
 				8B85E83520921BC200EA36F6 /* Frameworks */,
+				41D4811C7F914A96C3BAC663 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,10 +147,20 @@
 			path = CFGC;
 			sourceTree = "<group>";
 		};
+		41D4811C7F914A96C3BAC663 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67DA5C6E2772DB0B68867871 /* Pods-CFGC.debug.xcconfig */,
+				A6B67BCF05C19C94C6442A30 /* Pods-CFGC.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8B85E83520921BC200EA36F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				8B85E83620921BC200EA36F6 /* CoreData.framework */,
+				FF56EB2916C969F99F22143F /* libPods-CFGC.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,6 +215,21 @@
 				8BC643282044F22F00AC8C8C /* InfoVC.swift */,
 				8B639E2E20608ABF00C0D525 /* BiographicalVC.swift */,
 				8B05D0C3208E034200E468F1 /* WebVC.swift */,
+				32B3CB0123481C8500534E4A /* HomePageVC.swift */,
+				32B3CB0323483BC300534E4A /* TourVC.swift */,
+				32B3CB0523483C3300534E4A /* EventsVC.swift */,
+				32B3CB0723483C6E00534E4A /* ImpactVC.swift */,
+				32B3CB0923483C9F00534E4A /* MembershipVC.swift */,
+				32BB5A7A23485CC900523A2D /* ContactUsVC.swift */,
+				32BB5A7C23485D3800523A2D /* BICVC.swift */,
+				32BB5A7E23485D8600523A2D /* BellesVC.swift */,
+				32BB5A8023485DB700523A2D /* ProjectsVC.swift */,
+				32BB5A8223485E0300523A2D /* GrantsVC.swift */,
+				32BB5A8423485E3300523A2D /* LegacyVC.swift */,
+				32BB5A8623485E6800523A2D /* MapVC.swift */,
+				32A8D0102349216F0083E46F /* EmbedMapVC.swift */,
+				7FB3268D237EBBB2006240AD /* icon.png */,
+				7FB3268B237E9D70006240AD /* DirectionsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,9 +250,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0130DC452034B06400362B90 /* Build configuration list for PBXNativeTarget "CFGC" */;
 			buildPhases = (
+				5002031FF27ED9B0C2E99910 /* [CP] Check Pods Manifest.lock */,
 				0130DC2F2034B06400362B90 /* Sources */,
 				0130DC302034B06400362B90 /* Frameworks */,
 				0130DC312034B06400362B90 /* Resources */,
+				111BA0956F2EED860AF33E7E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,6 +277,7 @@
 				TargetAttributes = {
 					0130DC322034B06400362B90 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1100;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -242,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0130DC412034B06400362B90 /* LaunchScreen.storyboard in Resources */,
+				7FB3268E237EBBB3006240AD /* icon.png in Resources */,
 				8B24CBFC2048ECB600FE6390 /* sqlData_1.txt in Resources */,
 				0130DC3E2034B06400362B90 /* Assets.xcassets in Resources */,
 				0130DC3C2034B06400362B90 /* Main.storyboard in Resources */,
@@ -250,6 +315,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		111BA0956F2EED860AF33E7E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CFGC/Pods-CFGC-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CFGC/Pods-CFGC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5002031FF27ED9B0C2E99910 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CFGC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0130DC2F2034B06400362B90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -257,23 +367,37 @@
 			files = (
 				8B85E83A20921D1600EA36F6 /* cfgcDataModel.xcdatamodeld in Sources */,
 				8BB974F2203B5EF1008039BB /* LoginViewController.swift in Sources */,
+				32BB5A7D23485D3800523A2D /* BICVC.swift in Sources */,
+				32BB5A8323485E0300523A2D /* GrantsVC.swift in Sources */,
+				7FB3268C237E9D70006240AD /* DirectionsVC.swift in Sources */,
 				8B05D0C4208E034200E468F1 /* WebVC.swift in Sources */,
 				8B24CBFA2048C93200FE6390 /* ContactCard.swift in Sources */,
+				32BB5A7F23485D8600523A2D /* BellesVC.swift in Sources */,
 				8B85E8842092486500EA36F6 /* Thumbnail+CoreDataClass.swift in Sources */,
 				8B37B8CF2060C43F00611889 /* SegueFromRight.swift in Sources */,
 				8B0C5F34208DD33B006FF116 /* UIViewControllerExtensions.swift in Sources */,
 				8B85E8862092486500EA36F6 /* FullRes+CoreDataClass.swift in Sources */,
+				32B3CB0823483C6E00534E4A /* ImpactVC.swift in Sources */,
+				32B3CB0223481C8500534E4A /* HomePageVC.swift in Sources */,
+				32B3CB0623483C3300534E4A /* EventsVC.swift in Sources */,
 				8B85E834209177A800EA36F6 /* UIImageExt.swift in Sources */,
 				8BD6DC5C203B38F800788CB6 /* ContactCell.swift in Sources */,
+				32A8D0112349216F0083E46F /* EmbedMapVC.swift in Sources */,
 				8BD6DC5F203B3E4300788CB6 /* ContactModel.swift in Sources */,
 				8B639E332060958000C0D525 /* SegueFromLeft.swift in Sources */,
 				0130DC392034B06400362B90 /* ContactVC.swift in Sources */,
+				32B3CB0A23483C9F00534E4A /* MembershipVC.swift in Sources */,
+				32BB5A7B23485CC900523A2D /* ContactUsVC.swift in Sources */,
+				32BB5A8523485E3300523A2D /* LegacyVC.swift in Sources */,
 				8BC643292044F22F00AC8C8C /* InfoVC.swift in Sources */,
 				8B8560FA205EEF0600470330 /* User.swift in Sources */,
+				32BB5A8123485DB700523A2D /* ProjectsVC.swift in Sources */,
 				8B85E8852092486500EA36F6 /* Thumbnail+CoreDataProperties.swift in Sources */,
 				8B639E2F20608ABF00C0D525 /* BiographicalVC.swift in Sources */,
 				8B79A88B20620B9A00716D47 /* Background.swift in Sources */,
 				8B85E8872092486500EA36F6 /* FullRes+CoreDataProperties.swift in Sources */,
+				32BB5A8723485E6800523A2D /* MapVC.swift in Sources */,
+				32B3CB0423483BC300534E4A /* TourVC.swift in Sources */,
 				0130DC372034B06400362B90 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,30 +537,32 @@
 		};
 		0130DC462034B06400362B90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67DA5C6E2772DB0B68867871 /* Pods-CFGC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WK34JP3G3D;
+				DEVELOPMENT_TEAM = FL6J78634M;
 				INFOPLIST_FILE = CFGC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Cory.CFGC;
+				PRODUCT_BUNDLE_IDENTIFIER = Baker.CFGC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		0130DC472034B06400362B90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6B67BCF05C19C94C6442A30 /* Pods-CFGC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WK34JP3G3D;
+				DEVELOPMENT_TEAM = FL6J78634M;
 				INFOPLIST_FILE = CFGC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Cory.CFGC;
+				PRODUCT_BUNDLE_IDENTIFIER = Baker.CFGC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
