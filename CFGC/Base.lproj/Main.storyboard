@@ -220,10 +220,10 @@
                                 <rect key="frame" x="16" y="161" width="288" height="263"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4I-PL-ATi">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="532"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="845"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyD-sd-RIh" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="532"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="845"/>
                                                 <string key="text">Our USPS Mailing Address:
 
 Cape Fear Garden Club, Inc.
@@ -255,7 +255,7 @@ AzaleaBellesChair[@]CapeFearGardenClub.org
 Webmaster:
 Rahel Haley
 Webmaster[@]CapeFearGardenClub.org</string>
-                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -396,10 +396,10 @@ Webmaster[@]CapeFearGardenClub.org</string>
                                 <rect key="frame" x="16" y="161" width="288" height="263"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQD-YL-j9v">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="1064"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="1548.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3s-I3-HJn" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="1064"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="1548.5"/>
                                                 <string key="text">CAPE FEAR GARDEN CLUB, INC
 WILMINGTON, NORTH CAROLINA
 
@@ -449,7 +449,7 @@ Mrs. W.E. Elliott
 Mrs. William Latimer
 Mrs. Martin Willard
 Miss Sarah Lippitt</string>
-                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -613,14 +613,14 @@ Miss Sarah Lippitt</string>
                                 <rect key="frame" x="16" y="161" width="288" height="220"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTq-GO-qpP">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="938.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="1508.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHB-4E-Vkb" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="938.5"/>
-                                                <string key="text">Several landscape installations throughout New Hanover County have been initiated by the Cape Fear Garden Club.
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="1508.5"/>
+                                                <mutableString key="text">Several landscape installations throughout New Hanover County have been initiated by the Cape Fear Garden Club.
 
 AIRLIE SHOWCASE GARDEN
-Airlie Showcase Garden was born in 2006 with an Asian design.   Over time the garden had outgrown its borders.  The idea of changing the garden to a Southern Garden was presented at the September 2015 General Meeting.  In late winter of 2016 the Asian garden was torn out and the Southern Garden was completed in early April 2016.
+Airlie Showcase Garden was born in 2006 with an Asian design. Over time the garden had outgrown its borders.  The idea of changing the garden to a Southern Garden was presented at the September 2015 General Meeting. In late winter of 2016 the Asian garden was torn out and the Southern Garden was completed in early April 2016.
 
 The Southern Garden is filled with Encore Azaleas, Drift Roses, Endless Summer Hydrangeas, Yew Prostrata, and Dwarf Lorepetalum.  The border for the garden is white Sasanqua Camellias.  In the spring the garden has the sweet aroma of Confederate Jasmine which covers an arbor at the entrance.  In addition to the plants there are two Red Maple trees that offer some shade.  A slate walkway outlined with Dwarf Mondo grass leads to a white vineyard bench.
 
@@ -628,8 +628,8 @@ The garden has a different but tranquil feeling when it is lite during Enchanted
 
 BIRDS AND BUTTERFLIES Birds and Butterflies installs bluebird trails and butterfly gardens as the opportunity presents itself in the community, as well as assisting with community projects that relate to Birds and Butterflies.  Bluebird trails include those at the Seaspray Landing community, in honor of Doris Ayers, a CFGC member, and the trail at River Bluffs, a low-impact development community overlooking the Cape Fear River. As a designated LID community, it provides a wetland area to temporarily store, filter and clean runoff water rather than using retention ponds. They provide habitat for many creatures such as birds, butterflies, bees, salamanders, toads and frogs. Bluebirds had taken up residence as of spring 2017 at both locations.  
 
-Additional committees focus on: civic improvements, such as tree canopy replacement after storms and Beauty Spot awards; conservation projects; gardening for wildlife, educating the public on how to create a wildlife habitat; and leading youth garden clubs, helping several local elementary schools plant wildlife habitats on their campus.</string>
-                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+Additional committees focus on: civic improvements, such as tree canopy replacement after storms and Beauty Spot awards; conservation projects; gardening for wildlife, educating the public on how to create a wildlife habitat; and leading youth garden clubs, helping several local elementary schools plant wildlife habitats on their campus.</mutableString>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -797,15 +797,15 @@ Additional committees focus on: civic improvements, such as tree canopy replacem
                                 <rect key="frame" x="16" y="161" width="288" height="220"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsx-cn-7gT">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="282"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="483"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aft-t7-Rzx" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="282"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="483"/>
                                                 <string key="text">For over 50 years, the Azalea Garden Tour, sponsored by the Cape Fear Garden Club, has proudly returned thousands of dollars to New Hanover County. Tour profits Money available to beautify, conserve, educate, inspire, and contribute to people of all ages using horticulture and garden development. 
 
 BEAUTIFICATION ENDOWMENT FUND
 The Cape Fear Garden Club works with the North Carolina Community Foundation (NCCF) to maintain and invest Club funds set aside to ensure the long-term commitment of the Club to its mission in the New Hanover County community.  Events, such as the Southern Soiree in honor of a notable Club member, are held each year to support this endowment fund.</string>
-                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1069,10 +1069,10 @@ The Cape Fear Garden Club works with the North Carolina Community Foundation (NC
                                 <rect key="frame" x="16" y="161" width="288" height="263"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nwk-hX-exf">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="563.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="905"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CES-WZ-neC" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="563.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="905"/>
                                                 <string key="text">Belle Mission Statement
 
 The Cape Fear Garden Club, Inc. Azalea Belles© serve as ambassadors for The Cape Fear Garden Club, Inc., the North Carolina Azalea Festival and the City of Wilmington. This is a diverse group of young women dressed in colorful gowns that complement the blooms and surrounding landscapes of Wilmington, greet visitors to the Cape Fear Garden Club Azalea Garden Tour©, and participate in other events related to the North Carolina Azalea Festival.
@@ -1083,7 +1083,7 @@ Criteria for being selected as an Azalea Belle:
 · A young lady who wishes to be a Belle may not participate in the Azalea Scholarship Pageant in the same year she serves as a Belle.
 
 Updated information concerning The Cape Fear Garden Club, Inc. Azalea Belles© may be found on the website of The Cape Fear Garden Club at capefeargardenclub.org and on Facebook at www.facebook.com/AzaleaBelles</string>
-                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1202,14 +1202,14 @@ Updated information concerning The Cape Fear Garden Club, Inc. Azalea Belles© m
                                 <rect key="frame" x="16" y="161" width="288" height="321"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jd9-EG-246">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="407"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="664"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSU-wV-SWX" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="407"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="664"/>
                                                 <string key="text">Battery Island Committee highlights the twenty-three-year relationship that The Cape Fear Garden Club, Inc. has in working closely with Audubon NC's Coastal Office and biologists to maintain safe habitats for the migratory birds, specifically the islands in the Lower Cape Fear River where they nest. 
 
 The Cape Fear Garden Club, Inc. assists Audubon in funding through a standing annual grant and through education outreach by sponsoring the annual Spring Cruise to the Bird Islands in the Lower Cape Fear River each May. This committee supports Audubon with cleanups on Battery Island in the spring before nesting season begins and the fall after the nesting season is complete. Our main concern is to get debris that floats in off the Cape Fear River and specifically fishing line off the island because of the danger of entanglement of pelicans and other shorebirds. The Committee also does the detailed planning and coordination for The Cape Fear Garden Club for the Spring Cruise to the Bird Islands in the Lower Cape Fear River.</string>
-                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1369,10 +1369,10 @@ The Cape Fear Garden Club, Inc. assists Audubon in funding through a standing an
                                 <rect key="frame" x="16" y="161" width="288" height="220"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WEH-a1-yP3">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="2956.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="4645.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwW-9e-mde" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="2956.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="4645.5"/>
                                                 <string key="text">For almost 90 years the Cape Fear Garden Club has worked to enhance and support the natural beauty of Wilmington. In 2011, we created the Cape Fear Garden Club Beautification Endowment to create perpetual funding to promote wide scale enhancement and maintenance of the landscapes of our city gateways, medians, byways and public spaces. Below is an overview of how recent grants benefit our Wilmington community:
 
 BEAUTIFICATION:
@@ -1434,7 +1434,7 @@ PHILANTHROPIC:
 ENDOWED SCHOLARSHIPS:
     Cape Fear Community College
     University of North Carolina, Wilmington </string>
-                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1580,14 +1580,14 @@ ENDOWED SCHOLARSHIPS:
                                 <rect key="frame" x="16" y="153" width="288" height="271"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="99M-cL-w7v">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="313"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="543"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlw-Zl-dkG" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="313"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="543"/>
                                                 <string key="text">Come enjoy Southern hospitality amid the vibrant color of azaleas and spring flowers during the Annual Cape Fear Garden Club Azalea Garden Tour© in the beautiful coastal community of Wilmington, North Carolina. An official event of the North Carolina Azalea Festival, the tour is one of the longest running and most popular garden tours in the South.
 
 Proceeds from the Cape Fear Garden Club Azalea Garden Tour© are reinvested in the community through beautification and horticultural grants within New Hanover County, scholarships at the University of North Carolina Wilmington and Cape Fear Community College, and conservation efforts at Battery Island, a National Audubon Society bird sanctuary. The club has granted over $1 million in donations to the community in the past 61 years.</string>
-                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1656,10 +1656,10 @@ Proceeds from the Cape Fear Garden Club Azalea Garden Tour© are reinvested in t
                                 <rect key="frame" x="16" y="161" width="288" height="321"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpy-0p-83I">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="594.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="1026"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4D-DB-gLf" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="594.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="1026"/>
                                                 <string key="text">Mark your Calendar for the 2020 Cruise!
 
 The Battery Island/Birds of the Lower Cape Fear Cruise will sail on Sunday, May 17, 2020. 
@@ -1677,7 +1677,7 @@ The cruise will include islands in the lower Cape Fear River where the birds hav
 Bring your camera and binoculars to view nesting areas of many coastal water birds including pelicans, white ibis, great egrets and herons. Pack a picnic lunch if you would like. Soft drinks, water and snacks will be sold aboard ship.
 
 Additional information is available by emailing birdislandcruise@capefeargardenclub.org.</string>
-                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1886,10 +1886,10 @@ Additional information is available by emailing birdislandcruise@capefeargardenc
                                 <rect key="frame" x="16" y="161" width="288" height="220"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1iD-ZG-2dw">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="673"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="1106.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sig-yN-jme" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="673"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="1106.5"/>
                                                 <string key="text">Proceeds of the 2018 Azalea Festival Garden Tour, totalling $72,326, were awarded to grant recipients on November 14, 2018. The Cape Fear Garden Club is pleased to have David Johnson, owner of Johnson Nursery-Gardens Direct, as a sponsor for the 2018 Grant Recipients received a $300 credit to be used at his nursery located in Willard or by ordering on line.
 
 GRANT RECIPIENTS
@@ -1923,7 +1923,7 @@ Standing Grants
 North Carolina Audubon Society Grant
 Cape Fear Community College Scholarship
 University of North Carolina Wilmington Scholarship</string>
-                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -2002,7 +2002,7 @@ University of North Carolina Wilmington Scholarship</string>
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="343"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WC9-vc-EHE" userLabel="HomeButton">
-                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="72.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" button="YES" image="YES"/>
                                                         </accessibility>
@@ -2013,13 +2013,13 @@ University of North Carolina Wilmington Scholarship</string>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Membership Directory" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="xmZ-gt-BpD">
-                                                        <rect key="frame" x="0.0" y="92.5" width="320" height="20"/>
+                                                        <rect key="frame" x="0.0" y="93" width="320" height="103.5"/>
                                                         <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="21"/>
                                                         <color key="textColor" red="0.18779702289086012" green="0.43214625634517767" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CarolinaYellowJessamineMed1" translatesAutoresizingMaskIntoConstraints="NO" id="MX3-pi-Wet">
-                                                        <rect key="frame" x="0.0" y="132.5" width="320" height="210.5"/>
+                                                        <rect key="frame" x="0.0" y="216.5" width="320" height="126.5"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
@@ -2905,16 +2905,16 @@ Wilmington, NC 28403</string>
     <inferredMetricsTieBreakers>
         <segue reference="cZF-10-4Rl"/>
         <segue reference="2kb-zO-Cul"/>
-        <segue reference="zjO-Lx-Eqy"/>
-        <segue reference="y3k-WG-u1D"/>
-        <segue reference="Jcw-jy-QDr"/>
-        <segue reference="wWO-MV-KEj"/>
-        <segue reference="1uL-Ti-aiY"/>
-        <segue reference="kWx-oG-9T9"/>
-        <segue reference="kYe-Pu-ghP"/>
-        <segue reference="RUd-Le-6J6"/>
-        <segue reference="qe5-Iy-MgD"/>
-        <segue reference="mgI-9s-2fW"/>
-        <segue reference="ju9-hf-rjG"/>
+        <segue reference="czg-DI-FVn"/>
+        <segue reference="iRi-0V-gkS"/>
+        <segue reference="LWn-5P-J6g"/>
+        <segue reference="ix7-Jp-m5q"/>
+        <segue reference="m3H-ix-876"/>
+        <segue reference="L39-3r-Fou"/>
+        <segue reference="U5T-a2-BNb"/>
+        <segue reference="Dlo-LM-TPn"/>
+        <segue reference="fYJ-bc-AH4"/>
+        <segue reference="Wjg-hC-N3U"/>
+        <segue reference="iun-Ec-TtN"/>
     </inferredMetricsTieBreakers>
 </document>

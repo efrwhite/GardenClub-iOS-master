@@ -467,17 +467,47 @@ class InfoVC: UIViewController, MFMessageComposeViewControllerDelegate, MFMailCo
     }
     
     @IBAction func textMessagePressed(_ sender: Any) {
-        let textMessageRecipients = [contact.PrimaryContactNo]
-        if MFMessageComposeViewController.canSendText(){
-            let messageComposeVC = MFMessageComposeViewController()
-            messageComposeVC.messageComposeDelegate = self
-            messageComposeVC.recipients = textMessageRecipients
-            messageComposeVC.body = "Sending from my iPhone"
-            self.present(messageComposeVC, animated: true, completion: nil)
+        let primaryNum = contact.PrimaryContactNo.replacingOccurrences(of: ".", with: "")
+        let secondaryNum = contact.SecondaryContactNo.replacingOccurrences(of: ".", with: "")
+        
+        let phoneActionSheet = UIAlertController(title: "Please Select A Number", message: "", preferredStyle: UIAlertController.Style.actionSheet)
+        
+        let primaryPhoneButtonAction = UIAlertAction(title: "Primary Phone: " + contact.PrimaryContactNo, style: UIAlertAction.Style.default){(ACTION) in
+            if MFMessageComposeViewController.canSendText(){
+                let messageComposeVC = MFMessageComposeViewController()
+                messageComposeVC.messageComposeDelegate = self
+                messageComposeVC.recipients = [primaryNum]
+                messageComposeVC.body = "Sending from my iPhone"
+                self.present(messageComposeVC, animated: true, completion: nil)
+            }
+            else {
+                print ("SMS service is not available")
+            }
         }
-        else {
-            print ("SMS service is not available")
+        
+        let secondaryPhoneButtonAction = UIAlertAction(title: "Secondary Phone: " + contact.SecondaryContactNo, style: UIAlertAction.Style.default){(ACTION) in
+            if MFMessageComposeViewController.canSendText(){
+                let messageComposeVC = MFMessageComposeViewController()
+                messageComposeVC.messageComposeDelegate = self
+                messageComposeVC.recipients = [secondaryNum]
+                messageComposeVC.body = "Sending from my iPhone"
+                self.present(messageComposeVC, animated: true, completion: nil)
+            }
+            else {
+                print ("SMS service is not available")
+            }
         }
+        
+        let cancelButtonAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default){
+            (ACTION) in
+            print("canceled")
+        }
+        
+        phoneActionSheet.addAction(primaryPhoneButtonAction)
+        phoneActionSheet.addAction(secondaryPhoneButtonAction)
+        phoneActionSheet.addAction(cancelButtonAction)
+        
+        self.present(phoneActionSheet, animated: true, completion: nil)
     }
     
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
