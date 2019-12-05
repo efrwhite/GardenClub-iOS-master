@@ -617,7 +617,7 @@ Miss Sarah Lippitt</string>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHB-4E-Vkb" userLabel="Description">
                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="1508.5"/>
-                                                <mutableString key="text">Several landscape installations throughout New Hanover County have been initiated by the Cape Fear Garden Club.
+                                                <string key="text">Several landscape installations throughout New Hanover County have been initiated by the Cape Fear Garden Club.
 
 AIRLIE SHOWCASE GARDEN
 Airlie Showcase Garden was born in 2006 with an Asian design. Over time the garden had outgrown its borders.  The idea of changing the garden to a Southern Garden was presented at the September 2015 General Meeting. In late winter of 2016 the Asian garden was torn out and the Southern Garden was completed in early April 2016.
@@ -628,7 +628,7 @@ The garden has a different but tranquil feeling when it is lite during Enchanted
 
 BIRDS AND BUTTERFLIES Birds and Butterflies installs bluebird trails and butterfly gardens as the opportunity presents itself in the community, as well as assisting with community projects that relate to Birds and Butterflies.  Bluebird trails include those at the Seaspray Landing community, in honor of Doris Ayers, a CFGC member, and the trail at River Bluffs, a low-impact development community overlooking the Cape Fear River. As a designated LID community, it provides a wetland area to temporarily store, filter and clean runoff water rather than using retention ponds. They provide habitat for many creatures such as birds, butterflies, bees, salamanders, toads and frogs. Bluebirds had taken up residence as of spring 2017 at both locations.  
 
-Additional committees focus on: civic improvements, such as tree canopy replacement after storms and Beauty Spot awards; conservation projects; gardening for wildlife, educating the public on how to create a wildlife habitat; and leading youth garden clubs, helping several local elementary schools plant wildlife habitats on their campus.</mutableString>
+Additional committees focus on: civic improvements, such as tree canopy replacement after storms and Beauty Spot awards; conservation projects; gardening for wildlife, educating the public on how to create a wildlife habitat; and leading youth garden clubs, helping several local elementary schools plant wildlife habitats on their campus.</string>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -2002,7 +2002,7 @@ University of North Carolina Wilmington Scholarship</string>
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="343"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WC9-vc-EHE" userLabel="HomeButton">
-                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="72.5"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" button="YES" image="YES"/>
                                                         </accessibility>
@@ -2013,13 +2013,13 @@ University of North Carolina Wilmington Scholarship</string>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Membership Directory" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="xmZ-gt-BpD">
-                                                        <rect key="frame" x="0.0" y="93" width="320" height="103.5"/>
+                                                        <rect key="frame" x="0.0" y="92.5" width="320" height="20"/>
                                                         <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="21"/>
                                                         <color key="textColor" red="0.18779702289086012" green="0.43214625634517767" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CarolinaYellowJessamineMed1" translatesAutoresizingMaskIntoConstraints="NO" id="MX3-pi-Wet">
-                                                        <rect key="frame" x="0.0" y="216.5" width="320" height="126.5"/>
+                                                        <rect key="frame" x="0.0" y="132.5" width="320" height="210.5"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
@@ -2237,6 +2237,9 @@ University of North Carolina Wilmington Scholarship</string>
                                                     <state key="normal">
                                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="ultraLight"/>
                                                     </state>
+                                                    <connections>
+                                                        <segue destination="jLi-Rt-1um" kind="show" id="SKd-Hl-PXH"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.95686274510000002" green="0.84313725490000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2339,6 +2342,46 @@ University of North Carolina Wilmington Scholarship</string>
                 <tapGestureRecognizer id="vUX-Oo-5Uc" userLabel="imageTapped"/>
             </objects>
             <point key="canvasLocation" x="-7365" y="527.11267605633805"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aph-jh-xQV">
+            <objects>
+                <viewController id="jLi-Rt-1um" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZY9-4i-xzC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CarolinaYellowJessamineMed1" translatesAutoresizingMaskIntoConstraints="NO" id="Nfw-2Y-lod">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFX-7P-ali">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <connections>
+                                    <segue destination="O3Q-4l-Vd9" kind="show" id="kuP-Gn-wsk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eC9-Hd-e7f" firstAttribute="bottom" secondItem="Nfw-2Y-lod" secondAttribute="bottom" id="2QR-5A-eTV"/>
+                            <constraint firstItem="Nfw-2Y-lod" firstAttribute="leading" secondItem="eC9-Hd-e7f" secondAttribute="leading" id="7ji-VH-oju"/>
+                            <constraint firstItem="EFX-7P-ali" firstAttribute="leading" secondItem="eC9-Hd-e7f" secondAttribute="leading" id="AOD-hN-bnz"/>
+                            <constraint firstItem="eC9-Hd-e7f" firstAttribute="trailing" secondItem="EFX-7P-ali" secondAttribute="trailing" id="M3c-zQ-7QM"/>
+                            <constraint firstItem="Nfw-2Y-lod" firstAttribute="top" secondItem="eC9-Hd-e7f" secondAttribute="top" id="OT9-ua-Cc6"/>
+                            <constraint firstItem="EFX-7P-ali" firstAttribute="top" secondItem="eC9-Hd-e7f" secondAttribute="top" id="YfT-vq-20E"/>
+                            <constraint firstItem="eC9-Hd-e7f" firstAttribute="bottom" secondItem="EFX-7P-ali" secondAttribute="bottom" id="lIU-vf-Qgh"/>
+                            <constraint firstItem="eC9-Hd-e7f" firstAttribute="trailing" secondItem="Nfw-2Y-lod" secondAttribute="trailing" id="leh-AN-L66"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eC9-Hd-e7f"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gzk-4E-oaQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqT-3w-txx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7370.625" y="1244.3661971830986"/>
         </scene>
         <!--InfoVC-->
         <scene sceneID="kEK-5e-Zco">
@@ -2904,8 +2947,8 @@ Wilmington, NC 28403</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="cZF-10-4Rl"/>
-        <segue reference="2kb-zO-Cul"/>
-        <segue reference="czg-DI-FVn"/>
+        <segue reference="kuP-Gn-wsk"/>
+        <segue reference="zjO-Lx-Eqy"/>
         <segue reference="iRi-0V-gkS"/>
         <segue reference="LWn-5P-J6g"/>
         <segue reference="ix7-Jp-m5q"/>

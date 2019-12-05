@@ -73,25 +73,8 @@ class ContactVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     
     func buildContacts() {
         
-        if !sortSwitch.isOn {
-            sortLabel.text = "Sort Last"
-            contactCards = contactCards.sorted{ ($0.LastName == $1.LastName ? $0.FirstName < $1.FirstName : $0.LastName < $1.LastName) } //sort array
+        if sortSwitch.isOn {
             
-            for user in contactCards {
-                var userKey = String(user.LastName.prefix(1))
-                if (userKey == userKey.lowercased()){
-                    userKey = userKey.uppercased()
-                }
-                
-                if var userValues = userDictionary[userKey] {
-                    userValues.append(user)
-                    
-                    userDictionary[userKey] = userValues
-                } else {
-                    userDictionary[userKey] = [user]
-                }
-            }
-        } else if sortSwitch.isOn {
             sortLabel.text = "Sort First"
             contactCards = contactCards.sorted{ ($0.FirstName == $1.FirstName ? $0.LastName < $1.LastName : $0.FirstName < $1.FirstName) } //sort array
 
@@ -104,6 +87,25 @@ class ContactVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
                 if var userValues = userDictionary[userKey] {
                     userValues.append(user)
 
+                    userDictionary[userKey] = userValues
+                } else {
+                    userDictionary[userKey] = [user]
+                }
+            }
+        } else if sortSwitch.isOn == false {
+            
+            sortLabel.text = "Sort Last"
+            contactCards = contactCards.sorted{ ($0.LastName == $1.LastName ? $0.FirstName < $1.FirstName : $0.LastName < $1.LastName) } //sort array
+            
+            for user in contactCards {
+                var userKey = String(user.LastName.prefix(1))
+                if (userKey == userKey.lowercased()){
+                    userKey = userKey.uppercased()
+                }
+                
+                if var userValues = userDictionary[userKey] {
+                    userValues.append(user)
+                    
                     userDictionary[userKey] = userValues
                 } else {
                     userDictionary[userKey] = [user]
