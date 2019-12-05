@@ -193,13 +193,10 @@ class ContactVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         if(inSearchMode){
             var contact: ContactCard!
             let userKey = filteredUserSectionTitles[indexPath.section]
-            
             contact = filteredDictionary[userKey]?[indexPath.row]
-            
             performSegue(withIdentifier: "InfoVC", sender: contact)
         }
         

@@ -21,6 +21,9 @@ class ContactCell: UITableViewCell {
         // Initialization code
     }
 
+    @IBAction func enlargeImg(_ sender: UIButton) {
+        
+    }
     
     /**
     
@@ -132,7 +135,6 @@ class ContactCell: UITableViewCell {
             }catch{
                 print("failed")
             }
-            
         }
     }
 }
