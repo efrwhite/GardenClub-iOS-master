@@ -23,8 +23,8 @@ class InfoVC: UIViewController, MFMessageComposeViewControllerDelegate, MFMailCo
     @IBOutlet weak var editBtn: UIBarButtonItem!
     
     @IBOutlet weak var contactImage: UIImageView!
-
-    @IBOutlet var swipe: UISwipeGestureRecognizer!
+    
+    @IBOutlet weak var moreInfoButton: UIBarButtonItem!
 
     @IBOutlet weak var nameTxt: UITextField!
 
@@ -125,6 +125,7 @@ class InfoVC: UIViewController, MFMessageComposeViewControllerDelegate, MFMailCo
     @IBAction func editBtnPressed(_ sender: Any){
         inEditState = true
         membersBackBtn.isEnabled = false
+        moreInfoButton.isEnabled = false
         editBtn.isEnabled = false
         cancelBtn.isEnabled = true
         cancelBtn.tintColor = UIColor(red: 0, green: 122/255, blue: 1, alpha: 1)
@@ -298,6 +299,7 @@ class InfoVC: UIViewController, MFMessageComposeViewControllerDelegate, MFMailCo
         shouldRaiseKeyboard = false
         //print("building info screen")
         membersBackBtn.isEnabled = true
+        moreInfoButton.isEnabled = true
         
         saveBtn.isEnabled = false
         saveBtn.tintColor = UIColor.clear
@@ -421,10 +423,8 @@ class InfoVC: UIViewController, MFMessageComposeViewControllerDelegate, MFMailCo
         performSegue(withIdentifier: "ContactVC", sender: nil)
     }
     
-    @IBAction func swipeHandler(_ gestureRecognizer : UISwipeGestureRecognizer){
-        if gestureRecognizer.state == .ended && !inEditState{
-            performSegue(withIdentifier: "BiographicalVC", sender: contact)
-        }
+    @IBAction func moreInfoPressed(_ sender: UIBarButtonItem){
+        performSegue(withIdentifier: "BiographicalVC", sender: contact)
     }
     
     @IBAction func callBtnPressed(_ sender: UIBarButtonItem){

@@ -1,20 +1,22 @@
 //
-//  ViewController.swift
+//  ContactFirstSortVC.swift
 //  CFGC
 //
-//  Created by Cory Shrum on 2/19/18.
-//  Copyright © 2018 Tabor Scott. All rights reserved.
+//  Created by Elizabeth Baker on 12/6/19.
+//  Copyright © 2019 Tabor Scott. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
-class ContactVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, NSFetchedResultsControllerDelegate {
+class ContactFirstSortVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, NSFetchedResultsControllerDelegate {
     
     var controller: NSFetchedResultsController<Thumbnail>!
     
     @IBOutlet weak var logoutBtn: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var sortSwitch: UISwitch!
+    @IBOutlet weak var sortLabel: UILabel!
     var currentUser: User?
     var userDictionary = [String: [ContactCard]]()
     var userSectionTitles = [String]()
@@ -62,13 +64,20 @@ class ContactVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
             let error = error as? NSError
             print("\(error)")
         }
+        
+    }
+    
+    @IBAction func switchChange(sender: UISwitch) {
+        performSegue(withIdentifier: "SortLast", sender: UISwitch())
     }
     
     func buildContacts() {
-        contactCards = contactCards.sorted{ ($0.LastName == $1.LastName ? $0.FirstName < $1.FirstName : $0.LastName < $1.LastName) } //sort array
+        sortLabel.text = "Sort First"
+        sortSwitch.isOn = true
+        contactCards = contactCards.sorted{ ($0.FirstName == $1.FirstName ? $0.LastName < $1.LastName : $0.FirstName < $1.FirstName) } //sort array
         
         for user in contactCards {
-            var userKey = String(user.LastName.prefix(1))
+            var userKey = String(user.FirstName.prefix(1))
             if (userKey == userKey.lowercased()){
                 userKey = userKey.uppercased()
             }
@@ -166,7 +175,7 @@ class ContactVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
             var contact: ContactCard!
             let userKey = filteredUserSectionTitles[indexPath.section]
             contact = filteredDictionary[userKey]?[indexPath.row]
-            performSegue(withIdentifier: "InfoVC", sender: contact)
+            performSegue(withIdentifier: "InfoVC2", sender: contact)
         }
         
         var contact: ContactCard!
@@ -175,14 +184,14 @@ class ContactVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         
         contact = userDictionary[userKey]?[indexPath.row]
         
-        performSegue(withIdentifier: "InfoVC", sender: contact)
+        performSegue(withIdentifier: "InfoVC2", sender: contact)
     }
     
     @IBAction func logoutBtnPressed(_ logoutBtn: UIBarButtonItem){
         //segue to loginVC with empty currentUser
         //send empty user
         let user = User(userName: "", password: "")
-        performSegue(withIdentifier: "LoginVC", sender: user)
+        performSegue(withIdentifier: "LoginVC2", sender: user)
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -286,7 +295,7 @@ class ContactVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "InfoVC"{
+        if segue.identifier == "InfoVC2"{
             if let infoVC = segue.destination as? InfoVC{
                 if let contact = sender as? ContactCard {
                     infoVC.contact = contact;
@@ -296,7 +305,7 @@ class ContactVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
             }
         }
         
-        if segue.identifier == "LoginVC"{
+        if segue.identifier == "LoginVC2"{
             if let loginVC = segue.destination as? LoginViewController{
                 if let user = sender as? User{
                     loginVC.previousLogin = self.currentUser
@@ -315,4 +324,3 @@ class ContactVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         self.present(alert, animated: true, completion: nil)
     }
 }
-

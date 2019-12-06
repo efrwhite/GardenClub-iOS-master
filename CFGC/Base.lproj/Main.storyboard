@@ -2107,7 +2107,6 @@ University of North Carolina Wilmington Scholarship</string>
                         <outlet property="scrollView" destination="qOp-ec-WME" id="gmX-ax-6cY"/>
                         <outlet property="submitBtn" destination="ixd-b3-o3O" id="ZiV-JN-SVC"/>
                         <outlet property="userName" destination="Szi-jh-rhl" id="txu-Fw-xwZ"/>
-                        <segue destination="7zg-cs-YPY" kind="show" identifier="ContactVC" customClass="SegueFromRight" customModule="CFGC" customModuleProvider="target" id="yyA-Nf-nzp"/>
                         <segue destination="e6E-fu-vXT" kind="custom" identifier="WebVC" customClass="SegueFromRight" customModule="CFGC" customModuleProvider="target" id="6DQ-lR-YEw"/>
                     </connections>
                 </viewController>
@@ -2156,12 +2155,12 @@ University of North Carolina Wilmington Scholarship</string>
                         <outlet property="myWebView" destination="cEe-Sf-u8r" id="LIa-oa-c1w"/>
                         <outlet property="statusTextField" destination="Fgn-Vn-v5V" id="xrx-Oy-9Hc"/>
                         <segue destination="BYZ-38-t0r" kind="custom" identifier="LoginViewController" customClass="SegueFromLeft" customModule="CFGC" customModuleProvider="target" id="eej-mB-of4"/>
-                        <segue destination="7zg-cs-YPY" kind="show" identifier="ContactVC" customClass="SegueFromRight" customModule="CFGC" customModuleProvider="target" id="2kb-zO-Cul"/>
+                        <segue destination="O3Q-4l-Vd9" kind="show" identifier="ContactVC" id="olH-7l-l6G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hGW-oM-svK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6024" y="1321"/>
+            <point key="canvasLocation" x="-5925" y="1382"/>
         </scene>
         <!--ContactScreen-->
         <scene sceneID="rYU-CB-u7Q">
@@ -2172,7 +2171,7 @@ University of North Carolina Wilmington Scholarship</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZFd-Fn-3NR">
-                                <rect key="frame" x="0.0" y="56" width="320" height="112"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
                                 <subviews>
                                     <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gfv-k7-nyy">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
@@ -2193,7 +2192,7 @@ University of North Carolina Wilmington Scholarship</string>
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="prq-jr-TSG">
-                                <rect key="frame" x="0.0" y="265" width="320" height="283"/>
+                                <rect key="frame" x="0.0" y="178" width="320" height="370"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactCell" rowHeight="42" id="xjt-mm-DGa" customClass="ContactCell" customModule="CFGC" customModuleProvider="target">
@@ -2232,36 +2231,19 @@ University of North Carolina Wilmington Scholarship</string>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.95686274510000002" green="0.84313725490000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </stackView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hab-B2-DhW">
-                                                    <rect key="frame" x="5" y="0.0" width="42" height="42"/>
-                                                    <state key="normal">
-                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="ultraLight"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="enlargeImg:" destination="xjt-mm-DGa" eventType="touchUpInside" id="pKQ-8x-jW9"/>
-                                                        <segue destination="jLi-Rt-1um" kind="show" identifier="TableViewToEnlargedImg" id="SKd-Hl-PXH"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.95686274510000002" green="0.84313725490000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstItem="hab-B2-DhW" firstAttribute="height" secondItem="L23-eZ-jeg" secondAttribute="height" id="3IZ-jh-iOM"/>
                                                 <constraint firstAttribute="bottom" secondItem="L23-eZ-jeg" secondAttribute="bottom" id="6Ha-vR-JUI"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aa0-U3-qcC" secondAttribute="trailing" id="7Nz-Q2-OMM"/>
-                                                <constraint firstItem="hab-B2-DhW" firstAttribute="leading" secondItem="L23-eZ-jeg" secondAttribute="leading" id="9kK-5P-q0A"/>
-                                                <constraint firstItem="hab-B2-DhW" firstAttribute="trailing" secondItem="L23-eZ-jeg" secondAttribute="trailing" id="D1h-eH-eRA"/>
                                                 <constraint firstItem="L23-eZ-jeg" firstAttribute="top" secondItem="WyC-TC-sJt" secondAttribute="top" id="EGt-mF-iGI"/>
                                                 <constraint firstItem="aa0-U3-qcC" firstAttribute="leading" secondItem="L23-eZ-jeg" secondAttribute="trailing" constant="10" id="FbQ-Qb-Sdq"/>
                                                 <constraint firstItem="L23-eZ-jeg" firstAttribute="leading" secondItem="WyC-TC-sJt" secondAttribute="leading" constant="5" id="P3M-mt-gxb"/>
                                                 <constraint firstAttribute="bottom" secondItem="aa0-U3-qcC" secondAttribute="bottom" constant="1" id="R93-q4-DJ5"/>
                                                 <constraint firstItem="aa0-U3-qcC" firstAttribute="top" secondItem="WyC-TC-sJt" secondAttribute="top" constant="1" id="Z9H-8S-BxM"/>
-                                                <constraint firstItem="hab-B2-DhW" firstAttribute="top" secondItem="L23-eZ-jeg" secondAttribute="top" id="dfw-Xl-1H0"/>
-                                                <constraint firstItem="hab-B2-DhW" firstAttribute="bottom" secondItem="L23-eZ-jeg" secondAttribute="bottom" id="lbS-Rc-ATW"/>
-                                                <constraint firstItem="hab-B2-DhW" firstAttribute="width" secondItem="L23-eZ-jeg" secondAttribute="width" id="yVg-bI-eeM"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="btnEnlarge" destination="hab-B2-DhW" id="Vfa-m1-G8Q"/>
                                             <outlet property="contactImg" destination="L23-eZ-jeg" id="mK8-To-Dd1"/>
                                             <outlet property="contactName" destination="HjB-Px-Kav" id="BdM-oL-zNV"/>
                                             <outlet property="mbrStat" destination="ymO-oV-OLA" id="onE-Ot-3e2"/>
@@ -2269,47 +2251,22 @@ University of North Carolina Wilmington Scholarship</string>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uh4-Ui-Goc">
-                                <rect key="frame" x="0.0" y="168" width="320" height="97"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OF5-4x-7xB">
+                                <rect key="frame" x="0.0" y="112" width="320" height="66"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OF5-4x-7xB">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="9ka-GE-k5e">
-                                                <rect key="frame" x="0.0" y="0.0" width="68" height="66"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="66" id="3Vf-B6-1F7"/>
-                                                    <constraint firstAttribute="width" constant="68" id="Hf5-ys-0re"/>
-                                                </constraints>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Cape Fear Garden Club, Inc." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="HaO-XG-Pdq">
-                                                <rect key="frame" x="73" y="23" width="247" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.4039215686" green="0.54117647059999996" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ww8-ha-s3w">
-                                        <rect key="frame" x="0.0" y="66" width="320" height="31"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort Last" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMG-CA-Brg">
-                                                <rect key="frame" x="0.0" y="5.5" width="180" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.4039215686" green="0.54117647059999996" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BUE-kB-24o">
-                                                <rect key="frame" x="185" y="0.0" width="137" height="31"/>
-                                                <color key="onTintColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <color key="thumbTintColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
-                                                <connections>
-                                                    <action selector="switchChangeWithSender:" destination="O3Q-4l-Vd9" eventType="valueChanged" id="dfZ-qw-TRF"/>
-                                                    <segue destination="7zg-cs-YPY" kind="show" identifier="SwitchChange" id="OrN-Dq-Wcr"/>
-                                                </connections>
-                                            </switch>
-                                        </subviews>
-                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="9ka-GE-k5e">
+                                        <rect key="frame" x="0.0" y="0.0" width="68" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="3Vf-B6-1F7"/>
+                                            <constraint firstAttribute="width" constant="68" id="Hf5-ys-0re"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Cape Fear Garden Club, Inc." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="HaO-XG-Pdq">
+                                        <rect key="frame" x="73" y="23" width="247" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.4039215686" green="0.54117647059999996" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -2317,14 +2274,14 @@ University of North Carolina Wilmington Scholarship</string>
                         <constraints>
                             <constraint firstItem="eN4-DO-oMc" firstAttribute="trailing" secondItem="prq-jr-TSG" secondAttribute="trailing" id="312-hG-qJb"/>
                             <constraint firstItem="ZFd-Fn-3NR" firstAttribute="leading" secondItem="eN4-DO-oMc" secondAttribute="leading" id="5CA-3D-Sdi"/>
-                            <constraint firstItem="uh4-Ui-Goc" firstAttribute="leading" secondItem="eN4-DO-oMc" secondAttribute="leading" id="6bl-OT-Ujv"/>
+                            <constraint firstItem="eN4-DO-oMc" firstAttribute="trailing" secondItem="OF5-4x-7xB" secondAttribute="trailing" id="AI5-fa-gan"/>
+                            <constraint firstItem="OF5-4x-7xB" firstAttribute="top" secondItem="ZFd-Fn-3NR" secondAttribute="bottom" id="E1V-JA-5uF"/>
                             <constraint firstItem="prq-jr-TSG" firstAttribute="leading" secondItem="eN4-DO-oMc" secondAttribute="leading" id="HOG-gj-voW"/>
                             <constraint firstItem="eN4-DO-oMc" firstAttribute="trailing" secondItem="ZFd-Fn-3NR" secondAttribute="trailing" id="Joe-CC-5ac"/>
-                            <constraint firstItem="uh4-Ui-Goc" firstAttribute="bottom" secondItem="prq-jr-TSG" secondAttribute="top" id="PUa-av-qFL"/>
                             <constraint firstItem="eN4-DO-oMc" firstAttribute="bottom" secondItem="prq-jr-TSG" secondAttribute="bottom" id="Q9c-0Z-dfX"/>
-                            <constraint firstItem="eN4-DO-oMc" firstAttribute="trailing" secondItem="uh4-Ui-Goc" secondAttribute="trailing" id="fw5-qj-rzG"/>
+                            <constraint firstItem="prq-jr-TSG" firstAttribute="top" secondItem="OF5-4x-7xB" secondAttribute="bottom" id="vk2-SA-Hif"/>
                             <constraint firstItem="ZFd-Fn-3NR" firstAttribute="top" secondItem="eN4-DO-oMc" secondAttribute="top" id="wBi-Jx-Y45"/>
-                            <constraint firstItem="uh4-Ui-Goc" firstAttribute="top" secondItem="ZFd-Fn-3NR" secondAttribute="bottom" id="wI2-RP-Ond"/>
+                            <constraint firstItem="OF5-4x-7xB" firstAttribute="leading" secondItem="eN4-DO-oMc" secondAttribute="leading" id="xFD-t0-YLl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eN4-DO-oMc"/>
                     </view>
@@ -2332,57 +2289,14 @@ University of North Carolina Wilmington Scholarship</string>
                     <connections>
                         <outlet property="logoutBtn" destination="9gC-Wd-sN0" id="YMT-kS-9ny"/>
                         <outlet property="searchBar" destination="oOR-vh-FUx" id="OTS-v4-4aL"/>
-                        <outlet property="sortLabel" destination="hMG-CA-Brg" id="GKG-b7-vaK"/>
-                        <outlet property="sortSwitch" destination="BUE-kB-24o" id="iRg-ml-jpO"/>
                         <outlet property="tableView" destination="prq-jr-TSG" id="hdr-gc-NlB"/>
                         <segue destination="2Kx-Le-dP1" kind="show" identifier="InfoVC" customClass="SegueFromRight" customModule="CFGC" customModuleProvider="target" id="cZF-10-4Rl"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="LoginVC" customClass="SegueFromLeft" customModule="CFGC" customModuleProvider="target" id="zjO-Lx-Eqy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bqG-AL-oHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="vUX-Oo-5Uc" userLabel="imageTapped"/>
             </objects>
             <point key="canvasLocation" x="-6367.5" y="527.11267605633805"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="aph-jh-xQV">
-            <objects>
-                <viewController id="jLi-Rt-1um" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZY9-4i-xzC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CarolinaYellowJessamineMed1" translatesAutoresizingMaskIntoConstraints="NO" id="Nfw-2Y-lod">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                </accessibility>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFX-7P-ali">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                                <connections>
-                                    <segue destination="7zg-cs-YPY" kind="show" identifier="EnlargedImgToTableView" id="kuP-Gn-wsk"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="eC9-Hd-e7f" firstAttribute="bottom" secondItem="Nfw-2Y-lod" secondAttribute="bottom" id="2QR-5A-eTV"/>
-                            <constraint firstItem="Nfw-2Y-lod" firstAttribute="leading" secondItem="eC9-Hd-e7f" secondAttribute="leading" id="7ji-VH-oju"/>
-                            <constraint firstItem="EFX-7P-ali" firstAttribute="leading" secondItem="eC9-Hd-e7f" secondAttribute="leading" id="AOD-hN-bnz"/>
-                            <constraint firstItem="eC9-Hd-e7f" firstAttribute="trailing" secondItem="EFX-7P-ali" secondAttribute="trailing" id="M3c-zQ-7QM"/>
-                            <constraint firstItem="Nfw-2Y-lod" firstAttribute="top" secondItem="eC9-Hd-e7f" secondAttribute="top" id="OT9-ua-Cc6"/>
-                            <constraint firstItem="EFX-7P-ali" firstAttribute="top" secondItem="eC9-Hd-e7f" secondAttribute="top" id="YfT-vq-20E"/>
-                            <constraint firstItem="eC9-Hd-e7f" firstAttribute="bottom" secondItem="EFX-7P-ali" secondAttribute="bottom" id="lIU-vf-Qgh"/>
-                            <constraint firstItem="eC9-Hd-e7f" firstAttribute="trailing" secondItem="Nfw-2Y-lod" secondAttribute="trailing" id="leh-AN-L66"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="eC9-Hd-e7f"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="gzk-4E-oaQ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dqT-3w-txx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-7370.625" y="1244.3661971830986"/>
         </scene>
         <!--InfoVC-->
         <scene sceneID="kEK-5e-Zco">
@@ -2393,7 +2307,7 @@ University of North Carolina Wilmington Scholarship</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAU-4F-ey4">
-                                <rect key="frame" x="0.0" y="56" width="320" height="56"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
                                 <items>
                                     <navigationItem id="om0-lA-Mjz">
                                         <leftBarButtonItems>
@@ -2405,13 +2319,14 @@ University of North Carolina Wilmington Scholarship</string>
                                             <barButtonItem enabled="NO" title="Save" id="uKz-EO-Hd0">
                                                 <connections>
                                                     <action selector="saveBtnPressed:" destination="2Kx-Le-dP1" id="PiC-d9-wlA"/>
+                                                    <segue destination="O3Q-4l-Vd9" kind="show" identifier="ContactVC" id="mX6-kO-Sja"/>
                                                 </connections>
                                             </barButtonItem>
                                         </leftBarButtonItems>
                                         <rightBarButtonItems>
-                                            <barButtonItem enabled="NO" title="Edit" id="Thj-Qp-BxI">
+                                            <barButtonItem title="More Info" id="fCQ-vV-BYJ">
                                                 <connections>
-                                                    <action selector="editBtnPressed:" destination="2Kx-Le-dP1" id="UaO-P0-HB2"/>
+                                                    <action selector="moreInfoPressed:" destination="2Kx-Le-dP1" id="N7Z-Gv-7Qd"/>
                                                 </connections>
                                             </barButtonItem>
                                             <barButtonItem enabled="NO" title="Cancel" id="f4a-zy-UFL">
@@ -2419,12 +2334,17 @@ University of North Carolina Wilmington Scholarship</string>
                                                     <action selector="cancelBtnPressed:" destination="2Kx-Le-dP1" id="gXz-YY-1mt"/>
                                                 </connections>
                                             </barButtonItem>
+                                            <barButtonItem enabled="NO" title="Edit" id="Thj-Qp-BxI">
+                                                <connections>
+                                                    <action selector="editBtnPressed:" destination="2Kx-Le-dP1" id="UaO-P0-HB2"/>
+                                                </connections>
+                                            </barButtonItem>
                                         </rightBarButtonItems>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Yba-0Q-bZu">
-                                <rect key="frame" x="8" y="117" width="304" height="377"/>
+                                <rect key="frame" x="8" y="61" width="304" height="433"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="F7U-rp-12U">
                                         <rect key="frame" x="0.0" y="0.0" width="304" height="173"/>
@@ -2448,19 +2368,19 @@ University of North Carolina Wilmington Scholarship</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="kxU-bR-GBC">
-                                        <rect key="frame" x="0.0" y="178" width="304" height="199"/>
+                                        <rect key="frame" x="0.0" y="178" width="304" height="255"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tME-NO-ZPC">
-                                                <rect key="frame" x="0.0" y="0.0" width="304" height="21.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="23.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Member Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="lfY-CN-dJ0">
-                                                        <rect key="frame" x="0.0" y="0.5" width="152" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="1.5" width="152" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="mbrStatus" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="0O0-Kw-cw2">
-                                                        <rect key="frame" x="152" y="0.0" width="152" height="21.5"/>
+                                                        <rect key="frame" x="152" y="0.0" width="152" height="23.5"/>
                                                         <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -2471,16 +2391,16 @@ University of North Carolina Wilmington Scholarship</string>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RSZ-Rd-PWe">
-                                                <rect key="frame" x="0.0" y="21.5" width="304" height="22"/>
+                                                <rect key="frame" x="0.0" y="24.5" width="304" height="27.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spouse Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ytP-7M-nkd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="152" height="22"/>
+                                                        <rect key="frame" x="0.0" y="3.5" width="152" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="David" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="0TG-KQ-gYh" userLabel="Spouse Txt">
-                                                        <rect key="frame" x="152" y="0.0" width="152" height="22"/>
+                                                        <rect key="frame" x="152" y="0.0" width="152" height="27.5"/>
                                                         <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -2491,16 +2411,16 @@ University of North Carolina Wilmington Scholarship</string>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tph-i6-kAY">
-                                                <rect key="frame" x="0.0" y="43.5" width="304" height="53.5"/>
+                                                <rect key="frame" x="0.0" y="52.5" width="304" height="98"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Kxu-TV-Egz">
-                                                        <rect key="frame" x="0.0" y="8" width="76" height="37.5"/>
+                                                        <rect key="frame" x="0.0" y="8" width="76" height="82"/>
                                                         <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" delaysContentTouches="NO" canCancelContentTouches="NO" editable="NO" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XTi-0b-w2g" userLabel="Address Txt">
-                                                        <rect key="frame" x="152" y="0.0" width="152" height="53.5"/>
+                                                        <rect key="frame" x="152" y="0.0" width="152" height="98"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <string key="text">5608 Surrey Downs Court
 Wilmington, NC 28403</string>
@@ -2514,7 +2434,7 @@ Wilmington, NC 28403</string>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IXf-57-O0Z">
-                                                <rect key="frame" x="0.0" y="97" width="304" height="41"/>
+                                                <rect key="frame" x="0.0" y="151.5" width="304" height="41"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Primary Contact Number" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpe-ST-Exu">
                                                         <rect key="frame" x="0.0" y="0.0" width="152" height="41"/>
@@ -2533,7 +2453,7 @@ Wilmington, NC 28403</string>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zzF-YF-cbz">
-                                                <rect key="frame" x="0.0" y="138" width="304" height="41"/>
+                                                <rect key="frame" x="0.0" y="193" width="304" height="41"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secondary Contact Number" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="dG9-H4-rZJ">
                                                         <rect key="frame" x="0.0" y="0.0" width="152" height="41"/>
@@ -2552,7 +2472,7 @@ Wilmington, NC 28403</string>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XaF-89-bhk">
-                                                <rect key="frame" x="0.0" y="179" width="304" height="20"/>
+                                                <rect key="frame" x="0.0" y="235" width="304" height="20"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loh-bI-GFa">
                                                         <rect key="frame" x="0.0" y="0.0" width="152" height="20"/>
@@ -2634,9 +2554,6 @@ Wilmington, NC 28403</string>
                             <constraint firstItem="XSA-7a-2Ai" firstAttribute="width" secondItem="yFS-1W-GBf" secondAttribute="width" multiplier="0.4" id="yXy-SV-ZbK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tUr-Rs-x6h"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="pyS-t9-MWG" appends="YES" id="X5Q-cs-bgD"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="j6p-U2-07g"/>
                     <connections>
@@ -2649,22 +2566,17 @@ Wilmington, NC 28403</string>
                         <outlet property="emailTxt" destination="xoG-Iu-zfX" id="OZK-z1-u8D"/>
                         <outlet property="mbrStatTxt" destination="0O0-Kw-cw2" id="kHA-kZ-g8z"/>
                         <outlet property="membersBackBtn" destination="Ba6-qe-8R3" id="PLE-R8-Nnj"/>
+                        <outlet property="moreInfoButton" destination="fCQ-vV-BYJ" id="Ffm-rA-Tg5"/>
                         <outlet property="nameTxt" destination="ECM-tp-0fZ" id="uTx-Y0-OLs"/>
                         <outlet property="primaryConTxt" destination="tfI-qc-Zlo" id="KHZ-kU-gsb"/>
                         <outlet property="saveBtn" destination="uKz-EO-Hd0" id="tXv-ba-5hn"/>
                         <outlet property="secondaryConTxt" destination="b1z-1b-lBI" id="Xmf-J6-sF5"/>
                         <outlet property="spouseTxt" destination="0TG-KQ-gYh" id="2jz-65-T4f"/>
                         <outlet property="txtMsgBtn" destination="W2U-fz-Le5" id="8yn-1h-yal"/>
-                        <segue destination="7zg-cs-YPY" kind="show" identifier="ContactVC" customClass="SegueFromLeft" customModule="CFGC" customModuleProvider="target" id="eqM-Mc-gli"/>
                         <segue destination="Bc1-di-6Rq" kind="show" identifier="BiographicalVC" customClass="SegueFromRight" customModule="CFGC" customModuleProvider="target" id="ZLJ-nP-i28"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n23-4S-C2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="pyS-t9-MWG">
-                    <connections>
-                        <action selector="swipeHandler:" destination="2Kx-Le-dP1" id="S6X-dA-IfV"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-8346" y="528"/>
         </scene>
@@ -2940,25 +2852,6 @@ Wilmington, NC 28403</string>
             </objects>
             <point key="canvasLocation" x="-5145" y="-1400"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="j6D-nP-j7E">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7zg-cs-YPY" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="cjt-3R-KWb"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TFS-ku-m9r">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="O3Q-4l-Vd9" kind="relationship" relationship="rootViewController" id="QsQ-Sq-dJv"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FbA-vL-FBY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-7365" y="527.11267605633805"/>
-        </scene>
     </scenes>
     <resources>
         <image name="CFGC banner with logo - small" width="375" height="93"/>
@@ -2966,18 +2859,18 @@ Wilmington, NC 28403</string>
         <image name="ellipse" width="207" height="201"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OrN-Dq-Wcr"/>
         <segue reference="cZF-10-4Rl"/>
+        <segue reference="mX6-kO-Sja"/>
         <segue reference="zjO-Lx-Eqy"/>
         <segue reference="iRi-0V-gkS"/>
-        <segue reference="LWn-5P-J6g"/>
-        <segue reference="ix7-Jp-m5q"/>
+        <segue reference="Jcw-jy-QDr"/>
+        <segue reference="wWO-MV-KEj"/>
         <segue reference="m3H-ix-876"/>
         <segue reference="L39-3r-Fou"/>
         <segue reference="U5T-a2-BNb"/>
         <segue reference="Dlo-LM-TPn"/>
-        <segue reference="fYJ-bc-AH4"/>
-        <segue reference="Wjg-hC-N3U"/>
+        <segue reference="7gu-2R-7OK"/>
+        <segue reference="mgI-9s-2fW"/>
         <segue reference="P4w-lo-iAT"/>
     </inferredMetricsTieBreakers>
 </document>

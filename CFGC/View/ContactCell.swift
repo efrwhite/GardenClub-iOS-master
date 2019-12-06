@@ -14,15 +14,10 @@ class ContactCell: UITableViewCell {
     @IBOutlet weak var contactImg: UIImageView!
     @IBOutlet weak var contactName: UILabel!
     @IBOutlet weak var mbrStat: UILabel!
-    @IBOutlet weak var btnEnlarge: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-    }
-
-    @IBAction func enlargeImg(_ sender: UIButton) {
-        
     }
     
     /**
