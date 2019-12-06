@@ -88,7 +88,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, UIScrollViewDe
     
     @IBAction func submitBtnPressed(_ sender: UIButton){
         conCardsJson = _backGround.contactCards
-        currentUser = User(userName: "efrwhite@aol.com", password: "CFGC-2019-20@EBaker!")
+        currentUser = User(userName: userName.text!, password: password.text!)
         //let spinner = UIViewController.displaySpinner(onView: self.view)
         //self.startActivity()
         
