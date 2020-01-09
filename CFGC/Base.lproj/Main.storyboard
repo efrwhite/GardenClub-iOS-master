@@ -217,13 +217,13 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wI-D9-u9S">
-                                <rect key="frame" x="16" y="161" width="288" height="303"/>
+                                <rect key="frame" x="8" y="161" width="304" height="303"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4I-PL-ATi">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="845"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="824.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyD-sd-RIh" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="845"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="824.5"/>
                                                 <string key="text">Our USPS Mailing Address:
 
 Cape Fear Garden Club, Inc.
@@ -284,9 +284,9 @@ Webmaster[@]CapeFearGardenClub.org</string>
                         <constraints>
                             <constraint firstItem="GEq-F8-AU0" firstAttribute="top" secondItem="zgF-Oj-uW9" secondAttribute="top" constant="16" id="139-AS-TQi"/>
                             <constraint firstItem="0CW-T5-OTy" firstAttribute="leading" secondItem="zgF-Oj-uW9" secondAttribute="leading" id="5mk-fV-XNF"/>
-                            <constraint firstItem="3wI-D9-u9S" firstAttribute="leading" secondItem="zgF-Oj-uW9" secondAttribute="leading" constant="16" id="9cu-2k-oOQ"/>
+                            <constraint firstItem="3wI-D9-u9S" firstAttribute="leading" secondItem="zgF-Oj-uW9" secondAttribute="leading" constant="8" id="9cu-2k-oOQ"/>
                             <constraint firstItem="zgF-Oj-uW9" firstAttribute="trailing" secondItem="AK5-1y-xPJ" secondAttribute="trailing" id="9g3-eT-eUq"/>
-                            <constraint firstItem="zgF-Oj-uW9" firstAttribute="trailing" secondItem="3wI-D9-u9S" secondAttribute="trailing" constant="16" id="ELO-RB-rnq"/>
+                            <constraint firstItem="zgF-Oj-uW9" firstAttribute="trailing" secondItem="3wI-D9-u9S" secondAttribute="trailing" constant="8" id="ELO-RB-rnq"/>
                             <constraint firstItem="zgF-Oj-uW9" firstAttribute="trailing" secondItem="pd1-bX-Hul" secondAttribute="trailing" id="Nqr-WO-3JS"/>
                             <constraint firstItem="AK5-1y-xPJ" firstAttribute="leading" secondItem="zgF-Oj-uW9" secondAttribute="leading" id="TqA-4m-xfd"/>
                             <constraint firstItem="0CW-T5-OTy" firstAttribute="top" secondItem="pd1-bX-Hul" secondAttribute="bottom" constant="8" id="Uhk-8P-E0W"/>
@@ -393,14 +393,14 @@ Webmaster[@]CapeFearGardenClub.org</string>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fec-Kn-ycY">
-                                <rect key="frame" x="16" y="161" width="288" height="303"/>
+                                <rect key="frame" x="8" y="161" width="304" height="303"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQD-YL-j9v">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="1548.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="1548.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3s-I3-HJn" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="1548.5"/>
-                                                <string key="text">CAPE FEAR GARDEN CLUB, INC
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="1548.5"/>
+                                                <mutableString key="text">CAPE FEAR GARDEN CLUB, INC
 WILMINGTON, NORTH CAROLINA
 
 ORGANIZED FEBRUARY 11, 1925
@@ -415,10 +415,10 @@ MOTTO
 Adopted September 9, 1953
 
 COLORS
-Green and Yellow
+Green, Yellow and Pink
 
 FLOWER
-Carolina Yellow Jessamine (Gelsemium sempervirens)
+Carolina Yellow Jessamine (Gelsemium sempervirens) Rhododendron x 'George Lindley Taber'
 
 CAPE FEAR GARDEN CLUB SEAL
 Adopted March 25, 1997, designed by Myrta W. Spence, CFGC
@@ -448,7 +448,7 @@ Miss Jeanie Strange
 Mrs. W.E. Elliott
 Mrs. William Latimer
 Mrs. Martin Willard
-Miss Sarah Lippitt</string>
+Miss Sarah Lippitt</mutableString>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -480,7 +480,7 @@ Miss Sarah Lippitt</string>
                             <constraint firstItem="RRj-bd-zkc" firstAttribute="leading" secondItem="iQO-QG-7QG" secondAttribute="leading" id="9RG-wj-WEk"/>
                             <constraint firstItem="wC7-cd-gKj" firstAttribute="top" secondItem="EGk-CQ-BsR" secondAttribute="bottom" constant="8" id="DDN-xd-vct"/>
                             <constraint firstItem="iQO-QG-7QG" firstAttribute="trailing" secondItem="wC7-cd-gKj" secondAttribute="trailing" id="EYp-Qq-L4R"/>
-                            <constraint firstItem="fec-Kn-ycY" firstAttribute="leading" secondItem="iQO-QG-7QG" secondAttribute="leading" constant="16" id="FlQ-tL-rNZ"/>
+                            <constraint firstItem="fec-Kn-ycY" firstAttribute="leading" secondItem="iQO-QG-7QG" secondAttribute="leading" constant="8" id="FlQ-tL-rNZ"/>
                             <constraint firstItem="8GG-Gi-KXp" firstAttribute="trailing" secondItem="iQO-QG-7QG" secondAttribute="trailing" id="HZc-bN-cMD"/>
                             <constraint firstItem="wC7-cd-gKj" firstAttribute="leading" secondItem="iQO-QG-7QG" secondAttribute="leading" id="JFm-qE-2bl"/>
                             <constraint firstItem="iQO-QG-7QG" firstAttribute="trailing" secondItem="EGk-CQ-BsR" secondAttribute="trailing" id="JSY-j9-geY"/>
@@ -488,7 +488,7 @@ Miss Sarah Lippitt</string>
                             <constraint firstItem="iQO-QG-7QG" firstAttribute="trailing" secondItem="RRj-bd-zkc" secondAttribute="trailing" id="UcI-LG-cu5"/>
                             <constraint firstItem="iQO-QG-7QG" firstAttribute="bottom" secondItem="wC7-cd-gKj" secondAttribute="bottom" constant="8" id="cKI-I6-WGv"/>
                             <constraint firstItem="EGk-CQ-BsR" firstAttribute="top" secondItem="fec-Kn-ycY" secondAttribute="bottom" constant="8" id="hMk-IP-z1p"/>
-                            <constraint firstItem="iQO-QG-7QG" firstAttribute="trailing" secondItem="fec-Kn-ycY" secondAttribute="trailing" constant="16" id="jlj-6O-bnP"/>
+                            <constraint firstItem="iQO-QG-7QG" firstAttribute="trailing" secondItem="fec-Kn-ycY" secondAttribute="trailing" constant="8" id="jlj-6O-bnP"/>
                             <constraint firstItem="EGk-CQ-BsR" firstAttribute="leading" secondItem="iQO-QG-7QG" secondAttribute="leading" id="qLU-2i-H1m"/>
                             <constraint firstItem="fec-Kn-ycY" firstAttribute="top" secondItem="RRj-bd-zkc" secondAttribute="bottom" constant="8" id="y9u-5L-Ag5"/>
                             <constraint firstItem="8GG-Gi-KXp" firstAttribute="top" secondItem="iQO-QG-7QG" secondAttribute="top" constant="16" id="zRy-eY-ufJ"/>
@@ -610,13 +610,13 @@ Miss Sarah Lippitt</string>
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUg-9J-aZQ">
-                                <rect key="frame" x="16" y="161" width="288" height="265"/>
+                                <rect key="frame" x="8" y="161" width="304" height="265"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTq-GO-qpP">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="1508.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="1448"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHB-4E-Vkb" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="1508.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="1448"/>
                                                 <string key="text">Several landscape installations throughout New Hanover County have been initiated by the Cape Fear Garden Club.
 
 AIRLIE SHOWCASE GARDEN
@@ -664,12 +664,12 @@ Additional committees focus on: civic improvements, such as tree canopy replacem
                             <constraint firstItem="gUg-9J-aZQ" firstAttribute="top" secondItem="4g2-5J-KU7" secondAttribute="bottom" constant="8" id="LpZ-6T-xqa"/>
                             <constraint firstItem="ZFB-7z-HwW" firstAttribute="leading" secondItem="DTs-wk-xKF" secondAttribute="leading" id="QZH-ih-0A0"/>
                             <constraint firstItem="ZFB-7z-HwW" firstAttribute="top" secondItem="XEB-gq-b9E" secondAttribute="bottom" constant="8" id="Sxh-Lo-XLb"/>
-                            <constraint firstItem="gUg-9J-aZQ" firstAttribute="leading" secondItem="DTs-wk-xKF" secondAttribute="leading" constant="16" id="cLR-4R-nGM"/>
+                            <constraint firstItem="gUg-9J-aZQ" firstAttribute="leading" secondItem="DTs-wk-xKF" secondAttribute="leading" constant="8" id="cLR-4R-nGM"/>
                             <constraint firstItem="DTs-wk-xKF" firstAttribute="bottom" secondItem="CjG-ph-Qxe" secondAttribute="bottom" constant="8" id="dKs-eG-IwU"/>
                             <constraint firstItem="OAc-Yr-vCA" firstAttribute="trailing" secondItem="DTs-wk-xKF" secondAttribute="trailing" id="eLk-f8-fSl"/>
                             <constraint firstItem="XEB-gq-b9E" firstAttribute="leading" secondItem="DTs-wk-xKF" secondAttribute="leading" id="evh-YZ-a4Z"/>
                             <constraint firstItem="XEB-gq-b9E" firstAttribute="top" secondItem="gUg-9J-aZQ" secondAttribute="bottom" constant="8" id="iJB-c5-ucM"/>
-                            <constraint firstItem="DTs-wk-xKF" firstAttribute="trailing" secondItem="gUg-9J-aZQ" secondAttribute="trailing" constant="16" id="kO9-h8-9wo"/>
+                            <constraint firstItem="DTs-wk-xKF" firstAttribute="trailing" secondItem="gUg-9J-aZQ" secondAttribute="trailing" constant="8" id="kO9-h8-9wo"/>
                             <constraint firstItem="OAc-Yr-vCA" firstAttribute="top" secondItem="DTs-wk-xKF" secondAttribute="top" constant="16" id="m2J-8h-CeE"/>
                             <constraint firstItem="DTs-wk-xKF" firstAttribute="trailing" secondItem="4g2-5J-KU7" secondAttribute="trailing" id="myU-uK-raM"/>
                             <constraint firstItem="CjG-ph-Qxe" firstAttribute="leading" secondItem="DTs-wk-xKF" secondAttribute="leading" id="r8I-Jc-XjV"/>
@@ -794,17 +794,17 @@ Additional committees focus on: civic improvements, such as tree canopy replacem
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BzY-zU-TRu">
-                                <rect key="frame" x="16" y="161" width="288" height="265"/>
+                                <rect key="frame" x="8" y="161" width="304" height="265"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsx-cn-7gT">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="483"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="463"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aft-t7-Rzx" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="483"/>
-                                                <string key="text">For over 50 years, the Azalea Garden Tour, sponsored by the Cape Fear Garden Club, has proudly returned thousands of dollars to New Hanover County. Tour profits Money available to beautify, conserve, educate, inspire, and contribute to people of all ages using horticulture and garden development. 
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="463"/>
+                                                <mutableString key="text">For over 50 years, the Azalea Garden Tour, sponsored by the Cape Fear Garden Club, has proudly returned thousands of dollars to New Hanover County. Tour profits Money available to beautify, conserve, educate, inspire, and contribute to people of all ages using horticulture and garden development. 
 
 BEAUTIFICATION ENDOWMENT FUND
-The Cape Fear Garden Club works with the North Carolina Community Foundation (NCCF) to maintain and invest Club funds set aside to ensure the long-term commitment of the Club to its mission in the New Hanover County community.  Events, such as the Southern Soiree in honor of a notable Club member, are held each year to support this endowment fund.</string>
+The Cape Fear Garden Club works with the North Carolina Community Foundation (NCCF) to maintain and invest Club funds set aside to ensure the long-term commitment of the Club to its mission in the New Hanover County community.  Events, such as the Southern Soiree in honor of a notable Club member, are held every other year to support this endowment fund.</mutableString>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -833,7 +833,7 @@ The Cape Fear Garden Club works with the North Carolina Community Foundation (NC
                         <color key="backgroundColor" red="0.95686274510000002" green="0.84313725490000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qcO-KT-fnz" firstAttribute="trailing" secondItem="ai6-Wc-fHO" secondAttribute="trailing" id="42C-Di-aeN"/>
-                            <constraint firstItem="BzY-zU-TRu" firstAttribute="leading" secondItem="qcO-KT-fnz" secondAttribute="leading" constant="16" id="4bF-e1-Dk7"/>
+                            <constraint firstItem="BzY-zU-TRu" firstAttribute="leading" secondItem="qcO-KT-fnz" secondAttribute="leading" constant="8" id="4bF-e1-Dk7"/>
                             <constraint firstItem="qcO-KT-fnz" firstAttribute="trailing" secondItem="kXU-YU-UC1" secondAttribute="trailing" id="Afd-HY-Ynk"/>
                             <constraint firstItem="sfq-dB-A8g" firstAttribute="leading" secondItem="qcO-KT-fnz" secondAttribute="leading" id="DDX-er-bJe"/>
                             <constraint firstItem="9Qd-oY-8Gg" firstAttribute="top" secondItem="BzY-zU-TRu" secondAttribute="bottom" constant="8" id="G7p-1a-nyC"/>
@@ -845,7 +845,7 @@ The Cape Fear Garden Club works with the North Carolina Community Foundation (NC
                             <constraint firstItem="xLT-dl-xwq" firstAttribute="top" secondItem="ai6-Wc-fHO" secondAttribute="bottom" constant="8" id="cDa-nP-3cs"/>
                             <constraint firstItem="kXU-YU-UC1" firstAttribute="top" secondItem="9Qd-oY-8Gg" secondAttribute="bottom" constant="8" id="dAi-rf-G6V"/>
                             <constraint firstItem="BzY-zU-TRu" firstAttribute="top" secondItem="xLT-dl-xwq" secondAttribute="bottom" constant="8" id="iuX-2B-jSa"/>
-                            <constraint firstItem="qcO-KT-fnz" firstAttribute="trailing" secondItem="BzY-zU-TRu" secondAttribute="trailing" constant="16" id="lxF-gy-9Nk"/>
+                            <constraint firstItem="qcO-KT-fnz" firstAttribute="trailing" secondItem="BzY-zU-TRu" secondAttribute="trailing" constant="8" id="lxF-gy-9Nk"/>
                             <constraint firstItem="qcO-KT-fnz" firstAttribute="trailing" secondItem="xLT-dl-xwq" secondAttribute="trailing" id="nes-wQ-Bj4"/>
                             <constraint firstItem="kXU-YU-UC1" firstAttribute="leading" secondItem="qcO-KT-fnz" secondAttribute="leading" id="qFg-Wm-dyS"/>
                             <constraint firstItem="qcO-KT-fnz" firstAttribute="trailing" secondItem="9Qd-oY-8Gg" secondAttribute="trailing" id="tXV-5G-YTQ"/>
@@ -947,7 +947,7 @@ The Cape Fear Garden Club works with the North Carolina Community Foundation (NC
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSC-q9-dNj" userLabel="EmbeddedMap">
-                                <rect key="frame" x="10" y="161" width="300" height="169"/>
+                                <rect key="frame" x="8" y="161" width="304" height="171"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="YSC-q9-dNj" secondAttribute="height" multiplier="16:9" id="NbM-0d-Rrx"/>
                                 </constraints>
@@ -956,15 +956,15 @@ The Cape Fear Garden Club works with the North Carolina Community Foundation (NC
                                 </connections>
                             </containerView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4d-5T-mYW">
-                                <rect key="frame" x="10" y="338" width="300" height="126"/>
+                                <rect key="frame" x="8" y="340" width="304" height="124"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qIU-4v-V5y">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="925.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="925.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2e-tn-bxc" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="300" height="925.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="925.5"/>
                                                 <accessibility key="accessibilityConfiguration" label="Description"/>
-                                                <mutableString key="text">Gardening…A Personal Experience
+                                                <string key="text">Gardening…A Personal Experience
 April 3, 4, and 5, 2020
 
 Ribbon Cutting Ceremony and Azalea Queen’s Garden Party is Friday, April 3, 2020 at 10:00am. 
@@ -980,7 +980,7 @@ An official featured event of the North Carolina Azalea Festival
 
 ESSENTIAL PARKING TIPS:
 As you enter many of our neighborhoods, parking will ONLY be allowed on one side of the street. Please observe the NO PARKING signs to avoid congestion and keep traffic moving smoothly. Please be courteous and thoughtful when parking. Park only on the pavement, not on the grass. Avoid parking anywhere traffic cones have been set. We would like everyone to enjoy the tour.
-PLEASE, NO PETS ALLOWED.</mutableString>
+PLEASE, NO PETS ALLOWED.</string>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1007,24 +1007,24 @@ PLEASE, NO PETS ALLOWED.</mutableString>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.84313725490000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lSA-ht-gXd" firstAttribute="trailing" secondItem="T4d-5T-mYW" secondAttribute="trailing" constant="10" id="05j-gM-iJ7"/>
+                            <constraint firstItem="lSA-ht-gXd" firstAttribute="trailing" secondItem="T4d-5T-mYW" secondAttribute="trailing" constant="8" id="05j-gM-iJ7"/>
                             <constraint firstItem="0Vf-5R-dqP" firstAttribute="leading" secondItem="lSA-ht-gXd" secondAttribute="leading" id="4FZ-0R-qx3"/>
                             <constraint firstItem="0Vf-5R-dqP" firstAttribute="top" secondItem="faL-3O-ePt" secondAttribute="bottom" constant="8" id="6b4-v2-9sp"/>
                             <constraint firstItem="T4d-5T-mYW" firstAttribute="top" secondItem="YSC-q9-dNj" secondAttribute="bottom" constant="8" id="BHZ-kt-4Uy"/>
                             <constraint firstItem="YSC-q9-dNj" firstAttribute="top" secondItem="bz1-vQ-rlc" secondAttribute="bottom" constant="8" id="E1h-N4-GdH"/>
                             <constraint firstItem="faL-3O-ePt" firstAttribute="top" secondItem="T4d-5T-mYW" secondAttribute="bottom" constant="8" id="G2f-Cp-dYA"/>
                             <constraint firstItem="hiF-Uj-L0i" firstAttribute="top" secondItem="lSA-ht-gXd" secondAttribute="top" constant="16" id="Lqo-6j-SFd"/>
-                            <constraint firstItem="YSC-q9-dNj" firstAttribute="leading" secondItem="lSA-ht-gXd" secondAttribute="leading" constant="10" id="NaI-lu-is0"/>
+                            <constraint firstItem="YSC-q9-dNj" firstAttribute="leading" secondItem="lSA-ht-gXd" secondAttribute="leading" constant="8" id="NaI-lu-is0"/>
                             <constraint firstItem="lSA-ht-gXd" firstAttribute="bottom" secondItem="0Vf-5R-dqP" secondAttribute="bottom" constant="8" id="Oi8-qz-A9G"/>
                             <constraint firstItem="bz1-vQ-rlc" firstAttribute="top" secondItem="hiF-Uj-L0i" secondAttribute="bottom" constant="8" id="RXC-NA-QW1"/>
                             <constraint firstItem="bz1-vQ-rlc" firstAttribute="leading" secondItem="lSA-ht-gXd" secondAttribute="leading" id="RZH-6u-Lik"/>
-                            <constraint firstItem="T4d-5T-mYW" firstAttribute="leading" secondItem="lSA-ht-gXd" secondAttribute="leading" constant="10" id="a1t-hF-81Z"/>
+                            <constraint firstItem="T4d-5T-mYW" firstAttribute="leading" secondItem="lSA-ht-gXd" secondAttribute="leading" constant="8" id="a1t-hF-81Z"/>
                             <constraint firstItem="lSA-ht-gXd" firstAttribute="trailing" secondItem="faL-3O-ePt" secondAttribute="trailing" id="d14-2C-9I7"/>
                             <constraint firstItem="faL-3O-ePt" firstAttribute="leading" secondItem="lSA-ht-gXd" secondAttribute="leading" id="fzT-uf-jBR"/>
                             <constraint firstItem="hiF-Uj-L0i" firstAttribute="leading" secondItem="lSA-ht-gXd" secondAttribute="leading" id="gGh-M6-vPQ"/>
                             <constraint firstItem="lSA-ht-gXd" firstAttribute="trailing" secondItem="bz1-vQ-rlc" secondAttribute="trailing" id="iQD-7l-Efm"/>
                             <constraint firstItem="lSA-ht-gXd" firstAttribute="trailing" secondItem="0Vf-5R-dqP" secondAttribute="trailing" id="nCN-0T-9cP"/>
-                            <constraint firstItem="lSA-ht-gXd" firstAttribute="trailing" secondItem="YSC-q9-dNj" secondAttribute="trailing" constant="10" id="rdT-H6-VHy"/>
+                            <constraint firstItem="lSA-ht-gXd" firstAttribute="trailing" secondItem="YSC-q9-dNj" secondAttribute="trailing" constant="8" id="rdT-H6-VHy"/>
                             <constraint firstItem="lSA-ht-gXd" firstAttribute="trailing" secondItem="hiF-Uj-L0i" secondAttribute="trailing" id="vU8-EH-kKM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lSA-ht-gXd"/>
@@ -1122,13 +1122,13 @@ PLEASE, NO PETS ALLOWED.</mutableString>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tM1-P9-HHE">
-                                <rect key="frame" x="16" y="161" width="288" height="303"/>
+                                <rect key="frame" x="8" y="161" width="304" height="303"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nwk-hX-exf">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="322"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="282"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CES-WZ-neC" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="322"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="282"/>
                                                 <string key="text">The Cape Fear Garden Club, Inc. Azalea Belles© are a diverse group of young women from New Hanover County high schools. These “Beautiful Azaleas” delight visitors to our Annual Azalea Garden Tour with their beauty, grace, and charm. Their colorful gowns created by three local dressmakers are designed to emulate the showy blooms of their namesake flower. The Azalea Belles proudly serve as ambassadors of good will and hospitality to our city’s guests during many Azalea Festival events.</string>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                 <nil key="highlightedColor"/>
@@ -1167,11 +1167,11 @@ PLEASE, NO PETS ALLOWED.</mutableString>
                             <constraint firstItem="ghq-6k-Qt9" firstAttribute="top" secondItem="IHp-LA-S3b" secondAttribute="top" constant="16" id="b4r-3P-FhQ"/>
                             <constraint firstItem="xp3-pE-Q40" firstAttribute="top" secondItem="tM1-P9-HHE" secondAttribute="bottom" constant="8" id="bTe-2X-EF6"/>
                             <constraint firstItem="IHp-LA-S3b" firstAttribute="trailing" secondItem="xp3-pE-Q40" secondAttribute="trailing" id="buY-cg-iKG"/>
-                            <constraint firstItem="tM1-P9-HHE" firstAttribute="leading" secondItem="IHp-LA-S3b" secondAttribute="leading" constant="16" id="gaZ-be-PCK"/>
+                            <constraint firstItem="tM1-P9-HHE" firstAttribute="leading" secondItem="IHp-LA-S3b" secondAttribute="leading" constant="8" id="gaZ-be-PCK"/>
                             <constraint firstItem="tM1-P9-HHE" firstAttribute="top" secondItem="g8Q-Zs-Xdj" secondAttribute="bottom" constant="8" id="joG-bh-C1N"/>
                             <constraint firstItem="dwG-Y8-KVw" firstAttribute="leading" secondItem="IHp-LA-S3b" secondAttribute="leading" id="u4e-WO-EXF"/>
                             <constraint firstItem="g8Q-Zs-Xdj" firstAttribute="top" secondItem="ghq-6k-Qt9" secondAttribute="bottom" constant="8" id="uew-8T-aFo"/>
-                            <constraint firstItem="IHp-LA-S3b" firstAttribute="trailing" secondItem="tM1-P9-HHE" secondAttribute="trailing" constant="16" id="wFZ-xr-aRh"/>
+                            <constraint firstItem="IHp-LA-S3b" firstAttribute="trailing" secondItem="tM1-P9-HHE" secondAttribute="trailing" constant="8" id="wFZ-xr-aRh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IHp-LA-S3b"/>
                     </view>
@@ -1245,13 +1245,13 @@ PLEASE, NO PETS ALLOWED.</mutableString>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ucc-xg-nGO">
-                                <rect key="frame" x="16" y="161" width="288" height="341"/>
+                                <rect key="frame" x="8" y="161" width="304" height="341"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jd9-EG-246">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="643.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSU-wV-SWX" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="664"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="643.5"/>
                                                 <string key="text">Battery Island Committee highlights the twenty-three-year relationship that The Cape Fear Garden Club, Inc. has in working closely with Audubon NC's Coastal Office and biologists to maintain safe habitats for the migratory birds, specifically the islands in the Lower Cape Fear River where they nest. 
 
 The Cape Fear Garden Club, Inc. assists Audubon in funding through a standing annual grant and through education outreach by sponsoring the annual Spring Cruise to the Bird Islands in the Lower Cape Fear River each May. This committee supports Audubon with cleanups on Battery Island in the spring before nesting season begins and the fall after the nesting season is complete. Our main concern is to get debris that floats in off the Cape Fear River and specifically fishing line off the island because of the danger of entanglement of pelicans and other shorebirds. The Committee also does the detailed planning and coordination for The Cape Fear Garden Club for the Spring Cruise to the Bird Islands in the Lower Cape Fear River.</string>
@@ -1286,10 +1286,10 @@ The Cape Fear Garden Club, Inc. assists Audubon in funding through a standing an
                             <constraint firstItem="FzX-sM-NKD" firstAttribute="top" secondItem="Odl-Wy-AYG" secondAttribute="top" constant="16" id="72s-rF-zlj"/>
                             <constraint firstItem="FzX-sM-NKD" firstAttribute="leading" secondItem="Odl-Wy-AYG" secondAttribute="leading" id="74l-9C-U5U"/>
                             <constraint firstItem="1Qr-7I-gBg" firstAttribute="leading" secondItem="Odl-Wy-AYG" secondAttribute="leading" id="AeE-Py-Y71"/>
-                            <constraint firstItem="Odl-Wy-AYG" firstAttribute="trailing" secondItem="Ucc-xg-nGO" secondAttribute="trailing" constant="16" id="GEq-al-Wlg"/>
+                            <constraint firstItem="Odl-Wy-AYG" firstAttribute="trailing" secondItem="Ucc-xg-nGO" secondAttribute="trailing" constant="8" id="GEq-al-Wlg"/>
                             <constraint firstItem="Odl-Wy-AYG" firstAttribute="trailing" secondItem="FzX-sM-NKD" secondAttribute="trailing" id="I7f-MQ-9Le"/>
                             <constraint firstItem="5GP-GU-DRj" firstAttribute="top" secondItem="Ucc-xg-nGO" secondAttribute="bottom" constant="8" id="U8A-nc-1m8"/>
-                            <constraint firstItem="Ucc-xg-nGO" firstAttribute="leading" secondItem="Odl-Wy-AYG" secondAttribute="leading" constant="16" id="Wpz-Hl-HoJ"/>
+                            <constraint firstItem="Ucc-xg-nGO" firstAttribute="leading" secondItem="Odl-Wy-AYG" secondAttribute="leading" constant="8" id="Wpz-Hl-HoJ"/>
                             <constraint firstItem="1Qr-7I-gBg" firstAttribute="top" secondItem="FzX-sM-NKD" secondAttribute="bottom" constant="8" id="bAh-fX-FhQ"/>
                             <constraint firstItem="5GP-GU-DRj" firstAttribute="leading" secondItem="Odl-Wy-AYG" secondAttribute="leading" id="cI9-MV-G5X"/>
                             <constraint firstItem="Odl-Wy-AYG" firstAttribute="trailing" secondItem="5GP-GU-DRj" secondAttribute="trailing" id="dLK-Id-eEh"/>
@@ -1412,74 +1412,74 @@ The Cape Fear Garden Club, Inc. assists Audubon in funding through a standing an
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stN-K7-1H5">
-                                <rect key="frame" x="16" y="161" width="288" height="265"/>
+                                <rect key="frame" x="8" y="161" width="304" height="265"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WEH-a1-yP3">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="4645.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="4464.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwW-9e-mde" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="4645.5"/>
-                                                <string key="text">For almost 90 years the Cape Fear Garden Club has worked to enhance and support the natural beauty of Wilmington. In 2011, we created the Cape Fear Garden Club Beautification Endowment to create perpetual funding to promote wide scale enhancement and maintenance of the landscapes of our city gateways, medians, byways and public spaces. Below is an overview of how recent grants benefit our Wilmington community:
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="4464.5"/>
+                                                <mutableString key="text">For almost 90 years the Cape Fear Garden Club has worked to enhance and support the natural beauty of Wilmington. In 2011, we created the Cape Fear Garden Club Beautification Endowment to create perpetual funding to promote wide scale enhancement and maintenance of the landscapes of our city gateways, medians, byways and public spaces. Below is an overview of how recent grants benefit our Wilmington community:
 
 BEAUTIFICATION:
 The creation of new gardens and the restoration of existing gardens; adding trees, shrubs; flowers along with hardscapes that will allow people to enjoy the particular area.
 
-    Children's Museum - Secret Garden off Orange Street in which area residents, visitors and tourists can rest and relax
-    Carolina Beach - enhancement of the "Town Gazebo", central to this community
-    Schools: Wilmington Christian, NHHS, Hoggard, Forest Hills Elementary, CFCC, Roland Grise Middle, Isaac Bear, Friends School, Gregory Elementary, Lake Forest Academy, St Mary's, Wrightsville Beach Elementary, Noble Middle and Holly Tree Elementary
-    Juvenile Day Treatment Center - gateway to Wilmington along side of this building
-    Kure Beach - enhancement of areas surrounding city signs
-    Lower Cape Fear Historical Society - Latimer House
-    City of Wilmington - Greenfield Amphitheater
-    Airlie Gardens - Improve center drive of the gardens with irrigation, plant materials and mulch (2013)
-    Cameron Art Museum - Creation of a quilt garden from the museum's collection. It is a slave-made tulip quilt. Funding is for all plantings in this garden (2013)
-    Bellamy Mansion Museum - re-activate 1861 cistern and rainwater harvesting system
-    Rotary Clubs of Wilmington (for Greenfield Park) - completion of irrigation project and Rotary Wheel for Wilmington Parks and Recreation
-    Friends of the Battleship North Carolina - Improve Battleship Park with plants, mulch and soil (2013)
-    Wilmington Tree Commission - 200 azaleas and 9 Live Oaks on Market Street between 4th and 16th Streets
-    Cape Fear Community College - Beautify the circular courtyard at the Hanover parking deck (2013)
+- Children's Museum - Secret Garden off Orange Street in which area residents, visitors and tourists can rest and relax
+- Carolina Beach - enhancement of the "Town Gazebo", central to this community
+- Schools: Wilmington Christian, NHHS, Hoggard, Forest Hills Elementary, CFCC, Roland Grise Middle, Isaac Bear, Friends School, Gregory Elementary, Lake Forest Academy, St Mary's, Wrightsville Beach Elementary, Noble Middle and Holly Tree Elementary
+- Juvenile Day Treatment Center - gateway to Wilmington along side of this building
+- Kure Beach - enhancement of areas surrounding city signs
+- Lower Cape Fear Historical Society - Latimer House
+- City of Wilmington - Greenfield Amphitheater
+- Airlie Gardens - Improve center drive of the gardens with irrigation, plant materials and mulch (2013)
+- Cameron Art Museum - Creation of a quilt garden from the museum's collection. It is a slave-made tulip quilt. Funding is for all plantings in this garden (2013)
+- Bellamy Mansion Museum - re-activate 1861 cistern and rainwater harvesting system
+- Rotary Clubs of Wilmington (for Greenfield Park) - completion of irrigation project and Rotary Wheel for Wilmington Parks and Recreation
+- Friends of the Battleship North Carolina - Improve Battleship Park with plants, mulch and soil (2013)
+- Wilmington Tree Commission - 200 azaleas and 9 Live Oaks on Market Street between 4th and 16th Streets
+- Cape Fear Community College - Beautify the circular courtyard at the Hanover parking deck (2013)
 
 CONSERVATION:
 Supports the CFGC's ongoing project at Battery Island which was just increased from $4000 to $6000 awarded each year. This is a partnership with the Audubon Society with Walker Goldman and includes a bi-annual cleanup with plantings of Yaupon shrubs which help provide nesting sites for coastal birds, in particular the White Ibis which has one of the largest nesting sites right here in Battery Island. Other recent conservation grant projects have included:
 
-    The Arboretum new entrance which will feature storm water best management practice demonstration site (2008)
-    Cape Fear Community College Foundation - horticultural fitness trail which includes preservation of native carnivorous plants (2007)
-    Cape Fear River Watch - created an Urban Rain Garden to manage storm water runoff from headquarters building on Surry St; utilized native plants and conservation landscaping techniques to create an education site in front of the building (2007)
-    Lower Cape Fear Historical Society - Restore storm drains at sides of the 1852 Lamiter House and improve irrigation (2013)
-    North Carolina Coastal Federation - Native plants and shrubs for rain gardens at Bradley Creek and Alderman Elementary Schools (2013)
-    North Carolina Land Trust - Supplies for propagation of new plants to restore Venus Flytraps at the Stanley Rehder Carnivorous Garden (2013)
+- The Arboretum new entrance which will feature storm water best management practice demonstration site (2008)
+- Cape Fear Community College Foundation - horticultural fitness trail which includes preservation of native carnivorous plants (2007)
+- Cape Fear River Watch - created an Urban Rain Garden to manage storm water runoff from headquarters building on Surry St; utilized native plants and conservation landscaping techniques to create an education site in front of the building (2007)
+- Lower Cape Fear Historical Society - Restore storm drains at sides of the 1852 Lamiter House and improve irrigation (2013)
+- North Carolina Coastal Federation - Native plants and shrubs for rain gardens at Bradley Creek and Alderman Elementary Schools (2013)
+- North Carolina Land Trust - Supplies for propagation of new plants to restore Venus Flytraps at the Stanley Rehder Carnivorous Garden (2013)
 
 EDUCATIONAL:
 Multiple grant awards have gone to schools and organizations for the purpose of educating people about how to use plants for conservation, food, landscaping, attracting wildlife, etc.
 
-    Airlie Butterfly Garden - CFGC supplied the funds to landscape the entire area surrounding the new Butterfly Garden at Airlie Gardens.
-    Cape Fear Community College - funds for a greenhouse in which students learn to grow plants (now named the "Cape Fear Garden Club Greenhouse" in our club's honor for our support). CFCC is also a ppartner in landscaping Habitat for Humanity homes as a part of their landscaping curriculum
-    Arboretum - Plant additional 45 camellia plants and companion plants in the former specimen and patio garden
-    The Davis Community - Create an outdoor destination to draw people from their rooms to experience nature (2013)
-    Creekwood Community - an ongoing project to raise vegetables, engage community participation, educate and improve the health of area residents
+- Airlie Butterfly Garden - CFGC supplied the funds to landscape the entire area surrounding the new Butterfly Garden at Airlie Gardens.
+- Cape Fear Community College - funds for a greenhouse in which students learn to grow plants (now named the "Cape Fear Garden Club Greenhouse" in our club's honor for our support). CFCC is also a ppartner in landscaping Habitat for Humanity homes as a part of their landscaping curriculum
+- Arboretum - Plant additional 45 camellia plants and companion plants in the former specimen and patio garden
+- The Davis Community - Create an outdoor destination to draw people from their rooms to experience nature (2013)
+- Creekwood Community - an ongoing project to raise vegetables, engage community participation, educate and improve the health of area residents
 
 SCHOOLS:
-    Wilmington Academy of Arts and Sciences - vegetable gardens and a Snow Pea "Tee-Pee" to teach students a scientific introduction to vegetable gardening including the process of preparing beds, planting, composting, harvesting, and eating the crop produced
-    Communities in Schools – this center for at-risk youth will design, implement and maintain a flower and vegetable garden and hopefully sell the products at the Farmer’s Market downtown
-    Yahweh Center – working garden of flowers, herbs and vegetables including a greenhouse for hands on learning for children
-    JT Hoggard – shade garden and education for Horticultural students in implementation and maintenance
-    Bellamy Elementary Garden Club – flower beds to be used in education and to improve self esteem
-    NHHS – English as a second Language Students will install and maintain senior courtyard plantings
-    Laney Highschool – Senior class garden, provide mulch and plantings (2013)
+- Wilmington Academy of Arts and Sciences - vegetable gardens and a Snow Pea "Tee-Pee" to teach students a scientific introduction to vegetable gardening including the process of preparing beds, planting, composting, harvesting, and eating the crop produced
+- Communities in Schools – this center for at-risk youth will design, implement and maintain a flower and vegetable garden and hopefully sell the products at the Farmer’s Market downtown
+- Yahweh Center – working garden of flowers, herbs and vegetables including a greenhouse for hands on learning for children
+- JT Hoggard – shade garden and education for Horticultural students in implementation and maintenance
+- Bellamy Elementary Garden Club – flower beds to be used in education and to improve self esteem
+- NHHS – English as a second Language Students will install and maintain senior courtyard plantings
+- Laney Highschool – Senior class garden, provide mulch and plantings (2013)
 
 INSPIRATION AND MEMORIALS:
-    Lower Cape Fear Hospice received monies to help with a 3 phase project for gardens on the property that will be uplifting to patients as well as to the entire community who visit and contemplate life and death. In 2013 Hospice was awarded a grant to cover all the plantings for new courtyards created as part of the campaign to expand the Pavilion
-    UNCW students applied for and received a grant to beautify an area on campus and create a memorial garden for students and faculty who have died
-    Ashley High School TrrM Society – memorial garden
-    Little Chapel on the Boardwalk – Biblical Garden established on their property off “The Loop” – also educational as to plant materials found in the Old Testament
-    Wilmington Firefighters’ Memorial – Purchase materials for the irrigation system, a load of topsoil and perennials for the garden (2013)
+- Lower Cape Fear Hospice received monies to help with a 3 phase project for gardens on the property that will be uplifting to patients as well as to the entire community who visit and contemplate life and death. In 2013 Hospice was awarded a grant to cover all the plantings for new courtyards created as part of the campaign to expand the Pavilion
+- UNCW students applied for and received a grant to beautify an area on campus and create a memorial garden for students and faculty who have died
+- Ashley High School TrrM Society – memorial garden
+- Little Chapel on the Boardwalk – Biblical Garden established on their property off “The Loop” – also educational as to plant materials found in the Old Testament
+- Wilmington Firefighters’ Memorial – Purchase materials for the irrigation system, a load of topsoil and perennials for the garden (2013)
 
 PHILANTHROPIC:
-    Habitat for Humanity – for 4 years, we have funded plant materials to landscape homes for this organization; CFCC students provide the labor.  Habitat residents undergo a 12 week program to teach them how to own their own home and maintain it.
+- Habitat for Humanity – for 4 years, we have funded plant materials to landscape homes for this organization; CFCC students provide the labor.  Habitat residents undergo a 12 week program to teach them how to own their own home and maintain it.
 
 ENDOWED SCHOLARSHIPS:
-    Cape Fear Community College
-    University of North Carolina, Wilmington </string>
+- Cape Fear Community College
+- University of North Carolina, Wilmington </mutableString>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1513,7 +1513,7 @@ ENDOWED SCHOLARSHIPS:
                             <constraint firstItem="Nbj-2W-Hce" firstAttribute="trailing" secondItem="Jn5-Iw-bQW" secondAttribute="trailing" id="IFE-Be-y48"/>
                             <constraint firstItem="fD4-Qg-HTy" firstAttribute="leading" secondItem="Nbj-2W-Hce" secondAttribute="leading" id="IGd-mg-0pD"/>
                             <constraint firstItem="Jn5-Iw-bQW" firstAttribute="top" secondItem="fD4-Qg-HTy" secondAttribute="bottom" constant="8" id="MFB-7j-zmm"/>
-                            <constraint firstItem="stN-K7-1H5" firstAttribute="leading" secondItem="Nbj-2W-Hce" secondAttribute="leading" constant="16" id="Pgz-at-K2T"/>
+                            <constraint firstItem="stN-K7-1H5" firstAttribute="leading" secondItem="Nbj-2W-Hce" secondAttribute="leading" constant="8" id="Pgz-at-K2T"/>
                             <constraint firstItem="Jn5-Iw-bQW" firstAttribute="leading" secondItem="Nbj-2W-Hce" secondAttribute="leading" id="SJt-Zy-I4s"/>
                             <constraint firstItem="mlo-HI-a9u" firstAttribute="top" secondItem="Jn5-Iw-bQW" secondAttribute="bottom" constant="8" id="Viu-lQ-XWe"/>
                             <constraint firstItem="Nbj-2W-Hce" firstAttribute="trailing" secondItem="mlo-HI-a9u" secondAttribute="trailing" id="WmE-bx-hgH"/>
@@ -1525,7 +1525,7 @@ ENDOWED SCHOLARSHIPS:
                             <constraint firstItem="stN-K7-1H5" firstAttribute="top" secondItem="Oiu-Zx-Ah3" secondAttribute="bottom" constant="8" id="k9t-8H-EOh"/>
                             <constraint firstItem="Nbj-2W-Hce" firstAttribute="trailing" secondItem="fD4-Qg-HTy" secondAttribute="trailing" id="tFN-Sp-CdD"/>
                             <constraint firstItem="Nbj-2W-Hce" firstAttribute="bottom" secondItem="mlo-HI-a9u" secondAttribute="bottom" constant="8" id="uwK-FA-RAW"/>
-                            <constraint firstItem="Nbj-2W-Hce" firstAttribute="trailing" secondItem="stN-K7-1H5" secondAttribute="trailing" constant="16" id="wIc-cQ-f2p"/>
+                            <constraint firstItem="Nbj-2W-Hce" firstAttribute="trailing" secondItem="stN-K7-1H5" secondAttribute="trailing" constant="8" id="wIc-cQ-f2p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nbj-2W-Hce"/>
                     </view>
@@ -1623,13 +1623,13 @@ ENDOWED SCHOLARSHIPS:
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NEa-7G-ybW">
-                                <rect key="frame" x="16" y="153" width="288" height="311"/>
+                                <rect key="frame" x="8" y="153" width="304" height="311"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="99M-cL-w7v">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="523"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="483"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlw-Zl-dkG" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="523"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="483"/>
                                                 <string key="text">On behalf of the 401 members of the Cape Fear Garden Club, we thank you for joining us for the 2020 Azalea Garden Tour. The proceeds from the Garden Tour ticket sales are given back to our community each fall as grants to other non-profits for education, beautification and conservation of our native trees, plants and birds. As you make your way from garden to garden, you’ll pass by many beautiful spots around town: schools, parks, museums and roadways. There’s a good chance that through your purchase of an Azalea Garden Tour ticket, the Cape Fear Garden Club was able to enhance and preserve the beauty of many of these places in our community. Since 2003, the proceeds from the Azalea Garden Tour have supported local non-profits with grants from the Cape Fear Garden Club totaling over $1,209,000.</string>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                 <nil key="textColor"/>
@@ -1661,13 +1661,13 @@ ENDOWED SCHOLARSHIPS:
                             <constraint firstItem="klA-hf-wtH" firstAttribute="leading" secondItem="LAV-aY-Fdn" secondAttribute="leading" id="AbY-4a-3e4"/>
                             <constraint firstItem="klA-hf-wtH" firstAttribute="top" secondItem="NEa-7G-ybW" secondAttribute="bottom" constant="8" id="BDt-pf-tQg"/>
                             <constraint firstItem="NEa-7G-ybW" firstAttribute="top" secondItem="1hQ-Et-Egx" secondAttribute="bottom" constant="8" id="FIF-IR-rSI"/>
-                            <constraint firstItem="NEa-7G-ybW" firstAttribute="leading" secondItem="LAV-aY-Fdn" secondAttribute="leading" constant="16" id="Klf-0k-q0j"/>
+                            <constraint firstItem="NEa-7G-ybW" firstAttribute="leading" secondItem="LAV-aY-Fdn" secondAttribute="leading" constant="8" id="Klf-0k-q0j"/>
                             <constraint firstItem="LAV-aY-Fdn" firstAttribute="trailing" secondItem="klA-hf-wtH" secondAttribute="trailing" id="Uxj-IX-dmD"/>
                             <constraint firstItem="LAV-aY-Fdn" firstAttribute="trailing" secondItem="1hQ-Et-Egx" secondAttribute="trailing" id="dTL-q2-kGn"/>
                             <constraint firstItem="rhO-pq-XVg" firstAttribute="leading" secondItem="LAV-aY-Fdn" secondAttribute="leading" id="eim-1c-qyH"/>
                             <constraint firstItem="1hQ-Et-Egx" firstAttribute="top" secondItem="D8A-Ja-ae7" secondAttribute="bottom" constant="8" id="grI-lG-czu"/>
                             <constraint firstItem="1hQ-Et-Egx" firstAttribute="leading" secondItem="LAV-aY-Fdn" secondAttribute="leading" id="jum-8j-AHL"/>
-                            <constraint firstItem="LAV-aY-Fdn" firstAttribute="trailing" secondItem="NEa-7G-ybW" secondAttribute="trailing" constant="16" id="kWB-lo-d9x"/>
+                            <constraint firstItem="LAV-aY-Fdn" firstAttribute="trailing" secondItem="NEa-7G-ybW" secondAttribute="trailing" constant="8" id="kWB-lo-d9x"/>
                             <constraint firstItem="LAV-aY-Fdn" firstAttribute="leading" secondItem="D8A-Ja-ae7" secondAttribute="leading" id="nU4-R8-XGj"/>
                             <constraint firstItem="D8A-Ja-ae7" firstAttribute="trailing" secondItem="LAV-aY-Fdn" secondAttribute="trailing" id="rcr-Kn-Mmo"/>
                             <constraint firstItem="LAV-aY-Fdn" firstAttribute="trailing" secondItem="rhO-pq-XVg" secondAttribute="trailing" id="teD-SJ-NaK"/>
@@ -1697,13 +1697,13 @@ ENDOWED SCHOLARSHIPS:
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yr6-l4-Jnd">
-                                <rect key="frame" x="16" y="161" width="288" height="341"/>
+                                <rect key="frame" x="8" y="161" width="304" height="341"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpy-0p-83I">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="1026"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="965.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4D-DB-gLf" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="1026"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="965.5"/>
                                                 <string key="text">Mark your Calendar for the 2020 Cruise!
 
 The Battery Island/Birds of the Lower Cape Fear Cruise will sail on Sunday, May 17, 2020. 
@@ -1804,10 +1804,10 @@ Additional information is available by emailing birdislandcruise@capefeargardenc
                             <constraint firstItem="Yr6-l4-Jnd" firstAttribute="top" secondItem="Ld8-ga-NTC" secondAttribute="bottom" constant="8" id="EQo-Cz-adL"/>
                             <constraint firstItem="YLd-Bq-ieq" firstAttribute="trailing" secondItem="Ld8-ga-NTC" secondAttribute="trailing" id="FwC-ZF-Bhk"/>
                             <constraint firstItem="43f-0w-XIS" firstAttribute="top" secondItem="YLd-Bq-ieq" secondAttribute="top" constant="16" id="KyB-7N-Du6"/>
-                            <constraint firstItem="YLd-Bq-ieq" firstAttribute="trailing" secondItem="Yr6-l4-Jnd" secondAttribute="trailing" constant="16" id="MBi-0N-PM1"/>
+                            <constraint firstItem="YLd-Bq-ieq" firstAttribute="trailing" secondItem="Yr6-l4-Jnd" secondAttribute="trailing" constant="8" id="MBi-0N-PM1"/>
                             <constraint firstItem="Ce2-aS-pLC" firstAttribute="leading" secondItem="YLd-Bq-ieq" secondAttribute="leading" id="PWn-v8-qIC"/>
                             <constraint firstItem="43f-0w-XIS" firstAttribute="trailing" secondItem="YLd-Bq-ieq" secondAttribute="trailing" id="T8c-8u-atK"/>
-                            <constraint firstItem="Yr6-l4-Jnd" firstAttribute="leading" secondItem="YLd-Bq-ieq" secondAttribute="leading" constant="16" id="hiI-JW-nN0"/>
+                            <constraint firstItem="Yr6-l4-Jnd" firstAttribute="leading" secondItem="YLd-Bq-ieq" secondAttribute="leading" constant="8" id="hiI-JW-nN0"/>
                             <constraint firstItem="Ld8-ga-NTC" firstAttribute="top" secondItem="43f-0w-XIS" secondAttribute="bottom" constant="8" id="kWX-3W-9wh"/>
                             <constraint firstItem="Ld8-ga-NTC" firstAttribute="leading" secondItem="YLd-Bq-ieq" secondAttribute="leading" id="muc-iv-Cfa"/>
                         </constraints>
@@ -1927,13 +1927,13 @@ Additional information is available by emailing birdislandcruise@capefeargardenc
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wa9-6w-Whe">
-                                <rect key="frame" x="16" y="161" width="288" height="265"/>
+                                <rect key="frame" x="8" y="161" width="304" height="265"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1iD-ZG-2dw">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="1106.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="1046"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sig-yN-jme" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="1106.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="1046"/>
                                                 <string key="text">Proceeds of the 2018 Azalea Festival Garden Tour, totalling $72,326, were awarded to grant recipients on November 14, 2018. The Cape Fear Garden Club is pleased to have David Johnson, owner of Johnson Nursery-Gardens Direct, as a sponsor for the 2018 Grant Recipients received a $300 credit to be used at his nursery located in Willard or by ordering on line.
 
 GRANT RECIPIENTS
@@ -2001,7 +2001,7 @@ University of North Carolina Wilmington Scholarship</string>
                             <constraint firstItem="uE5-81-q6H" firstAttribute="leading" secondItem="yrc-Ps-ag7" secondAttribute="leading" id="99T-1U-dhl"/>
                             <constraint firstItem="SvC-r6-3Ov" firstAttribute="leading" secondItem="yrc-Ps-ag7" secondAttribute="leading" id="Ado-j5-x2d"/>
                             <constraint firstItem="yrc-Ps-ag7" firstAttribute="bottom" secondItem="SvC-r6-3Ov" secondAttribute="bottom" constant="8" id="Ap4-n2-e38"/>
-                            <constraint firstItem="wa9-6w-Whe" firstAttribute="leading" secondItem="yrc-Ps-ag7" secondAttribute="leading" constant="16" id="CXG-ZZ-yZ8"/>
+                            <constraint firstItem="wa9-6w-Whe" firstAttribute="leading" secondItem="yrc-Ps-ag7" secondAttribute="leading" constant="8" id="CXG-ZZ-yZ8"/>
                             <constraint firstItem="yrc-Ps-ag7" firstAttribute="trailing" secondItem="uE5-81-q6H" secondAttribute="trailing" id="DcQ-FP-49i"/>
                             <constraint firstItem="eUr-hU-5sg" firstAttribute="leading" secondItem="yrc-Ps-ag7" secondAttribute="leading" id="F6u-DI-idT"/>
                             <constraint firstItem="eUr-hU-5sg" firstAttribute="top" secondItem="wa9-6w-Whe" secondAttribute="bottom" constant="8" id="HB7-V6-c3e"/>
@@ -2009,7 +2009,7 @@ University of North Carolina Wilmington Scholarship</string>
                             <constraint firstItem="wa9-6w-Whe" firstAttribute="top" secondItem="v2b-P7-8a5" secondAttribute="bottom" constant="8" id="PVp-IG-IMf"/>
                             <constraint firstItem="v2b-P7-8a5" firstAttribute="leading" secondItem="yrc-Ps-ag7" secondAttribute="leading" id="Tjf-Qm-1Jr"/>
                             <constraint firstItem="yrc-Ps-ag7" firstAttribute="trailing" secondItem="eUr-hU-5sg" secondAttribute="trailing" id="UCc-VB-7BQ"/>
-                            <constraint firstItem="yrc-Ps-ag7" firstAttribute="trailing" secondItem="wa9-6w-Whe" secondAttribute="trailing" constant="16" id="geQ-vn-9ic"/>
+                            <constraint firstItem="yrc-Ps-ag7" firstAttribute="trailing" secondItem="wa9-6w-Whe" secondAttribute="trailing" constant="8" id="geQ-vn-9ic"/>
                             <constraint firstItem="yrc-Ps-ag7" firstAttribute="trailing" secondItem="v2b-P7-8a5" secondAttribute="trailing" id="q33-xe-Lx6"/>
                             <constraint firstItem="SvC-r6-3Ov" firstAttribute="top" secondItem="mBe-5H-29A" secondAttribute="bottom" constant="8" id="qCQ-Bn-F9a"/>
                             <constraint firstItem="mBe-5H-29A" firstAttribute="leading" secondItem="yrc-Ps-ag7" secondAttribute="leading" id="sXI-da-PBW"/>
@@ -2752,58 +2752,6 @@ Wilmington, NC 28403</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="66E-U9-nef" userLabel="DirectionsButton">
-                                <rect key="frame" x="0.0" y="467" width="320" height="35"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="ZSW-36-gcT"/>
-                                </constraints>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Get Directions to Ribbon Cutting (Opens Google Maps)">
-                                            <attributes>
-                                                <color key="NSColor" red="0.4039215686" green="0.54117647059999996" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="16" name="ArialMT"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingHead" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btnDirectionsPressed:" destination="ym2-YC-c4w" eventType="touchUpInside" id="xRJ-NW-0lM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3b-xb-bwC" userLabel="BackButton">
-                                <rect key="frame" x="0.0" y="510" width="320" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Ubc-9o-w3o"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
-                                <state key="normal" title="Back to the Map">
-                                    <color key="titleColor" red="0.4039215686" green="0.54117647059999996" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btnBackPressed:" destination="ym2-YC-c4w" eventType="touchUpInside" id="9pj-oU-h1Q"/>
-                                    <segue destination="WoU-Bq-7CF" kind="show" identifier="DirectionsToMap" id="kYe-Pu-ghP"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pC-cm-KaE" userLabel="HomeButton">
                                 <rect key="frame" x="0.0" y="16" width="320" height="75"/>
                                 <constraints>
@@ -2816,9 +2764,9 @@ Wilmington, NC 28403</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ribbon Cutting Garden: Secret Garden Tom &amp; Kate Fetzer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fyN-eg-HWT" userLabel="Title">
-                                <rect key="frame" x="0.0" y="99" width="320" height="33.5"/>
+                                <rect key="frame" x="0.0" y="99" width="320" height="36"/>
                                 <color key="backgroundColor" red="0.4039215686" green="0.54117647059999996" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -2828,15 +2776,58 @@ Wilmington, NC 28403</string>
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dM2-ol-Ovt">
-                                <rect key="frame" x="16" y="310.5" width="288" height="148.5"/>
+                                <rect key="frame" x="8" y="328.5" width="304" height="135.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CMY-xq-BJE">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="149"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMY-xq-BJE">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="945.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7X-p4-Wsf" userLabel="Description">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="149"/>
-                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
-                                                <nil key="textColor"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7X-p4-Wsf" userLabel="Description">
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="945.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <mutableString key="content">Our 67th Azalea Garden Tour opens with the spectacular Ribbon Cutting Ceremony. This event includes all of the 2020 Azalea Belles, the Citadel Summerall Guards, the North Carolina Azalea Festival Queen and celebrity guests. The Azalea Queen’s Garden Party will be held immediately following the Ribbon Cutting at this location.  This beautiful five-acre family estate truly reflects Southern charm and has been shared with this year’s Azalea Garden Tour for the ribbon cutting only. Located on a quiet lane it is an elegant refuge from traffic and noise. Large live oaks give filtered shade and leave patterns on the brick path. The home is a lovely soft yellow on the exterior with white trim and Charleston Green accents. Two story verandas adorn the front of the home and two story screen porches give year round appeal to experiencing the outdoors. A large guesthouse opens to the expansive pool complex and speaks to their love of entertaining with family and friends. Opposite the guest house and pool is a lovely pergola covered with Confederate jasmine. This garden says “Welcome Home,” the yard says “Kids Are Welcome.”  </mutableString>
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="18" name="ArialMT"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="How To Get There:">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="18" name="Arial-BoldMT"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="18" name="ArialMT"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">Parking for the Ribbon Cutting is ONLY available at Hugh MacRae Park Shelter-4, 314 Pine Grove Drive. Free round-trip bus service from the park to the Ribbon Cutting is available from 8:00am to Noon.  </string>
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="18" name="ArialMT"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Ribbon Cutting Garden is ONLY OPEN from 10:00am to Noon on Friday, NOT OPEN on Friday afternoon, Saturday or Sunday.">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="18" name="Arial-ItalicMT"/>
+                                                            <font key="NSOriginalFont" size="18" name="Arial-ItalicMT"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -2860,33 +2851,124 @@ Wilmington, NC 28403</string>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Lmy-BV-HGW"/>
                             </scrollView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ribboncutting" translatesAutoresizingMaskIntoConstraints="NO" id="cmQ-Ea-o6G">
-                                <rect key="frame" x="16" y="140" width="288" height="162"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="cmQ-Ea-o6G" secondAttribute="height" multiplier="16:9" id="iKc-pi-Jh1"/>
-                                </constraints>
+                                <rect key="frame" x="8" y="143" width="304" height="177.5"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="H5M-Hd-4tm">
+                                <rect key="frame" x="0.0" y="472" width="320" height="68"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" text="Get Directions to Ribbon Cutting Buses (Friday Only)" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p6N-ro-fMV">
+                                        <rect key="frame" x="0.0" y="-25" width="320" height="25"/>
+                                        <color key="backgroundColor" red="0.4039215686" green="0.54117647059999996" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="2PO-aO-sbr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Wt2-Qw-cFX">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="66E-U9-nef" userLabel="DirectionsButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                                <state key="normal" title="Get Directions to Ribbon Cutting Buses">
+                                                    <color key="titleColor" red="0.4039215686" green="0.54117647059999996" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnDirectionsPressed:" destination="ym2-YC-c4w" eventType="touchUpInside" id="xRJ-NW-0lM"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Zcg-vU-GbO">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                                <state key="normal" title="Saturday/Sunday">
+                                                    <color key="titleColor" red="0.4039215686" green="0.54117647059999996" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnSPressed:" destination="ym2-YC-c4w" eventType="touchUpInside" id="rem-oA-E8n"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Zcg-vU-GbO" firstAttribute="width" secondItem="66E-U9-nef" secondAttribute="width" id="fGg-Zb-gbk"/>
+                                            <constraint firstItem="Zcg-vU-GbO" firstAttribute="height" secondItem="66E-U9-nef" secondAttribute="height" id="njU-zi-Fd8"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3b-xb-bwC" userLabel="BackButton">
+                                        <rect key="frame" x="0.0" y="38" width="320" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Ubc-9o-w3o"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                        <state key="normal" title="Back to the Map">
+                                            <color key="titleColor" red="0.4039215686" green="0.54117647059999996" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnBackPressed:" destination="ym2-YC-c4w" eventType="touchUpInside" id="9pj-oU-h1Q"/>
+                                            <segue destination="WoU-Bq-7CF" kind="show" identifier="DirectionsToMap" id="kYe-Pu-ghP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="K3b-xb-bwC" firstAttribute="height" secondItem="Zcg-vU-GbO" secondAttribute="height" id="7LC-fl-Ctb"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.84313725490000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ZDh-C3-D5d" firstAttribute="trailing" secondItem="cmQ-Ea-o6G" secondAttribute="trailing" constant="16" id="0kF-w6-yT3"/>
-                            <constraint firstItem="dM2-ol-Ovt" firstAttribute="leading" secondItem="ZDh-C3-D5d" secondAttribute="leading" constant="16" id="0y1-wZ-rlO"/>
-                            <constraint firstItem="66E-U9-nef" firstAttribute="leading" secondItem="ZDh-C3-D5d" secondAttribute="leading" id="Fbz-Qk-Frb"/>
-                            <constraint firstItem="cmQ-Ea-o6G" firstAttribute="leading" secondItem="ZDh-C3-D5d" secondAttribute="leading" constant="16" id="FhD-bF-VM8"/>
+                            <constraint firstItem="ZDh-C3-D5d" firstAttribute="trailing" secondItem="cmQ-Ea-o6G" secondAttribute="trailing" constant="8" id="0kF-w6-yT3"/>
+                            <constraint firstItem="dM2-ol-Ovt" firstAttribute="leading" secondItem="ZDh-C3-D5d" secondAttribute="leading" constant="8" id="0y1-wZ-rlO"/>
+                            <constraint firstItem="dM2-ol-Ovt" firstAttribute="height" secondItem="cmQ-Ea-o6G" secondAttribute="height" multiplier="0.765432" id="9tN-z5-pBo"/>
+                            <constraint firstItem="cmQ-Ea-o6G" firstAttribute="leading" secondItem="ZDh-C3-D5d" secondAttribute="leading" constant="8" id="FhD-bF-VM8"/>
                             <constraint firstItem="1pC-cm-KaE" firstAttribute="trailing" secondItem="ZDh-C3-D5d" secondAttribute="trailing" id="Hrw-qT-Kge"/>
-                            <constraint firstItem="ZDh-C3-D5d" firstAttribute="trailing" secondItem="dM2-ol-Ovt" secondAttribute="trailing" constant="16" id="IFi-TJ-jJl"/>
+                            <constraint firstItem="ZDh-C3-D5d" firstAttribute="trailing" secondItem="dM2-ol-Ovt" secondAttribute="trailing" constant="8" id="IFi-TJ-jJl"/>
                             <constraint firstItem="cmQ-Ea-o6G" firstAttribute="top" secondItem="fyN-eg-HWT" secondAttribute="bottom" constant="8" id="NGO-v4-Ywj"/>
-                            <constraint firstItem="ZDh-C3-D5d" firstAttribute="bottom" secondItem="K3b-xb-bwC" secondAttribute="bottom" constant="8" id="NJi-M1-qAY"/>
-                            <constraint firstItem="66E-U9-nef" firstAttribute="top" secondItem="dM2-ol-Ovt" secondAttribute="bottom" constant="8" id="PMB-QO-FXv"/>
                             <constraint firstItem="fyN-eg-HWT" firstAttribute="top" secondItem="1pC-cm-KaE" secondAttribute="bottom" constant="8" id="UVl-mG-FBW"/>
                             <constraint firstItem="1pC-cm-KaE" firstAttribute="top" secondItem="ZDh-C3-D5d" secondAttribute="top" constant="16" id="YPQ-9U-5JM"/>
+                            <constraint firstItem="H5M-Hd-4tm" firstAttribute="leading" secondItem="ZDh-C3-D5d" secondAttribute="leading" id="Zg9-xn-cmJ"/>
                             <constraint firstItem="ZDh-C3-D5d" firstAttribute="trailing" secondItem="fyN-eg-HWT" secondAttribute="trailing" id="cSB-IL-RL5"/>
-                            <constraint firstItem="ZDh-C3-D5d" firstAttribute="trailing" secondItem="66E-U9-nef" secondAttribute="trailing" id="fWc-6Y-LNS"/>
                             <constraint firstItem="dM2-ol-Ovt" firstAttribute="top" secondItem="cmQ-Ea-o6G" secondAttribute="bottom" constant="8" id="g62-92-xUF"/>
-                            <constraint firstItem="ZDh-C3-D5d" firstAttribute="trailing" secondItem="K3b-xb-bwC" secondAttribute="trailing" id="hi2-Ci-mLb"/>
-                            <constraint firstItem="K3b-xb-bwC" firstAttribute="leading" secondItem="ZDh-C3-D5d" secondAttribute="leading" id="oei-t2-RR5"/>
-                            <constraint firstItem="K3b-xb-bwC" firstAttribute="top" secondItem="66E-U9-nef" secondAttribute="bottom" constant="8" id="uBv-Ap-FUY"/>
+                            <constraint firstItem="ZDh-C3-D5d" firstAttribute="bottom" secondItem="H5M-Hd-4tm" secondAttribute="bottom" constant="8" id="kqp-tb-rfy"/>
+                            <constraint firstItem="H5M-Hd-4tm" firstAttribute="trailing" secondItem="ZDh-C3-D5d" secondAttribute="trailing" id="tCY-7i-Tyg"/>
                             <constraint firstItem="ZDh-C3-D5d" firstAttribute="leading" secondItem="1pC-cm-KaE" secondAttribute="leading" id="vbt-qo-Qep"/>
                             <constraint firstItem="fyN-eg-HWT" firstAttribute="leading" secondItem="ZDh-C3-D5d" secondAttribute="leading" id="xue-Ni-5rV"/>
+                            <constraint firstItem="dM2-ol-Ovt" firstAttribute="bottom" secondItem="H5M-Hd-4tm" secondAttribute="top" constant="-8" id="yZF-eT-hg9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZDh-C3-D5d"/>
                     </view>
@@ -2894,8 +2976,10 @@ Wilmington, NC 28403</string>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="btnBack" destination="K3b-xb-bwC" id="lgP-60-uzb"/>
-                        <outlet property="btnDirections" destination="66E-U9-nef" id="loV-GH-orl"/>
+                        <outlet property="btnF" destination="66E-U9-nef" id="cXj-Ub-YuC"/>
                         <outlet property="btnHome" destination="1pC-cm-KaE" id="9IZ-7f-5Bh"/>
+                        <outlet property="btnS" destination="Zcg-vU-GbO" id="Dxm-d8-cWZ"/>
+                        <outlet property="dLabel" destination="p6N-ro-fMV" id="Lez-0a-egX"/>
                         <outlet property="descTV" destination="m7X-p4-Wsf" id="5k4-LG-oKv"/>
                         <outlet property="img" destination="cmQ-Ea-o6G" id="2z7-vX-4et"/>
                         <outlet property="titleTV" destination="fyN-eg-HWT" id="7u3-tp-2mY"/>
@@ -2910,7 +2994,7 @@ Wilmington, NC 28403</string>
             <objects>
                 <viewController id="L0v-U2-LV4" customClass="EmbedMapVC" customModule="CFGC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0PE-RH-jX4">
-                        <rect key="frame" x="0.0" y="0.0" width="300" height="169"/>
+                        <rect key="frame" x="0.0" y="0.0" width="304" height="171"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="khm-Ha-Y5t"/>
@@ -2933,16 +3017,16 @@ Wilmington, NC 28403</string>
     <inferredMetricsTieBreakers>
         <segue reference="cZF-10-4Rl"/>
         <segue reference="mX6-kO-Sja"/>
-        <segue reference="czg-DI-FVn"/>
+        <segue reference="Lcm-Tx-Gmh"/>
         <segue reference="y3k-WG-u1D"/>
         <segue reference="LWn-5P-J6g"/>
         <segue reference="ix7-Jp-m5q"/>
-        <segue reference="JWM-S4-Nhm"/>
+        <segue reference="m3H-ix-876"/>
         <segue reference="kWx-oG-9T9"/>
-        <segue reference="U5T-a2-BNb"/>
+        <segue reference="kYe-Pu-ghP"/>
         <segue reference="RUd-Le-6J6"/>
         <segue reference="qe5-Iy-MgD"/>
         <segue reference="Wjg-hC-N3U"/>
-        <segue reference="iun-Ec-TtN"/>
+        <segue reference="x9z-9F-C29"/>
     </inferredMetricsTieBreakers>
 </document>

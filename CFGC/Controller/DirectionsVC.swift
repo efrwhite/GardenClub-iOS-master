@@ -14,26 +14,36 @@ class DirectionsVC: UIViewController {
     
     @IBOutlet weak var btnHome: UIButton!
     @IBOutlet weak var titleTV: UILabel!
+    @IBOutlet weak var dLabel: UILabel!
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var descTV: UILabel!
-    @IBOutlet weak var btnDirections: UIButton!
+    @IBOutlet weak var btnF: UIButton!
+    @IBOutlet weak var btnS: UIButton!
     @IBOutlet weak var btnBack: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         var boldText = "How To Get There: "
-        let attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 17)]
-        let atts = [NSAttributedString.Key.font : UIFont.italicSystemFont(ofSize: 17)]
+        let attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 18)]
+        let atts = [NSAttributedString.Key.font : UIFont.italicSystemFont(ofSize: 18)]
         
         switch(marker) {
         case "RC":
+            titleTV.text = "Ribbon Cutting Garden: Secret Garden\nTom & Kate Fetzer"
+            img.image = UIImage(named: "ribboncutting")
             let attributedString = NSMutableAttributedString(string: "Our 67th Azalea Garden Tour opens with the spectacular Ribbon Cutting Ceremony. This event includes all of the 2020 Azalea Belles, the Citadel Summerall Guards, the North Carolina Azalea Festival Queen and celebrity guests. The Azalea Queen’s Garden Party will be held immediately following the Ribbon Cutting at this location.\n\nThis beautiful five-acre family estate truly reflects Southern charm and has been shared with this year’s Azalea Garden Tour for the ribbon cutting only. Located on a quiet lane it is an elegant refuge from traffic and noise. Large live oaks give filtered shade and leave patterns on the brick path. The home is a lovely soft yellow on the exterior with white trim and Charleston Green accents. Two story verandas adorn the front of the home and two story screen porches give year round appeal to experiencing the outdoors. A large guesthouse opens to the expansive pool complex and speaks to their love of entertaining with family and friends. Opposite the guest house and pool is a lovely pergola covered with Confederate jasmine. This garden says “Welcome Home,” the yard says “Kids Are Welcome.”\n\n")
             attributedString.append(NSMutableAttributedString(string: boldText, attributes: attrs))
             attributedString.append(NSMutableAttributedString(string: "Parking for the Ribbon Cutting is ONLY available at Hugh MacRae Park Shelter-4, 314 Pine Grove Drive. Free round-trip bus service from the park to the Ribbon Cutting is available from 8:00am to Noon.\n\n"))
             let italText = "Ribbon Cutting Garden is ONLY OPEN from 10:00am to Noon on Friday, NOT OPEN on Friday afternoon, Saturday or Sunday."
             attributedString.append(NSMutableAttributedString(string: italText, attributes: atts))
             descTV.attributedText = attributedString
+            btnF.setTitle("Press Here For Friday Only Directions", for: .normal)
+            dLabel.isHidden = false
+            dLabel.text = "Get Directions to Ribbon Cutting Buses"
+            dLabel.minimumScaleFactor = 0.5
+            dLabel.numberOfLines = 1
+            dLabel.adjustsFontSizeToFitWidth = true
             break
         case "1":
             titleTV.text = "Garden 1: Secret Garden\nJames and Frances Parnell"
@@ -44,7 +54,18 @@ class DirectionsVC: UIViewController {
             attStr.append(NSMutableAttributedString(string: boldText, attributes: attrs))
             attStr.append(NSMutableAttributedString(string: "This garden can only be accessed by our free round-trip buses that circle between a parking facility and Gardens 1 & 2 from 9:30am to 5:00pm.\n\nFriday: Park at Hugh MacRae Park, Shelter-4, 314 Pine Grove Drive, last bus to the garden will leave at 4:30pm.\n\nSaturday & Sunday: Park at Bradley Creek Elementary School, 6211 Greenville Loop Road, last bus to the gardens will leave at 4:30pm."))
             descTV.attributedText = attStr
-            btnDirections.setTitle("Get Directions to Garden 1\n(Open Google Maps)", for: .normal)
+            btnF.setTitle("Friday", for: .normal)
+            dLabel.isHidden = false
+            dLabel.text = "Get Directions to Garden 1 Buses"
+            dLabel.minimumScaleFactor = 0.5
+            dLabel.numberOfLines = 1
+            dLabel.adjustsFontSizeToFitWidth = true
+            btnS.isHidden = false
+            btnS.setTitle("Saturday/Sunday", for: .normal)
+            btnS.titleLabel?.minimumScaleFactor = 0.5
+            btnS.titleLabel?.numberOfLines = 1
+            btnS.titleLabel?.adjustsFontSizeToFitWidth = true
+            btnS.isEnabled = true
             break
         case "2":
             titleTV.text = "Garden 2: Secret Garden\nDrs. Jeff Warhaftig and Amanda Trimpey"
@@ -53,13 +74,24 @@ class DirectionsVC: UIViewController {
             attStr.append(NSMutableAttributedString(string: boldText, attributes: attrs))
             attStr.append(NSMutableAttributedString(string: "This garden can only be accessed by our free round-trip buses that circle between a parking facility and Gardens 1 & 2 from 9:30am to 5:00pm.\n\nFriday: Park at Hugh MacRae Park, Shelter-4, 314 Pine Grove Drive, last bus to the garden will leave at 4:30pm.\n\nSaturday & Sunday: Park at Bradley Creek Elementary School, 6211 Greenville Loop Road, last bus to the gardens will leave at 4:30pm."))
             descTV.attributedText = attStr
-            btnDirections.setTitle("Get Directions to Garden 2\n(Open Google Maps)", for: .normal)
+            btnF.setTitle("Friday", for: .normal)
+            dLabel.isHidden = false
+            dLabel.text = "Get Directions to Garden 2 Buses"
+            dLabel.minimumScaleFactor = 0.5
+            dLabel.numberOfLines = 1
+            dLabel.adjustsFontSizeToFitWidth = true
+            btnS.isHidden = false
+            btnS.setTitle("Saturday/Sunday", for: .normal)
+            btnS.titleLabel?.minimumScaleFactor = 0.5
+            btnS.titleLabel?.numberOfLines = 1
+            btnS.titleLabel?.adjustsFontSizeToFitWidth = true
+            btnS.isEnabled = true
             break
         case "3":
             titleTV.text = "Garden 3: 300 Airlie Road\nAirlie Garden with Lebanon Chapel"
             img.image = UIImage(named: "garden3")
-            descTV.text = "Airlie is a premier waterfront garden of the coastal South and is especially stunning in the spring during the azalea season when thousands of blooms cover the plants. There is a balance of manicured and natural areas with a combination of formal gardens, walking trails, sculptures, views of Bradley Creek, two freshwater lakes, more than 100,000 azaleas and the grandeur of the magnificent Airlie Oak, which dates back to 1545 and is the North Carolina State Champion Live Oak. Not to be missed are a seasonal Butterfly House and unique Bottle Chapel, made using over 2,800 bottles, and is the centerpiece of the Minnie Evans Sculpture Garden.\n\nThe lovely scenery and ideal film locations in Airlie Gardens have also attracted many films and television shows over the years. One Tree Hill and Dawson’s Creek both feature scenes in the Pergola Garden and the ABC Family movie, A Cinderella Story: Once Upon a Song was filmed at the stable’s creek-side lawns.\n\nAs a coastal region site on the North Carolina Birding Trail, Airlie offers some of the best birding in New Hanover County. Check out Airlie’s HotSpot on eBird.com, a website which lists over 200 birds that have been viewed there and what is being seen on a daily basis.\n\nOPEN SATURDAY AND SUNDAY ONLY 10:00am to 5:00pm. Not open Friday. Parking available at the entrance to the garden.\n\nA special feature to visit is the Mount Lebanon Chapel, which was built in 1835 as a “chapel for ease” for summer residents on Wrightsville Sound. It is the oldest religious structure in New Hanover County and is open for worship services from Mother’s Day through Labor Day each summer. The chapel is open Saturday and Sunday only 10:00am to 5:00pm with docents. Maps are available from our ticket table at Airlie and pink arrows will direct you to this historic Chapel owned by St. James Episcopal Parish."
-            btnDirections.setTitle("Get Directions to Garden 3\n(Open Google Maps)", for: .normal)
+            descTV.attributedText = NSMutableAttributedString(string: "Airlie is a premier waterfront garden of the coastal South and is especially stunning in the spring during the azalea season when thousands of blooms cover the plants. There is a balance of manicured and natural areas with a combination of formal gardens, walking trails, sculptures, views of Bradley Creek, two freshwater lakes, more than 100,000 azaleas and the grandeur of the magnificent Airlie Oak, which dates back to 1545 and is the North Carolina State Champion Live Oak. Not to be missed are a seasonal Butterfly House and unique Bottle Chapel, made using over 2,800 bottles, and is the centerpiece of the Minnie Evans Sculpture Garden.\n\nThe lovely scenery and ideal film locations in Airlie Gardens have also attracted many films and television shows over the years. One Tree Hill and Dawson’s Creek both feature scenes in the Pergola Garden and the ABC Family movie, A Cinderella Story: Once Upon a Song was filmed at the stable’s creek-side lawns.\n\nAs a coastal region site on the North Carolina Birding Trail, Airlie offers some of the best birding in New Hanover County. Check out Airlie’s HotSpot on eBird.com, a website which lists over 200 birds that have been viewed there and what is being seen on a daily basis.\n\nOPEN SATURDAY AND SUNDAY ONLY 10:00am to 5:00pm. Not open Friday. Parking available at the entrance to the garden.\n\nA special feature to visit is the Mount Lebanon Chapel, which was built in 1835 as a “chapel for ease” for summer residents on Wrightsville Sound. It is the oldest religious structure in New Hanover County and is open for worship services from Mother’s Day through Labor Day each summer. The chapel is open Saturday and Sunday only 10:00am to 5:00pm with docents. Maps are available from our ticket table at Airlie and pink arrows will direct you to this historic Chapel owned by St. James Episcopal Parish.")
+            btnF.setTitle("Get Directions to Garden 3", for: .normal)
             break
         case "4":
             titleTV.text = "Garden 4: Seawater Lane\nHarbor Way Gardens"
@@ -71,7 +103,7 @@ class DirectionsVC: UIViewController {
             attStr.append(NSMutableAttributedString(string: boldText, attributes: attrs))
             attStr.append(NSMutableAttributedString(string: "Parking is available next to Wrightsville Beach Town Hall on Seawater Lane."))
             descTV.attributedText = attStr
-            btnDirections.setTitle("Get Directions to Garden 4\n(Open Google Maps)", for: .normal)
+            btnF.setTitle("Get Directions to Garden 4", for: .normal)
             break
         case "5":
             titleTV.text = "Garden 5: 6309 Pintail Court\nMarcia Pendleton Doering"
@@ -81,7 +113,7 @@ class DirectionsVC: UIViewController {
             attStr.append(NSMutableAttributedString(string: boldText, attributes: attrs))
             attStr.append(NSMutableAttributedString(string: "Please park on the marked side of Widgeon Drive only."))
             descTV.attributedText = attStr
-            btnDirections.setTitle("Get Directions to Garden 5\n(Open Google Maps)", for: .normal)
+            btnF.setTitle("Get Directions to Garden 5", for: .normal)
             break
         case "6":
             titleTV.text = "Garden 6: 707 Colonial Drive\nDan Thorpe and Anne Beck"
@@ -91,7 +123,7 @@ class DirectionsVC: UIViewController {
             attStr.append(NSMutableAttributedString(string: boldText, attributes: attrs))
             attStr.append(NSMutableAttributedString(string: "Please park on the marked side of the street only, Saturday and Sunday additional parking available at Forest Hills Elementary School, 602 Colonial Drive."))
             descTV.attributedText = attStr
-            btnDirections.setTitle("Get Directions to Garden 6\n(Open Google Maps)", for: .normal)
+            btnF.setTitle("Get Directions to Garden 6", for: .normal)
             break
         case "7":
             titleTV.text = "Garden 7: 314 Colonial Drive\nErin and Dustin RT Sullivan"
@@ -101,7 +133,7 @@ class DirectionsVC: UIViewController {
             attStr.append(NSMutableAttributedString(string: boldText, attributes: attrs))
             attStr.append(NSMutableAttributedString(string: "Please park on the marked side of the street only."))
             descTV.attributedText = attStr
-            btnDirections.setTitle("Get Directions to Garden 7\n(Open Google Maps)", for: .normal)
+            btnF.setTitle("Get Directions to Garden 7", for: .normal)
             break
         case "8":
             titleTV.text = "Garden 8: 1710 Chestnut Street\nScotty and Kenton Sanders"
@@ -111,7 +143,7 @@ class DirectionsVC: UIViewController {
             attStr.append(NSMutableAttributedString(string: boldText, attributes: attrs))
             attStr.append(NSMutableAttributedString(string: "Box Lunches are available nearby on Friday and Saturday 11:30am to 2:30pm at St. Paul’s Episcopal Church. Enter parking lot next to Andrew’s Mortuary on Friday and Saturday from 11:30am to 2:30pm, $8.\n\nAs you enter many of our neighborhoods, parking will ONLY be allowed on one side of the street. Please observe the NO PARKING signs to avoid congestion and keep traffic moving smoothly. Please be courteous and thoughtful when parking. Park only on the pavement, not on the grass. Avoid parking anywhere traffic cones have been set."))
             descTV.attributedText = attStr
-            btnDirections.setTitle("Get Directions to Garden 8\n(Open Google Maps)", for: .normal)
+            btnF.setTitle("Get Directions to Garden 8", for: .normal)
             break
         case "9":
             titleTV.text = "Garden 9: 1708 Chestnut Street\nKaren and Auley Crouch"
@@ -121,13 +153,13 @@ class DirectionsVC: UIViewController {
             attStr.append(NSMutableAttributedString(string: boldText, attributes: attrs))
             attStr.append(NSMutableAttributedString(string: "Box Lunches are available nearby on Friday and Saturday 11:30am to 2:30pm at St. Paul’s Episcopal Church. Enter parking lot next to Andrew’s Mortuary on Friday and Saturday from 11:30am to 2:30pm, $8.\n\nAs you enter many of our neighborhoods, parking will ONLY be allowed on one side of the street. Please observe the NO PARKING signs to avoid congestion and keep traffic moving smoothly. Please be courteous and thoughtful when parking. Park only on the pavement, not on the grass. Avoid parking anywhere traffic cones have been set."))
             descTV.attributedText = attStr
-            btnDirections.setTitle("Get Directions to Garden 9\n(Open Google Maps)", for: .normal)
+            btnF.setTitle("Get Directions to Garden 9", for: .normal)
             break
         case "10":
             titleTV.text = "Garden 10: 1711 Princess Street\nDonna Launey and Patrick Tester"
             img.image = UIImage(named: "garden10")
-            descTV.text = "Built in 1912, this historic prairie style home welcomes you to its spacious front porch featuring furniture built by the garden owner’s father. A lovely English Lutyens bench sits at one end of the porch under a vintage stained glass window creating an inviting place to sit and socialize. The side yard was already established when the garden owners bought the house in 2015. The backyard, however, was a blank canvas, which invited them to design and install their personalized oasis as an extension of their home. The outdoor room includes a large dining table and bench, also built by Donna’s father. It is constructed using rare old cypress from Louisiana. The room is well used by the garden owners and their family as a relaxing escape in the summer and a cozy warm space in the winter, sitting in front of the fireplace in the glow of antique gas lamps. Their love of all things historic, weathered with patina and collected in part from Legacy Historic Salvage, directed the design of the greenhouse built by Patrick, which includes a vintage sink and a shelf above it that holds various garden tools. Exotic tropical patio plants are maintained in the greenhouse during the winter. The sundial orb sits as the focal point of the raised bed vegetable garden and a metal arbor stands at the entrance to the garden. A fire pit is made from the end of an oil tanker truck, and vintage bottles adorn the “bottle tree” which adds a touch of whimsy. A shady area in a back corner of the yard holds a bench set among various plants where one might sit and admire the garden. In the backyard a small maple, a fig, and potted citrus trees given by friends and family are symbolic of this lovingly created home and garden."
-            btnDirections.setTitle("Get Directions to Garden 10\n(Open Google Maps)", for: .normal)
+            descTV.attributedText = NSMutableAttributedString(string: "Built in 1912, this historic prairie style home welcomes you to its spacious front porch featuring furniture built by the garden owner’s father. A lovely English Lutyens bench sits at one end of the porch under a vintage stained glass window creating an inviting place to sit and socialize. The side yard was already established when the garden owners bought the house in 2015. The backyard, however, was a blank canvas, which invited them to design and install their personalized oasis as an extension of their home. The outdoor room includes a large dining table and bench, also built by Donna’s father. It is constructed using rare old cypress from Louisiana. The room is well used by the garden owners and their family as a relaxing escape in the summer and a cozy warm space in the winter, sitting in front of the fireplace in the glow of antique gas lamps. Their love of all things historic, weathered with patina and collected in part from Legacy Historic Salvage, directed the design of the greenhouse built by Patrick, which includes a vintage sink and a shelf above it that holds various garden tools. Exotic tropical patio plants are maintained in the greenhouse during the winter. The sundial orb sits as the focal point of the raised bed vegetable garden and a metal arbor stands at the entrance to the garden. A fire pit is made from the end of an oil tanker truck, and vintage bottles adorn the “bottle tree” which adds a touch of whimsy. A shady area in a back corner of the yard holds a bench set among various plants where one might sit and admire the garden. In the backyard a small maple, a fig, and potted citrus trees given by friends and family are symbolic of this lovingly created home and garden.")
+            btnF.setTitle("Get Directions to Garden 10", for: .normal)
             break
         case "11":
             titleTV.text = "Garden 11A/B: 512-510 Grace Street"
@@ -139,7 +171,7 @@ class DirectionsVC: UIViewController {
             attStr.append(NSMutableAttributedString(string: boldText, attributes: attrs))
             attStr.append(NSMutableAttributedString(string: "\nNext door is a Greek Revival Style house originally built for Wilburn Trask, identified with an historic plaque that dates it to 1865. Painted a “sunny” yellow color with a bright blue door, this house has a similar porch with rocking chairs and a glider swing. Whimsical lighting under the painted porch roof adds an extra dose of charm. Two potted ferns sit on the front brick steps and plantings along the street and driveway are lush and beautiful. All of the colorful annuals in the front and side garden are maintained in pots to make them easy to maintain. Tucked into the cozy courtyard is a lovely back porch with rocking chairs and a white glider that overlooks the shady brick patio with its two distinct seating areas. The bench is set at an angle under a large tree with ferns lending a tropical feel, then a charming birdbath and at the end a small dining table under a colorful umbrella. This garden has a big impact and shows how much can be accomplished in a small space with color, design and style."))
             descTV.attributedText = attStr
-            btnDirections.setTitle("Get Directions to Garden 11\n(Open Google Maps)", for: .normal)
+            btnF.setTitle("Get Directions to Garden 11", for: .normal)
             break
         case "12":
             titleTV.text = "Garden 12: 5024 Split Rail Drive\nSusan Wilson"
@@ -149,11 +181,15 @@ class DirectionsVC: UIViewController {
             attStr.append(NSMutableAttributedString(string: boldText, attributes: attrs))
             attStr.append(NSMutableAttributedString(string: "Please park on the marked side of the street only."))
             descTV.attributedText = attStr
-            btnDirections.setTitle("Get Directions to Garden 12\n(Open Google Maps)", for: .normal)
+            btnF.setTitle("Get Directions to Garden 12", for: .normal)
             break
         default:
             break
         }
+        btnF.titleLabel?.textAlignment = .center
+        btnF.titleLabel?.minimumScaleFactor = 0.5
+        btnF.titleLabel?.numberOfLines = 0
+        btnF.titleLabel?.adjustsFontSizeToFitWidth = true
     }
     
     @IBAction func btnHomePressed(_ sender: UIButton) {
@@ -162,40 +198,14 @@ class DirectionsVC: UIViewController {
     
     @IBAction func btnDirectionsPressed(_ sender: UIButton) {
         switch(marker) {
-        case "RC":
+        case "RC", "1", "2":
             if(UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!)) {
-                let URLString = "comgooglemaps://?daddr=6417+Quail+Run+Road+Wilmington,+North+Carolina&directionsmode=driving"
+                let URLString = "comgooglemaps://?daddr=314+Pine+Grove+Drive+Wilmington,+North+Carolina&directionsmode=driving"
                 guard let url = URL(string: URLString) else { return }
                 if #available(iOS 10, *) { UIApplication.shared.open(url) }
                 else { UIApplication.shared.openURL(url) }
             } else {
-                let URLString = "http://maps.apple.com/?daddr=6417+Quail+Run+Road+Wilmington,+North+Carolina&dirflg=d"
-                guard let url = URL(string: URLString) else { return }
-                if #available(iOS 10, *) { UIApplication.shared.open(url) }
-                else { UIApplication.shared.openURL(url) }
-            }
-            break
-        case "1":
-            if(UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!)) {
-                let URLString = "comgooglemaps://?daddr=6451+Quail+Run+Road+Wilmington,+North+Carolina&directionsmode=driving"
-                guard let url = URL(string: URLString) else { return }
-                if #available(iOS 10, *) { UIApplication.shared.open(url) }
-                else { UIApplication.shared.openURL(url) }
-            } else {
-                let URLString = "http://maps.apple.com/?daddr=6451+Quail+Run+Road+Wilmington,+North+Carolina&dirflg=d"
-                guard let url = URL(string: URLString) else { return }
-                if #available(iOS 10, *) { UIApplication.shared.open(url) }
-                else { UIApplication.shared.openURL(url) }
-            }
-            break
-        case "2":
-            if(UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!)) {
-                let URLString = "comgooglemaps://?daddr=6315+Old+Military+Road+Wilmington,+North+Carolina&directionsmode=driving"
-                guard let url = URL(string: URLString) else { return }
-                if #available(iOS 10, *) { UIApplication.shared.open(url) }
-                else { UIApplication.shared.openURL(url) }
-            } else {
-                let URLString = "http://maps.apple.com/?daddr=6315+Old+Military+Road+Wilmington,+North+Carolina&dirflg=d"
+                let URLString = "http://maps.apple.com/?daddr=314+Pine+Grove+Drive+Wilmington,+North+Carolina&dirflg=d"
                 guard let url = URL(string: URLString) else { return }
                 if #available(iOS 10, *) { UIApplication.shared.open(url) }
                 else { UIApplication.shared.openURL(url) }
@@ -216,12 +226,12 @@ class DirectionsVC: UIViewController {
             break
         case "4":
             if(UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!)) {
-                let URLString = "comgooglemaps://?daddr=daddr=34.215712,-77.807243&directionsmode=driving"
+                let URLString = "comgooglemaps://?daddr=Seawater+Lane+Wrightsville+Beach,+North+Carolina&directionsmode=driving"
                 guard let url = URL(string: URLString) else { return }
                 if #available(iOS 10, *) { UIApplication.shared.open(url) }
                 else { UIApplication.shared.openURL(url) }
             } else {
-                let URLString = "http://maps.apple.com/?daddr=34.215712,-77.807243&dirflg=d"
+                let URLString = "http://maps.apple.com/?daddr=Seawater+Lane+Wrightsville+Beach,+North+Carolina&dirflg=d"
                 guard let url = URL(string: URLString) else { return }
                 if #available(iOS 10, *) { UIApplication.shared.open(url) }
                 else { UIApplication.shared.openURL(url) }
@@ -333,6 +343,26 @@ class DirectionsVC: UIViewController {
             break
         default:
             break
+        }
+    }
+    
+    @IBAction func btnSPressed(_ sender: UIButton) {
+        switch(marker) {
+            case "1", "2":
+                if(UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!)) {
+                    let URLString = "comgooglemaps://?daddr=6211+Greenville+Loop+Road+Wilmington,+North+Carolina&directionsmode=driving"
+                    guard let url = URL(string: URLString) else { return }
+                    if #available(iOS 10, *) { UIApplication.shared.open(url) }
+                    else { UIApplication.shared.openURL(url) }
+                } else {
+                    let URLString = "http://maps.apple.com/?daddr=6211+Greenville+Loop+Road+Wilmington,+North+Carolina&dirflg=d"
+                    guard let url = URL(string: URLString) else { return }
+                    if #available(iOS 10, *) { UIApplication.shared.open(url) }
+                    else { UIApplication.shared.openURL(url) }
+                }
+                break
+            default:
+                break
         }
     }
     
